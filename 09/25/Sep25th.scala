@@ -6,7 +6,8 @@ object Sep25th {
     println(optionQuestion1(num1))
     println(optionQuestion1(none)) 
     println(optionQuestion2(num1))
-  }
+    println(optionQuestion2(none))
+}
 
 
 //問題1 Option[Int]型である、numが引数として渡されるメソッドoptionQuestion1があります。Someの場合はその値を、Noneの場合は０を返却するメソッドを、getOrElseメソッドを使って作成してください。
@@ -20,7 +21,6 @@ object Sep25th {
 
   def optionQuestion2(num: Option[Int]):Option[Int] = {
     num.map(n => n * 3)
-    
   
 
   }

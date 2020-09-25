@@ -2,27 +2,27 @@
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/Users/jun.honda/scala-traning/src/main/scala/09/25/Sep25th.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set(/Users/jun.honda/scala-traning/src/main/scala/09/25/target/scala-2.12/classes/Sep25th$.class, /Users/jun.honda/scala-traning/src/main/scala/09/25/target/scala-2.12/classes/Sep25th.class)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/Users/jun/projects/scala-training/09/25/Sep25th.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Sep25th)[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	product: Set(/Users/jun.honda/scala-traning/src/main/scala/09/25/Sep25th.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll sources are invalidated.[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Sep25th[0m
 [0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0% of all sources[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /Users/jun.honda/scala-traning/src/main/scala/09/25/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /Users/jun/projects/scala-training/09/25/target/scala-2.12/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.3.5:compile for Scala 2.12.10[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.3.5:compile for Scala 2.12.10[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 2caf4c28 for Scala compiler version 2.12.10[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 51c921c6 for Scala compiler version 2.12.10[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	/Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/jun/.sbt/boot/scala-2.12.10/lib/scala-library.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	/Users/jun.honda/scala-traning/src/main/scala/09/25/target/scala-2.12/classes[0m[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.70376512 s[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/jun/projects/scala-training/09/25/target/scala-2.12/classes[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.877543683 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone compiling.[0m
-m

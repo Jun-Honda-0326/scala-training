@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/jun/projects/scala-training/09/25/Sep25th.scala:27:3: identifier expected but '}' found.[0m
-[0m[[0m[31merror[0m] [0m[0m  }[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jun/projects/scala-training/09/25/Sep25th.scala:39:20: not found: value n1[0m
+[0m[[0m[31merror[0m] [0m[0m  num.flatMap(n => n1.map(n2 => n2 * 2))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

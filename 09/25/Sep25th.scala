@@ -11,11 +11,12 @@ object Sep25th {
     println(optionQuestion2(none))
     println(optionQuestion4(num2))
     println(optionQuestion4(none2))
-}
+  }
 
 
 //問題1 Option[Int]型である、numが引数として渡されるメソッドoptionQuestion1があります。Someの場合はその値を、Noneの場合は０を返却するメソッドを、getOrElseメソッドを使って作成してください。
 
+ 
   def optionQuestion1(num: Option[Int]):Int = {
     num.getOrElse(0)
   }
@@ -35,8 +36,8 @@ object Sep25th {
 
 //問題4 Option[Option[Int]]型である、numが引数として渡されるoptionQuestion4メソッドがあります。Someの場合はその値を2倍したSome[Int]を、Noneの場合はそのままNoneを返却するメソッドを作成してください。
 
- def optionQuestion4(num: Option[Option[Int]]):Option[Int] = {
+  def optionQuestion4(num: Option[Option[Int]]):Option[Int] = {
   num.flatten.map(n => n * 2)
-}
+  }
     
 }

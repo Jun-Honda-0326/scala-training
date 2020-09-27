@@ -1,0 +1,1 @@
+scalac -bootclasspath /Users/jun/.sbt/boot/scala-2.12.10/lib/scala-library.jar -classpath /Users/jun/projects/scala-training/target/scala-2.12/classes /Users/jun/projects/scala-training/src/main/scala/09/scala/MyApp.scala

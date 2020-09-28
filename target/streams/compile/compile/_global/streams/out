@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala:2:18: identifier expected but '[' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  def main(args: [String]):Unit = {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala:6:1: ')' expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

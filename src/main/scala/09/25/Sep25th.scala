@@ -1,4 +1,4 @@
-object Sep25th {
+ object Sep25th { 
   def main(args: Array[String]):Unit = {
     val num1: Option[Int] = Some(100)
     val none: Option[Int] = None
@@ -31,7 +31,7 @@ object Sep25th {
 
 //問題3 val strOpt: Option[String] = Some("") を定義し、それに対してisEmpty, isDefined を実行した場合にどのような挙動をするか確かめてください。
 
-//isEmptyを実行した場合はfakse、isDefinedを実行した時はtrueになる。
+//isEmptyを実行した場合はfalse、isDefinedを実行した時はtrueになる。
 
 
 //問題4 Option[Option[Int]]型である、numが引数として渡されるoptionQuestion4メソッドがあります。Someの場合はその値を2倍したSome[Int]を、Noneの場合はそのままNoneを返却するメソッドを作成してください。

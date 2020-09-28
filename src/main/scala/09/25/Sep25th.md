@@ -9,6 +9,9 @@
 ### 問題2
 - mapはSomeの時の場合のみ値を変更できるメソッド
 
+### 問題3
+- isEmpty(isDefined)メソッドはtrue or falseを返すメソッド
+
 ### 問題4
 - flattenメソッドはOptionの入れ子を解消するメソッド
 

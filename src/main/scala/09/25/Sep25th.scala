@@ -14,7 +14,7 @@ object Sep25th {
   }
 
 
-//問題1 Option[Int]型である、numが引数として渡されるメソッドoptionQuestion1があります。Someの場合はその値を、Noneの場合は０を返却するメソッドを、getOrElseメソッドを使って作成してください。
+//題1 Option[Int]型である、numが引数として渡されるメソッドoptionQuestion1があります。Someの場合はその値を、Noneの場合は０を返却するメソッドを、getOrElseメソッドを使って作成してください。
 
  
   def optionQuestion1(num: Option[Int]):Int = {
@@ -41,3 +41,4 @@ object Sep25th {
   }
     
 }
+

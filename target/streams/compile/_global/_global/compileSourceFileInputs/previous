@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.12.10":{"hashes":[["/Users/jun/projects/scala-training/src/main/scala/09/25/Sep25th.scala","07ee477a67754f9eaa0de25fd47ceaaba0d265cf"]],"lastModifiedTimes":[]}}]
-=======
-["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.12.10":{"hashes":[["/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala","9e25f4fb1d78e6d42d1c6d067c7bf6b12ccb4997"],["/Users/jun.honda/project/scala-training/src/main/scala/09/25/Sep25th.scala","1ed9869dc71f9a287aaad250acd0d7e1d7aa04ec"]],"lastModifiedTimes":[]}}]
->>>>>>> 81f5327528bae68335b476b82159093c7be3f7b5
+["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.12.10":{"hashes":[["/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala","a2d325a8d34ceb4a9d5c93e9847fd7ce5d43ba19"],["/Users/jun.honda/project/scala-training/src/main/scala/09/25/Sep25th.scala","0c9a34320713d48bda8a3a82ed9e801bf6d740da"]],"lastModifiedTimes":[]}}]

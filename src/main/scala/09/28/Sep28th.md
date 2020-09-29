@@ -1,5 +1,9 @@
 ## Seqについて
+<<<<<<< Updated upstream
 ### map
+=======
+## map
+>>>>>>> Stashed changes
 - コレクションの各要素に処理を行わせる
 ### flatten
 - 入れ子になったSeqを解消できる

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
@@ -26,3 +27,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/jun/projects/scala-training/target/scala-2.12/classes[0m
 [0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.90018901 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone compiling.[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+>>>>>>> Stashed changes

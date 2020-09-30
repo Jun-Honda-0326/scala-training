@@ -7,10 +7,10 @@
 [0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(c9136064b606344ee5674a69ee76f944236599ed), current stamp: Hash(49eb30a1fdc15d8162a467fbb1e4a589788466dd))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-29 18:20:09.282 GMT+09:00),Trigger)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(a2d325a8d34ceb4a9d5c93e9847fd7ce5d43ba19), current stamp: Hash(ec9614c2016e3305756c4e398a0f3d870e5f1001))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:40:35.538 GMT+09:00),Trigger)[0m
 [0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. Running 'run'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-29 18:20:09.282 GMT+09:00).[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:40:35.538 GMT+09:00).[0m
 [0m[[0m[0minfo[0m] [0m[0m2. Monitoring source files for scala-training/run...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
 [0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 3 ms since the last event for this path.[0m
@@ -20,23 +20,23 @@
 [0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(49eb30a1fdc15d8162a467fbb1e4a589788466dd), current stamp: Hash(07dd55f8d16f92649bd3b32c294dec8b48d8bcd8))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-29 18:36:43.965 GMT+09:00),Trigger)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(ec9614c2016e3305756c4e398a0f3d870e5f1001), current stamp: Hash(23b5087fa51a0ccac5c6c11bf76a25d33710f876))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:41:02.660 GMT+09:00),Trigger)[0m
 [0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. Running 'run'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-29 18:36:43.965 GMT+09:00).[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:41:02.660 GMT+09:00).[0m
 [0m[[0m[0minfo[0m] [0m[0m3. Monitoring source files for scala-training/run...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 1 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 0 ms since the last event for this path.[0m
 [0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(07dd55f8d16f92649bd3b32c294dec8b48d8bcd8), current stamp: Hash(a763d8cc0bc710c8c31394264d6a7c8ce20ce1dd))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-29 18:43:25.707 GMT+09:00),Trigger)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(23b5087fa51a0ccac5c6c11bf76a25d33710f876), current stamp: Hash(94ae9c10b50165cc4e0d0345822d09873d1192c8))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:41:29.033 GMT+09:00),Trigger)[0m
 [0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. Running 'run'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-29 18:43:25.707 GMT+09:00).[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:41:29.033 GMT+09:00).[0m
 [0m[[0m[0minfo[0m] [0m[0m4. Monitoring source files for scala-training/run...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
 [0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 1 ms since the last event for this path.[0m
@@ -46,25 +46,77 @@
 [0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(a763d8cc0bc710c8c31394264d6a7c8ce20ce1dd), current stamp: Hash(3c46dde4c7037d8cd65f9ae3fc4a7859ba9aa5c0))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-29 18:44:47.742 GMT+09:00),Trigger)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(94ae9c10b50165cc4e0d0345822d09873d1192c8), current stamp: Hash(66666ebb8f6ddcd33522bd456a42b0046a4d615e))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:45:25.661 GMT+09:00),Trigger)[0m
 [0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. Running 'run'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-29 18:44:47.742 GMT+09:00).[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:45:25.661 GMT+09:00).[0m
 [0m[[0m[0minfo[0m] [0m[0m5. Monitoring source files for scala-training/run...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 1 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 0 ms since the last event for this path.[0m
 [0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(3c46dde4c7037d8cd65f9ae3fc4a7859ba9aa5c0), current stamp: Hash(a2d325a8d34ceb4a9d5c93e9847fd7ce5d43ba19))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-29 18:45:32.716 GMT+09:00),Trigger)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(66666ebb8f6ddcd33522bd456a42b0046a4d615e), current stamp: Hash(39bec6fc83b4e220cff208aec9aa5b128e554222))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:45:45.007 GMT+09:00),Trigger)[0m
 [0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. Running 'run'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-29 18:45:32.716 GMT+09:00).[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:45:45.007 GMT+09:00).[0m
 [0m[[0m[0minfo[0m] [0m[0m6. Monitoring source files for scala-training/run...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 1 ms since the last event for this path.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 0 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(39bec6fc83b4e220cff208aec9aa5b128e554222), current stamp: Hash(025df2bf6d0c74e913ceba7852beee0094a7bd59))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:46:13.537 GMT+09:00),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:46:13.537 GMT+09:00).[0m
+[0m[[0m[0minfo[0m] [0m[0m7. Monitoring source files for scala-training/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 0 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(025df2bf6d0c74e913ceba7852beee0094a7bd59), current stamp: Hash(5d316873d4ce815739353fd0a86a79e89ff95ebd))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:46:34.990 GMT+09:00),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:46:34.990 GMT+09:00).[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0minfo[0m] [0m[0m8. Monitoring source files for scala-training/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 4 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(5d316873d4ce815739353fd0a86a79e89ff95ebd), current stamp: Hash(a73bfa00a57910f0e6ef62251cdbf7e40d34e4dc))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:46:48.064 GMT+09:00),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:46:48.064 GMT+09:00).[0m
+[0m[[0m[0minfo[0m] [0m[0m9. Monitoring source files for scala-training/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 0 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala-training / Compile / run - Accepted event for /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala (previous stamp: Hash(a73bfa00a57910f0e6ef62251cdbf7e40d34e4dc), current stamp: Hash(6d446d1c4e3395097455bab6d6468a904fdd8182))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala -> Trigger. Returning: (Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:47:29.315 GMT+09:00),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala, 2020-9月-30 11:47:29.315 GMT+09:00).[0m
+[0m[[0m[0minfo[0m] [0m[0m10. Monitoring source files for scala-training/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/09/28/Sep28th.scala. This event occurred 0 ms since the last event for this path.[0m

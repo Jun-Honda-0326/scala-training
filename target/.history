@@ -1,0 +1,5 @@
+sbt ~run
+run
+sbt ~run
+run
+~run

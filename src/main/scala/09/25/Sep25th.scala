@@ -1,5 +1,5 @@
  object Sep25th { 
-  def main1(args: Array[String]):Unit = {
+  def main(args: Array[String]):Unit = {
     val num1: Option[Int] = Some(100)
     val none: Option[Int] = None
     val num2: Option[Option[Int]] = Some(Some(200))
@@ -11,8 +11,8 @@
     println(optionQuestion2(none))
     println(optionQuestion4(num2))
     println(optionQuestion4(none2))
-//    println(optionQuestion5(num1))
- //   println(optionQuestion5(none))
+    println(optionQuestion5(num1))
+    println(optionQuestion5(none))
   }
 
 
@@ -39,15 +39,16 @@
 //問題4 Option[Option[Int]]型である、numが引数として渡されるoptionQuestion4メソッドがあります。Someの場合はその値を2倍したSome[Int]を、Noneの場合はそのままNoneを返却するメソッドを作成してください。
 
   def optionQuestion4(num: Option[Option[Int]]):Option[Int] = {
-  num.flatten.map(n => n * 2)
+    num.flatten.map(n => n * 2)
   }
 
-//  def optionQuestion5(num: Option[Int]): Int = {
-//    num match {
-//      case Some(100) => 1000
-//      case None => -1
-//    }
-//  }
-//
+
+  def optionQuestion5(num: Option[Int]): Int = {
+    num match {
+      case Some(i) => 1000
+      case None => -1
+    }
+  }
+
 }
 

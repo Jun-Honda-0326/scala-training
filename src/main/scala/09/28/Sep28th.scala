@@ -1,5 +1,5 @@
 object Sep28th {
-  def main(args:Array [String]):Unit = {
+  def main2(args:Array [String]):Unit = {
     val numSeq1: Seq[Int] = Seq(1,3,5,6,8,9,15,21)
     val numSeq2: Seq[Int] = Seq(43,50,78,99,100,101,111)
     val numSeq3: Seq[Int] = Seq(1,11)

@@ -154,13 +154,13 @@ Seq(1,2,3,4,5).foldRight(-7)((a: Int, b: Int) => a - b
 // 10
 1-(2-(3-(4-(5-(-7)) = 10
 ```
-### reduce
+## reduce
 - foldと同じく畳み込みを行うメソッドだが、初期値を要しない。
 - foldLeft foldRightにより畳み込みの順番を指定できる。何もついていない時は左畳み込みになる。
 - foldもreduceも単に要素を足し合わせたりするだけであれば、Seq.reduce(_+_)のように省略可能。
-### min max
+## min max
 - 最小、最大の要素を返す。空のSeqに実行すると例外が発生する。
-### match
+## match
 - matchによりSeqの分割が可能。引数で指定した数だけ分割できる。
 ```
 val numSeq = Seq(1,2,3,4)

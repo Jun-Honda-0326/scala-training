@@ -3,7 +3,8 @@ object Sep28th {
     val numSeq1: Seq[Int] = Seq(1,3,5,6,8,9,15,21)
     val numSeq2: Seq[Int] = Seq(43,50,78,99,100,101,111)
     val numSeq3: Seq[Int] = Seq(1,11)
-    val numSeq4: Seq[Int] = Seq()
+    val numSeq4: Seq[Int] = Seq()  
+    val numSeq5: Seq[Int] = Seq(3*4, 6*8, 8*9, 2*3)
     val numSeqSeq1: Seq[Seq[Int]] = Seq(Seq(1,3,5,6,7,9,12,24), Seq(2,4,5,7)) 
     val numOptSeq1: Seq[Option[Int]] = Seq(Some(0), Some(2), Some(3))
     val strSeq1: Seq[String] = Seq("hi", "hello", "ども", "great")
@@ -28,7 +29,9 @@ object Sep28th {
     println(sum(numSeq1))
     println(sum(numSeq4))
     println(sum_1(numSeq1))
-    println(sum_1(numSeq4))
+ //   println(sum_1(numSeq4))
+    println(seqQuestion14(numSeq5))
+    println(seqQuestion15(numSeq5))
 
 
   }
@@ -170,15 +173,18 @@ object Sep28th {
     numSeq.reduce(_ * _)
   }
 
-
-
-
 //問題14
 //Seq(3×4, 4×2, 4×1)の最小値を出力しましょう。
-//
+
+  def seqQuestion14(numSeq: Seq[Int]):Int = {
+    numSeq.min
+ }
+
+
 //問題15
 //Seq(3×4, 4×2, 4×1)の最大値を出力しましょう。  
 //
-//
-
+  def seqQuestion15(numSeq: Seq[Int]):Int = {
+    numSeq.max
+  }
 }

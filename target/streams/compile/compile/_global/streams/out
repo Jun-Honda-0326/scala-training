@@ -1,5 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/09/25/Sep25th.scala:47:5: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: Some((x: Int forSome x not in 100))[0m
-[0m[[0m[33mwarn[0m] [0m[0m    num match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/01/Oct01th.scala:13:13: not found: value mapQuestion5[0m
+[0m[[0m[31merror[0m] [0m[0m    println(mapQuestion5(seq))[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

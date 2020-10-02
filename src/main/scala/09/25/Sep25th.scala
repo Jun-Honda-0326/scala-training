@@ -1,5 +1,5 @@
  object Sep25th { 
-  def main(args: Array[String]):Unit = {
+  def main1(args: Array[String]):Unit = {
     val num1: Option[Int] = Some(100)
     val none: Option[Int] = None
     val num2: Option[Option[Int]] = Some(Some(200))

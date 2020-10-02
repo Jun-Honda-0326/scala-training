@@ -11,6 +11,7 @@ object Oct01th {
     println(mapQuestion3(fruitsMap))
     println(mapQuestion4(fruitsMap))
     println(mapQuestion5(seq))
+  
 
   }
 
@@ -53,8 +54,13 @@ object Oct01th {
     fruitsMap.mapValues(_ + "円")
   }
 
-  def mapQuestion5(seq: Seq[Int]):Map[Boolean, Seq[Int]] = {
-    seq.groupBy(_ %2 == 0)    
+//問5
+  def mapQuestion5(seq: Seq[Int]):Map[Int, Seq[Int]] = {
+    seq.groupBy(_ %2 )    
+
   }
 
 }
+
+
+

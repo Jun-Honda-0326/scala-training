@@ -1,0 +1,4 @@
+[debug] [scala-training] Classpath dependencies List()
+[debug] [scala-training] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'scala-training' to '/Users/jun.honda/project/scala-training/.bloop/scala-training.json'
+[success] Generated .bloop/scala-training.json

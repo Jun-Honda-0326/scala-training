@@ -1,6 +1,6 @@
 object Oct01th {
 
-  def main(args: Array[String]): Unit = {
+  def main3(args: Array[String]): Unit = {
     val fruitsMap = Map("りんご" -> 100,"みかん" -> 80, "ぶどう" -> 400)
     val seq: Seq[Int] = Seq(1,2,3,4)
 
@@ -61,6 +61,5 @@ object Oct01th {
   }
 
 }
-
 
 

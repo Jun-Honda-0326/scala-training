@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th.scala:9:22: not found: value Company[0m
-[0m[[0m[31merror[0m] [0m[0m      val nextbeat = Company("nextbeat", "03-5423-6131", "東京都渋谷区恵比寿4-9-10")[0m
-[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:38:27: not found: type Rectangular[0m
+[0m[[0m[31merror[0m] [0m[0m    val rectangular = new Rectangular(10,20,30)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

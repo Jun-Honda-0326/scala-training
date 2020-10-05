@@ -1089,3 +1089,1199 @@ insert into indexed_jar (md5) values (?) [23505-200]
 2020.10.05 12:40:31 INFO  time: compiled scala-training in 58ms
 2020.10.05 12:40:31 INFO  time: compiled scala-training in 58ms
 2020.10.05 12:40:37 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 36m 2.937s)
+2020.10.05 14:15:39 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 4h 11m 4.256s)
+2020.10.05 14:15:39 INFO  compiling scala-training (1 scala source)
+2020.10.05 14:15:39 INFO  compiling scala-training (1 scala source)
+2020.10.05 14:15:39 INFO  time: compiled scala-training in 0.28s
+2020.10.05 14:15:39 INFO  time: compiled scala-training in 0.28s
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+2020.10.05 14:17:35 INFO  started: Metals version 0.9.0 in workspace '/Users/jun.honda/project/scala-training'
+2020.10.05 14:17:35 INFO  time: initialize in 0.27s
+2020.10.05 14:17:37 INFO  started: Metals version 0.9.4 in workspace '/Users/jun.honda/project/scala-training' .
+2020.10.05 14:17:38 INFO  time: initialize in 0.27s
+2020.10.05 14:17:39 WARN  resetting database: /Users/jun.honda/project/scala-training/.metals/metals.h2.db
+2020.10.05 14:17:41 WARN  resetting database: /Users/jun.honda/project/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3413168279771618256/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.05 14:17:43 INFO  Selected port 5031
+2020.10.05 14:17:43 INFO  no build target: using presentation compiler with only scala-library
+Waiting for the bsp connection to come up...
+2020.10.05 14:17:44 WARN  no build target for: /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala
+2020.10.05 14:17:44 INFO  Started Metals http server at http://127.0.0.1:5031
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.0-RC1-229-b7c15aa9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/jun.honda/project/scala-training/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/jun.honda/project/scala-training/.bloop/scala-training-test.json'
+[0m[32m[D][0m Loading project from '/Users/jun.honda/project/scala-training/.bloop/scala-training.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.10.
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'scala-training-test', 'scala-training'
+[0m[32m[D][0m Missing analysis file for project 'scala-training-test'
+[0m[32m[D][0m Loading previous analysis for 'scala-training' from '/Users/jun.honda/project/scala-training/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3413168279771618256/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3413168279771618256/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.05 14:17:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.05 14:17:46 INFO  time: connected to build server in 2.97s
+2020.10.05 14:17:46 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3238300464432774627/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3238300464432774627/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3238300464432774627/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.05 14:17:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher8582221646811811680/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher8582221646811811680/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher8582221646811811680/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.05 14:17:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.05 14:17:47 INFO  time: connected to build server in 0.29s
+2020.10.05 14:17:47 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+2020.10.05 14:17:48 INFO  time: indexed workspace in 1.54s
+2020.10.05 14:17:48 INFO  no build target: using presentation compiler with only scala-library
+2020.10.05 14:17:49 INFO  running '/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/metals8642289989505005403/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.05 14:17:50 ERROR unexpected error during source scanning
+org.h2.jdbc.JdbcBatchUpdateException: 参照整合性制約違反: "CONSTRAINT_3: PUBLIC.TOPLEVEL_SYMBOL FOREIGN KEY(JAR) REFERENCES PUBLIC.INDEXED_JAR(ID) (9)"
+Referential integrity constraint violation: "CONSTRAINT_3: PUBLIC.TOPLEVEL_SYMBOL FOREIGN KEY(JAR) REFERENCES PUBLIC.INDEXED_JAR(ID) (9)"; SQL statement:
+insert into toplevel_symbol (symbol, path, jar) values (?, ?, ?) [23506-200]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1235)
+	at scala.meta.internal.metals.JarTopLevels.putTopLevels(JarTopLevels.scala:97)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$addSourceJarSymbols$1(MetalsLanguageServer.scala:2090)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$addSourceJarTopLevels$1(OnDemandSymbolIndex.scala:101)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.tryRun(OnDemandSymbolIndex.scala:133)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.addSourceJarTopLevels(OnDemandSymbolIndex.scala:100)
+	at scala.meta.internal.metals.MetalsLanguageServer.addSourceJarSymbols(MetalsLanguageServer.scala:2077)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$5(MetalsLanguageServer.scala:2045)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$5$adapted(MetalsLanguageServer.scala:2036)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:924)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:923)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$2(MetalsLanguageServer.scala:2036)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$2$adapted(MetalsLanguageServer.scala:2035)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:2035)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$10(MetalsLanguageServer.scala:1981)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.MetalsLanguageServer.timedThunk(MetalsLanguageServer.scala:1849)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:1981)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:1876)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.MetalsLanguageServer.timedThunk(MetalsLanguageServer.scala:1849)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:1876)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.05 14:17:51 INFO  time: indexed workspace in 4.07s
+2020.10.05 14:17:52 INFO  running '/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/metals3421267495594030993/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.05 14:17:52 INFO  [info] welcome to sbt 1.3.13 (Amazon.com Inc. Java 1.8.0_265)
+2020.10.05 14:17:52 INFO  [info] loading settings for project scala-training-build-build from metals.sbt ...
+2020.10.05 14:17:54 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project/project
+2020.10.05 14:17:54 INFO  [info] welcome to sbt 1.3.13 (Amazon.com Inc. Java 1.8.0_265)
+2020.10.05 14:17:54 INFO  [info] loading settings for project scala-training-build from metals.sbt ...
+2020.10.05 14:17:54 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project
+2020.10.05 14:17:56 INFO  [info] loading settings for project scala-training-build-build from metals.sbt ...
+2020.10.05 14:17:56 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project/project
+2020.10.05 14:17:57 INFO  [success] Generated .bloop/scala-training-build.json
+2020.10.05 14:17:57 INFO  [success] Total time: 2 s, completed 2020/10/05 14:17:57
+2020.10.05 14:17:57 INFO  [info] set current project to scala-training (in build file:/Users/jun.honda/project/scala-training/)
+2020.10.05 14:17:57 INFO  [info] loading settings for project scala-training-build from metals.sbt ...
+2020.10.05 14:17:57 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project
+2020.10.05 14:17:57 INFO  [success] Generated .bloop/scala-training-test.json
+2020.10.05 14:17:57 INFO  [success] Generated .bloop/scala-training.json
+2020.10.05 14:17:57 INFO  [success] Total time: 0 s, completed 2020/10/05 14:17:57
+2020.10.05 14:17:57 INFO  time: ran 'sbt bloopInstall' in 8.44s
+2020.10.05 14:17:57 INFO  build tool exit: 0
+2020.10.05 14:17:57 INFO  disconnected: build server
+No more data in the client stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7420397957807092668/bsp.socket'...
+Waiting for the bsp connection to come up...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7420397957807092668/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7420397957807092668/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.05 14:17:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.05 14:17:57 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+2020.10.05 14:17:57 INFO  time: indexed workspace in 0.2s
+2020.10.05 14:17:58 INFO  compiling scala-training (5 scala sources)
+2020.10.05 14:17:59 INFO  [success] Generated .bloop/scala-training-build.json
+2020.10.05 14:17:59 INFO  [success] Total time: 2 s, completed 2020/10/05 14:17:59
+2020.10.05 14:17:59 INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher5670069871777964164/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.05 14:17:59 INFO  [info] set current project to scala-training (in build file:/Users/jun.honda/project/scala-training/)
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+2020.10.05 14:17:59 INFO  [success] Generated .bloop/scala-training.json
+2020.10.05 14:17:59 INFO  [success] Generated .bloop/scala-training-test.json
+2020.10.05 14:17:59 INFO  [success] Total time: 0 s, completed 2020/10/05 14:18:00
+2020.10.05 14:17:59 INFO  build tool exit: 0
+2020.10.05 14:18:00 INFO  time: ran 'sbt bloopInstall' in 7.86s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4692113334692558735/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.4-13-408f4d80...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/jun.honda/project/scala-training/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/jun.honda/project/scala-training/.bloop/scala-training-test.json'
+[0m[32m[D][0m Loading project from '/Users/jun.honda/project/scala-training/.bloop/scala-training.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.10.
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar
+[0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'scala-training', 'scala-training-test'
+[0m[32m[D][0m Missing analysis file for project 'scala-training-test'
+[0m[32m[D][0m Loading previous analysis for 'scala-training' from '/Users/jun.honda/project/scala-training/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher5670069871777964164/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher5670069871777964164/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.05 14:18:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.4-13-408f4d80...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/jun.honda/project/scala-training/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/jun.honda/project/scala-training/.bloop/scala-training-test.json'
+[0m[32m[D][0m Loading project from '/Users/jun.honda/project/scala-training/.bloop/scala-training.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'scala-training', 'scala-training-test'
+[0m[32m[D][0m Missing analysis file for project 'scala-training-test'
+[0m[32m[D][0m Loading previous analysis for 'scala-training' from '/Users/jun.honda/project/scala-training/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4692113334692558735/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4692113334692558735/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.05 14:18:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher2302664267968183085/bsp.socket'...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher81404610242605024/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher2302664267968183085/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher2302664267968183085/bsp.socket...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher81404610242605024/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher81404610242605024/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.05 14:18:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.05 14:18:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.05 14:18:05 INFO  time: connected to build server in 6s
+2020.10.05 14:18:05 INFO  time: connected to build server in 5.39s
+2020.10.05 14:18:05 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.05 14:18:05 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.05 14:18:05 WARN  File watching failed, indexes will not be updated.
+java.nio.file.FileAlreadyExistsException: /Users/jun.honda/project/scala-training/project/src
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:88)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.$anonfun$createAndGetDirectories$1(MetalsEnrichments.scala:341)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.createDirectoriesRec$1(MetalsEnrichments.scala:341)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.createAndGetDirectories(MetalsEnrichments.scala:345)
+	at scala.meta.internal.metals.FileWatcher.watch$1(FileWatcher.scala:95)
+	at scala.meta.internal.metals.FileWatcher.$anonfun$restart$3(FileWatcher.scala:113)
+	at scala.meta.internal.metals.FileWatcher.$anonfun$restart$3$adapted(FileWatcher.scala:113)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.MapLike$DefaultKeySet.foreach(MapLike.scala:181)
+	at scala.meta.internal.metals.FileWatcher.restart(FileWatcher.scala:113)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$5(MetalsLanguageServer.scala:1951)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.MetalsLanguageServer.timedThunk(MetalsLanguageServer.scala:1849)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:1950)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:1876)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.MetalsLanguageServer.timedThunk(MetalsLanguageServer.scala:1849)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:1876)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.05 14:18:06 INFO  time: indexed workspace in 0.46s
+2020.10.05 14:18:05 INFO  time: indexed workspace in 0.46s
+No more data in the client stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6457424029259936333/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6457424029259936333/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6457424029259936333/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.05 14:18:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.05 14:18:50 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.05 14:18:50 INFO  compiling scala-training (1 scala source)
+2020.10.05 14:18:50 INFO  time: indexed workspace in 0.23s
+2020.10.05 14:18:59 INFO  time: compiled scala-training in 9.08s
+10 05, 2020 3:05:17 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+重大: Internal error: java.lang.InterruptedException
+java.util.concurrent.CompletionException: java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:42)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.pc.VirtualFileParams.checkCanceled(VirtualFileParams.java:25)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:77)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+	at scala.collection.Iterator.toStream(Iterator.scala:1415)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1414)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1429)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1415)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1171)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1161)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	... 9 more
+
+10 05, 2020 3:05:17 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+重大: Internal error: java.lang.InterruptedException
+java.util.concurrent.CompletionException: java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:27)
+	at scala.meta.pc.VirtualFileParams.checkCanceled(VirtualFileParams.java:25)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:73)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+	at scala.collection.Iterator.toStream(Iterator.scala:1415)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1414)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1429)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1415)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1171)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1161)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	... 9 more
+
+10 05, 2020 3:27:28 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 25
+10 05, 2020 3:29:03 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 103
+10 05, 2020 3:33:07 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 116
+10 05, 2020 3:36:04 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 140
+10 05, 2020 3:36:53 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 172
+10 05, 2020 3:37:21 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 209
+10 05, 2020 3:38:29 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 233
+10 05, 2020 3:38:44 午後 scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+情報: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+10 05, 2020 3:38:45 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 268
+10 05, 2020 3:38:50 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 284
+10 05, 2020 3:39:38 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 288
+2020.10.05 15:40:17 INFO  compiling scala-training (5 scala sources)
+2020.10.05 15:40:19 INFO  time: compiled scala-training in 2.15s
+2020.10.05 15:41:31 INFO  compiling scala-training (1 scala source)
+2020.10.05 15:41:31 INFO  time: compiled scala-training in 0.87s
+10 05, 2020 3:43:35 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 322
+2020.10.05 15:43:51 INFO  compiling scala-training (1 scala source)
+2020.10.05 15:43:51 INFO  time: compiled scala-training in 0.19s
+2020.10.05 15:50:08 INFO  compiling scala-training (1 scala source)
+2020.10.05 15:50:08 INFO  time: compiled scala-training in 0.1s
+2020.10.05 15:51:29 INFO  compiling scala-training (1 scala source)
+2020.10.05 15:51:29 INFO  time: compiled scala-training in 0.71s
+10 05, 2020 3:52:41 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 368
+2020.10.05 15:52:47 INFO  compiling scala-training (1 scala source)
+2020.10.05 15:52:47 INFO  time: compiled scala-training in 0.1s
+2020.10.05 15:52:57 INFO  compiling scala-training (1 scala source)
+2020.10.05 15:52:57 INFO  time: compiled scala-training in 67ms
+2020.10.05 15:53:14 INFO  compiling scala-training (1 scala source)
+2020.10.05 15:53:14 INFO  time: compiled scala-training in 85ms
+2020.10.05 15:54:12 INFO  compiling scala-training (1 scala source)
+2020.10.05 15:54:12 INFO  time: compiled scala-training in 83ms
+2020.10.05 16:08:09 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:08:09 INFO  time: compiled scala-training in 84ms
+2020.10.05 16:13:18 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:13:18 INFO  time: compiled scala-training in 76ms
+10 05, 2020 4:13:54 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 465
+2020.10.05 16:14:03 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:14:03 INFO  time: compiled scala-training in 77ms
+2020.10.05 16:14:31 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:14:31 INFO  time: compiled scala-training in 71ms
+10 05, 2020 4:17:01 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 1158,
+      "uri": "file:///Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "abstract class Person(name:String, age:Int){\n  def greet():Unit\n}\n\ncase class Japanese(name:String, age:Int) extends Person(name \u003d name, age \u003d age){\n  val japan \u003d new Japanese(name:String, age:Int)\n  def greet(): Unit \u003d{ println(\"こんにちは\") }\n}\n\ncase class American(name:String,age:Int) extends Person(name \u003d name, age \u003d age){\n  def greet():Unit \u003d{ println(\"Hello\") }\n}\n\n\nobject Oct05th02{\n\n  def main(args:Array[String]):Unit \u003d {\n    japan.greet()\n  }\n\n}\n\n  \n"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: -1 is not a valid offset, allowed [0..457]
+	at scala.meta.internal.inputs.InternalInput.offsetToLine(InternalInput.scala:49)
+	at scala.meta.internal.inputs.InternalInput.offsetToLine$(InternalInput.scala:43)
+	at scala.meta.inputs.Input$VirtualFile.offsetToLine(Input.scala:80)
+	at scala.meta.inputs.Position$Range.startLine(Position.scala:37)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionMetaPosition.toLSP(CommonMtagsEnrichments.scala:74)
+	at scala.meta.internal.metals.TokenEditDistance.toRevised(TokenEditDistance.scala:135)
+	at scala.meta.internal.metals.Diagnostics.toFreshDiagnostic(Diagnostics.scala:229)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$3(Diagnostics.scala:197)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$3$adapted(Diagnostics.scala:196)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:196)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:174)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:122)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:900)
+	... 15 more
+
+2020.10.05 16:17:03 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:17:03 INFO  time: compiled scala-training in 78ms
+10 05, 2020 4:22:38 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 538
+10 05, 2020 4:22:44 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 564
+2020.10.05 16:23:04 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:23:04 INFO  time: compiled scala-training in 78ms
+2020.10.05 16:24:22 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:24:22 INFO  time: compiled scala-training in 75ms
+2020.10.05 16:24:54 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:24:54 INFO  time: compiled scala-training in 69ms
+2020.10.05 16:25:04 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:17:17: stale bloop error: not enough arguments for constructor Japanese: (name: String, age: Int)Japanese.
+Unspecified value parameters name, age.
+    val japan = new Japanese()
+                ^^^^^^^^^^^^^^
+2020.10.05 16:25:04 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:17:17: stale bloop error: not enough arguments for constructor Japanese: (name: String, age: Int)Japanese.
+Unspecified value parameters name, age.
+    val japan = new Japanese()
+                ^^^^^^^^^^^^^^
+10 05, 2020 4:25:08 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 573
+10 05, 2020 4:25:11 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 585
+10 05, 2020 4:25:13 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 586
+2020.10.05 16:25:17 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:25:17 INFO  time: compiled scala-training in 0.62s
+10 05, 2020 4:26:48 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 587
+2020.10.05 16:27:54 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:27:54 INFO  time: compiled scala-training in 51ms
+2020.10.05 16:28:24 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:28:24 INFO  time: compiled scala-training in 0.96s
+2020.10.05 16:31:02 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:31:02 INFO  time: compiled scala-training in 0.7s
+10 05, 2020 4:31:35 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 598
+2020.10.05 16:31:56 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:31:56 INFO  time: compiled scala-training in 0.67s
+2020.10.05 16:36:58 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:36:58 INFO  time: compiled scala-training in 0.67s
+10 05, 2020 4:39:57 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 663
+10 05, 2020 4:40:28 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 712
+10 05, 2020 4:41:05 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 723
+10 05, 2020 4:44:00 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 737
+10 05, 2020 4:44:01 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 773
+2020.10.05 16:44:18 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:44:18 INFO  time: compiled scala-training in 50ms
+2020.10.05 16:45:08 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:45:08 INFO  time: compiled scala-training in 68ms
+2020.10.05 16:47:01 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:47:01 INFO  time: compiled scala-training in 68ms
+2020.10.05 16:47:14 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:47:14 INFO  time: compiled scala-training in 0.55s
+10 05, 2020 4:48:49 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 776
+10 05, 2020 4:48:55 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 787
+10 05, 2020 4:51:08 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 790
+10 05, 2020 4:51:09 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 835
+2020.10.05 16:51:13 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:51:13 INFO  time: compiled scala-training in 41ms
+2020.10.05 16:51:50 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:51:50 INFO  time: compiled scala-training in 0.6s
+2020.10.05 16:52:14 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:52:14 INFO  time: compiled scala-training in 0.58s
+2020.10.05 16:52:46 INFO  compiling scala-training (1 scala source)
+2020.10.05 16:52:46 INFO  time: compiled scala-training in 0.55s
+2020.10.05 17:14:55 INFO  compiling scala-training (1 scala source)
+2020.10.05 17:14:55 INFO  time: compiled scala-training in 0.62s
+2020.10.05 17:33:39 INFO  compiling scala-training (1 scala source)
+2020.10.05 17:33:39 INFO  time: compiled scala-training in 0.6s
+2020.10.05 17:33:58 INFO  compiling scala-training (1 scala source)
+2020.10.05 17:33:58 INFO  time: compiled scala-training in 0.58s
+2020.10.05 17:34:10 INFO  compiling scala-training (1 scala source)
+2020.10.05 17:34:10 INFO  time: compiled scala-training in 0.77s
+2020.10.05 17:34:55 INFO  compiling scala-training (1 scala source)
+2020.10.05 17:34:55 INFO  time: compiled scala-training in 0.62s
+10 05, 2020 5:47:16 午後 scala.meta.internal.pc.CompletionProvider expected$1
+警告: String index out of range: -1
+10 05, 2020 5:47:16 午後 scala.meta.internal.pc.CompletionProvider expected$1
+警告: String index out of range: -1
+2020.10.05 18:09:09 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:09:09 INFO  time: compiled scala-training in 0.56s
+2020.10.05 18:09:53 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:09:53 INFO  time: compiled scala-training in 69ms
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:05 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:06 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:07 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:07 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:07 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:07 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:07 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:07 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:07 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:07 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:11 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:26 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:26 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:26 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:26 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:26 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:26 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:26 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:26 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:23:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"直方体の体積は${height * wide * vartical}です")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:28 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:29:5: stale bloop error: type mismatch;
+ found   : Unit
+ required: Int
+    println(s"四角錐の体積は${height * wide * vartical * 1/3}です" )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.05 18:10:32 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:10:32 INFO  time: compiled scala-training in 70ms
+2020.10.05 18:12:02 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:12:02 INFO  time: compiled scala-training in 56ms
+2020.10.05 18:14:22 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:14:22 INFO  time: compiled scala-training in 73ms
+2020.10.05 18:14:50 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:14:50 INFO  time: compiled scala-training in 61ms
+2020.10.05 18:16:05 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:16:05 INFO  time: compiled scala-training in 67ms
+10 05, 2020 6:26:09 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 838
+10 05, 2020 6:26:20 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 892
+2020.10.05 18:26:32 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:26:32 INFO  time: compiled scala-training in 38ms
+2020.10.05 18:26:45 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:26:45 INFO  time: compiled scala-training in 67ms
+2020.10.05 18:31:09 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:31:09 INFO  time: compiled scala-training in 44ms
+2020.10.05 18:31:25 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:31:25 INFO  time: compiled scala-training in 80ms
+2020.10.05 18:31:52 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:31:52 INFO  time: compiled scala-training in 74ms
+2020.10.05 18:36:14 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:36:14 INFO  time: compiled scala-training in 55ms
+2020.10.05 18:37:31 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:37:31 INFO  time: compiled scala-training in 70ms
+2020.10.05 18:37:46 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:37:46 INFO  time: compiled scala-training in 79ms
+2020.10.05 18:40:47 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:40:47 INFO  time: compiled scala-training in 43ms
+2020.10.05 18:41:34 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:41:34 INFO  time: compiled scala-training in 82ms
+2020.10.05 18:42:03 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:42:03 INFO  time: compiled scala-training in 43ms
+2020.10.05 18:42:27 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:42:27 INFO  time: compiled scala-training in 76ms
+2020.10.05 18:44:32 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:44:32 INFO  time: compiled scala-training in 72ms
+2020.10.05 18:44:54 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:44:54 INFO  time: compiled scala-training in 72ms
+2020.10.05 18:45:31 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:45:31 INFO  time: compiled scala-training in 65ms
+2020.10.05 18:52:32 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:52:32 INFO  time: compiled scala-training in 64ms
+2020.10.05 18:52:53 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:52:53 INFO  time: compiled scala-training in 60ms
+2020.10.05 18:54:29 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:54:29 INFO  time: compiled scala-training in 63ms
+10 05, 2020 6:55:12 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 893
+10 05, 2020 6:55:14 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 934
+2020.10.05 18:55:26 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:55:26 INFO  time: compiled scala-training in 45ms
+2020.10.05 18:56:09 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:56:09 INFO  time: compiled scala-training in 56ms
+2020.10.05 18:59:22 INFO  compiling scala-training (1 scala source)
+2020.10.05 18:59:22 INFO  time: compiled scala-training in 65ms
+2020.10.05 19:03:34 INFO  compiling scala-training (1 scala source)
+2020.10.05 19:03:34 INFO  time: compiled scala-training in 87ms
+2020.10.05 19:05:13 INFO  compiling scala-training (1 scala source)
+2020.10.05 19:05:13 INFO  time: compiled scala-training in 92ms
+2020.10.05 19:05:55 INFO  compiling scala-training (1 scala source)
+2020.10.05 19:05:55 INFO  time: compiled scala-training in 76ms
+2020.10.05 19:06:52 INFO  compiling scala-training (1 scala source)
+2020.10.05 19:06:52 INFO  time: compiled scala-training in 63ms
+2020.10.05 19:07:37 INFO  compiling scala-training (1 scala source)
+2020.10.05 19:07:37 INFO  time: compiled scala-training in 0.54s
+2020.10.05 19:08:46 INFO  compiling scala-training (1 scala source)
+2020.10.05 19:08:46 INFO  time: compiled scala-training in 36ms
+2020.10.05 19:09:42 INFO  compiling scala-training (1 scala source)
+2020.10.05 19:09:42 INFO  time: compiled scala-training in 41ms
+2020.10.05 19:10:43 INFO  compiling scala-training (1 scala source)
+2020.10.05 19:10:43 INFO  time: compiled scala-training in 56ms
+2020.10.05 19:11:20 INFO  compiling scala-training (1 scala source)
+2020.10.05 19:11:20 INFO  time: compiled scala-training in 52ms
+2020.10.05 19:11:58 INFO  compiling scala-training (1 scala source)
+2020.10.05 19:11:58 INFO  time: compiled scala-training in 0.61s
+No more data in the client stdin, exiting...
+2020.10.05 19:13:36 ERROR Unexpected error initializing server
+java.util.concurrent.ExecutionException: Boxed InterruptedException
+	at scala.concurrent.impl.Promise$.resolver(Promise.scala:86)
+	at scala.concurrent.impl.Promise$.scala$concurrent$impl$Promise$$resolveTry(Promise.scala:79)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.java8.FuturesConvertersImpl$P.accept(FutureConvertersImpl.scala:100)
+	at scala.concurrent.java8.FuturesConvertersImpl$P.accept(FutureConvertersImpl.scala:97)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$3(BuildServerConnection.scala:196)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$2(BuildServerConnection.scala:196)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:17)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:28)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:27)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:18)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:139)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:28)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:27)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:18)
+	at scala.meta.internal.metals.MetalsLanguageServer.cancel(MetalsLanguageServer.scala:86)
+	at scala.meta.internal.metals.MetalsLanguageServer.cancelAll(MetalsLanguageServer.scala:98)
+	at scala.meta.metals.Main$.main(Main.scala:45)
+	at scala.meta.metals.Main.main(Main.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at coursier.bootstrap.launcher.a.a(null)
+	at coursier.bootstrap.launcher.Launcher.main(null)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$3(BuildServerConnection.scala:196)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$2(BuildServerConnection.scala:196)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:17)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:28)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:27)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:18)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:139)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:28)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:27)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:18)
+	at scala.meta.internal.metals.MetalsLanguageServer.cancel(MetalsLanguageServer.scala:86)
+	at scala.meta.internal.metals.MetalsLanguageServer.cancelAll(MetalsLanguageServer.scala:98)
+	at scala.meta.metals.Main$.main(Main.scala:45)
+	at scala.meta.metals.Main.main(Main.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at coursier.bootstrap.launcher.a.a(null)
+	at coursier.bootstrap.launcher.Launcher.main(null)
+

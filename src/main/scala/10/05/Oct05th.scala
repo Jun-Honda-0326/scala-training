@@ -2,7 +2,7 @@ case class Company(company_name:String, telnumber:String, address:String)
 
   object Oct05th{
 
-    def main(args:Array[String]):Unit = {
+    def main4(args:Array[String]):Unit = {
 
       val company: (String,String,String) = ("nextbeat", "03-5423-6131", "東京都渋谷区恵比寿4-9-10") //タプルのインスタンスを生成
       println(company._1, company._2, company._3) //各インスタンスにアクセス

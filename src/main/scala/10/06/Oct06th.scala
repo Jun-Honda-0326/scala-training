@@ -3,14 +3,18 @@ import scala.util.{ Try, Success, Failure }
 object MainOct06th{
 
   def main(args:Array[String]): Unit = {
-    val either1:Either[String, Int] = Right(10)
+    val either1:Either[String, Int] = Right(100)
     val either2:Either[String, Int] = Left("Error")
+    val either3:Either[String, Int] = Right(200)
+    val success:Try[Int] = Success(100)
     println(eitherFlatMap(either1))
     println(eitherToLeft(either1))
     println(eitherMatch(either1))
     println(eitherMatch(either2))
     println(checkTry(10,2))
     println(checkTry(0,0))
+    println(eitherQuestion2(either1,either2,either3))
+    println(tryToEither(success))
   }
 
   def eitherFlatMap(either: Either[String, Int]):Int = {
@@ -35,7 +39,33 @@ object MainOct06th{
         case Failure(f) => f.getMessage
       }
   }
+
+  def eitherQuestion2
+    (either1:Either[String,Int], either2:Either[String,Int], either3:Either[String,Int]):Unit = {
+   val v = for {
+      val1 <- either1
+      val2 <- either2
+      val3 <- either3
+    } yield { 
+   
+      val1 * val2 * val3
+    }
+    println("---")
+    println(v)
+  }
+
+//問題3
+//Try[Int]を、Either[String, Int]に変換するコードを書いてください。
+//
+//Eitherの左辺には、Tryが持っている Throwable.getMessageの値を渡してください。
+//
+//Try[Int]の定義で１行、変換で１行の計２行記述してください。 
+ 
+  def tryToEither(s:Try[Int]):Either[Throwable,Int] = {
+    s.toEither
+  }
 }
+
   
 
 

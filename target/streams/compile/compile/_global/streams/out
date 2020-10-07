@@ -1,4 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct05th_2.scala:38:27: not found: type Rectangular[0m
-[0m[[0m[31merror[0m] [0m[0m    val rectangular = new Rectangular(10,20,30)[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/06/Oct06th.scala:52:13: not found: value val1[0m
+[0m[[0m[31merror[0m] [0m[0m    println(val1)[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/06/Oct06th.scala:53:13: not found: value val2[0m
+[0m[[0m[31merror[0m] [0m[0m    println(val2)[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/06/Oct06th.scala:54:13: not found: value val3[0m
+[0m[[0m[31merror[0m] [0m[0m    println(val3)[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

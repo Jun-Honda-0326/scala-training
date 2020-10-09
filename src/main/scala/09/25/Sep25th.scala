@@ -1,10 +1,11 @@
  object Sep25th { 
-  def main1(args: Array[String]):Unit = {
+  def main(args: Array[String]):Unit = {
     val num1: Option[Int] = Some(100)
     val none: Option[Int] = None
     val num2: Option[Option[Int]] = Some(Some(200))
     val none2: Option[Option[Int]] = None
-    
+    val map: Map[Int, String] = Map(1 -> "ロシア", 2 -> "カナダ", 3 -> "アメリカ")
+
     println(optionQuestion1(num1))
     println(optionQuestion1(none)) 
     println(optionQuestion2(num1))
@@ -13,6 +14,7 @@
     println(optionQuestion4(none2))
     println(optionQuestion5(num1))
     println(optionQuestion5(none))
+    println(mapPractice(map))
   }
 
 
@@ -49,6 +51,22 @@
       case None => -1
     }
   }
+
+  def mapPractice(map:Map[Int,String]):Unit ={
+     val list =  for (m <- map.values) yield m 
+     val list2 = list.toSeq
+     val keys = map.keys.toSeq 
+
+     var i = 0
+
+     while(i < keys.length) {
+       println(s"${keys(i)}位は${list2(i)}です")
+       i = i + 1
+     }
+  }
+
+
+
 
 }
 

@@ -1,6 +1,6 @@
 object MainOct05th02{
 
-  def main5(args:Array[String]):Unit = {
+  def main(args:Array[String]):Unit = {
     val japan = new Japanese("田中", 30)
     val american = new American("Tom", 25)
     val rectangular = new Rectangular(10,20,30)
@@ -8,7 +8,8 @@ object MainOct05th02{
     val hello = new sayHello("山本") 
     val helloEnglish = new sayHelloEnglish("Tom") 
     val nextbeat = new NextbeatName("ネクストビート")
-    
+    val book= Book.aboutBook("NARUTO", 450)
+
     println(japan.greet())
     println(american.greet())
     println(s"直方体の体積は${rectangular.calculate()}です")
@@ -16,7 +17,9 @@ object MainOct05th02{
     println(hello.hello()) 
     println(helloEnglish.hello())
     println(nextbeat.printName)
+    println(book)
   }
+
 }
 
 
@@ -72,6 +75,16 @@ trait Nextbeat {
   def printName:String = name 
 }
 
-class NextbeatName(val name:String) extends Nextbeat 
+
+class NextbeatName(val name:String) extends Nextbeat
+ 
+
+object Book{
+
+  def aboutBook(name:String,price:Int) :String = {
+    s"${name}は${price}円です"
+  }
+}
+
 
 

@@ -7,6 +7,8 @@ object MainOct06th{
     val either2:Either[String, Int] = Left("Error")
     val either3:Either[String, Int] = Right(200)
     val success:Try[Int] = Success(100)
+    val failure:Try[Nothing] = Failure(new Exception("エラーメッセージ"))
+    
     println(eitherFlatMap(either1))
     println(eitherToLeft(either1))
     println(eitherMatch(either1))
@@ -15,6 +17,8 @@ object MainOct06th{
     println(checkTry(0,0))
     println(eitherQuestion2(either1,either2,either3))
     println(tryToEither(success))
+    println(tryToEither(failure))
+
   }
 
   def eitherFlatMap(either: Either[String, Int]):Int = {
@@ -61,22 +65,9 @@ object MainOct06th{
 //
 //Try[Int]の定義で１行、変換で１行の計２行記述してください。 
  
-  def tryToEither(s:Try[Int]):Either[Throwable,Int] = {
-    s.toEither
+  def tryToEither(i:Try[Int]):Either[String,Int] = {
+    i.toEither.fold(f => Left(f.getMessage), s => Right(s))
   }
 }
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -282,3 +282,5 @@
 [0m[[0m[0minfo[0m] [0m[0m22. Monitoring source files for scala-training/run...[0m
 [0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
 [0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct09th.scala. This event occurred 6 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m

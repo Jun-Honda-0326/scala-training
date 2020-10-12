@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct09th.scala:24:23: not found: type Try[0m
-[0m[[0m[31merror[0m] [0m[0m  val result1: Option[Try[String]] = f.value[0m
-[0m[[0m[31merror[0m] [0m[0m                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct09th.scala:30:23: not found: type Try[0m
-[0m[[0m[31merror[0m] [0m[0m  val result2: Option[Try[String]] = f.value[0m
-[0m[[0m[31merror[0m] [0m[0m                      ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/10/Oct12th_3.scala:23:7: only traits and abstract classes can have declared but undefined members[0m
+[0m[[0m[31merror[0m] [0m[0m  def future2()[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

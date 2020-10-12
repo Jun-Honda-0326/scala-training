@@ -3,3 +3,19 @@ run
 sbt ~run
 run
 ~run
+:paste
+console
+run
+~run
+run
+~run
+1
+~run
+run
+~run
+1
+~run
+1
+~run
+1
+~run

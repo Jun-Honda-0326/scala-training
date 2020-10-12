@@ -1,1 +1,1 @@
-scalac -bootclasspath /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar -classpath /Users/jun.honda/project/scala-training/target/scala-2.12/classes /Users/jun.honda/project/scala-training/src/main/scala/10/05/Oct09th.scala
+scalac -bootclasspath /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar -classpath /Users/jun.honda/project/scala-training/target/scala-2.12/classes /Users/jun.honda/project/scala-training/src/main/scala/10/10/Oct12th_2.scala

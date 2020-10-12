@@ -1,11 +1,15 @@
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/jun.honda/project/scala-training/target/scala-2.12/scala-training_2.12-0.1.0-SNAPSHOT.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FuturePractice$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/FuturePractice$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Oct05th.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/Oct05th.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Book$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/Book$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	sayHelloEnglish.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/sayHelloEnglish.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CompositeFuture.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/CompositeFuture.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Japanese.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/Japanese.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MainOct06th.class[0m
@@ -26,16 +30,24 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/FourSidedPyramid.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Sep28th.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/Sep28th.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutureOptionUsage$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/FutureOptionUsage$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Sep28th$$anonfun$seqQuestion6$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/Sep28th$$anonfun$seqQuestion6$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CompositeFuture$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/CompositeFuture$$anonfun$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Shape.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/Shape.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Oct01th$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/Oct01th$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FuturePractice.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/FuturePractice.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Sep28th$$anonfun$seqQuestion7$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/Sep28th$$anonfun$seqQuestion7$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	American.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/American.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CompositeFuture$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/CompositeFuture$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Rectangular.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/Rectangular.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Sep28th$.class[0m
@@ -56,8 +68,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/Sep25th$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Oct01th.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/Oct01th.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FuturePractice$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/FuturePractice$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutureOptionUsage$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/FutureOptionUsage$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CompositeFuture$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/CompositeFuture$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MainOct05th02.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/MainOct05th02.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutureOptionUsage.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/FutureOptionUsage.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MainOct05th02$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.12/classes/MainOct05th02$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

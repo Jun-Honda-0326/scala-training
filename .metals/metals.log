@@ -10062,3 +10062,1350 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 2020.10.09 19:23:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
 2020.10.09 19:23:53 INFO  Connected to Build server v1.4.4-13-408f4d80
 2020.10.09 19:23:53 INFO  time: indexed workspace in 0.45s
+2020.10.09 19:26:59 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 3m 6.369s)
+10 09, 2020 7:29:25 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didSave",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/jun.honda/project/scala-training/src/main/scala/10/09/Oct09th.scala"
+    }
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /Users/jun.honda/project/scala-training/src/main/scala/10/09/Oct09th.scala
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:354)
+	at scala.meta.internal.metals.MetalsLanguageServer.didSave(MetalsLanguageServer.scala:827)
+	... 16 more
+
+10 09, 2020 7:29:25 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didSave",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/jun.honda/project/scala-training/src/main/scala/10/09/Oct09th.scala"
+    },
+    "text": "import scala.concurrent._\nimport ExecutionContext.Implicits.global\n\n\nobject Main09th {\n\n  def main(args:Array[String]):Unit \u003d {\n\n    println(run())\n    println(futureSample)\n  }\n\n  def run():Unit \u003d {\n\n    Future {\n      (1 to 10).foreach{i \u003d\u003e Thread.sleep(1000)\n      println(i)\n      }\n    }\n\n   Future { \n     (11 to 20).foreach{i \u003d\u003e Thread.sleep(2000)\n     println(i)\n     }\n   }\n  }\n\n\n  def futureSample:Unit \u003d {\n  \n   val s \u003d\"Hello\"\n   val f:Future[String] \u003d Future {\n     s +\" future!! \"\n   }\n   \n   f foreach{\n     msg \u003d\u003e println(msg)\n   }\n  }\n}\n"
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /Users/jun.honda/project/scala-training/src/main/scala/10/09/Oct09th.scala
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:395)
+	at scala.meta.internal.metals.MetalsLanguageServer.didSave(MetalsLanguageServer.scala:917)
+	... 16 more
+
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...2020.10.12 09:43:00 INFO  started: Metals version 0.9.0 in workspace '/Users/jun.honda/project/scala-training'
+2020.10.12 09:43:00 INFO  time: initialize in 0.31s
+2020.10.12 09:43:00 WARN  resetting database: /Users/jun.honda/project/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4663853599434433917/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.12 09:43:01 INFO  Selected port 5032
+2020.10.12 09:43:00 INFO  no build target: using presentation compiler with only scala-library
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4663853599434433917/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4663853599434433917/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 09:43:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.12 09:43:01 INFO  time: connected to build server in 0.61s
+2020.10.12 09:43:01 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.12 09:43:01 WARN  Unable to run doctor. To fix this problem enable -Dmetals.http=true
+2020.10.12 09:43:02 INFO  compiling scala-training (7 scala sources)
+2020.10.12 09:43:02 INFO  started: Metals version 0.9.4 in workspace '/Users/jun.honda/project/scala-training' .
+2020.10.12 09:43:02 INFO  Started Metals http server at http://127.0.0.1:5032
+2020.10.12 09:43:03 INFO  time: initialize in 0.5s
+2020.10.12 09:43:03 INFO  running '/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/metals7787737451177764450/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.12 09:43:03 WARN  resetting database: /Users/jun.honda/project/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3809734304970375230/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3809734304970375230/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3809734304970375230/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 09:43:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4918956923190078237/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4918956923190078237/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4918956923190078237/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 09:43:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.12 09:43:03 INFO  time: connected to build server in 0.24s
+2020.10.12 09:43:03 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.12 09:43:04 INFO  time: indexed workspace in 3.21s
+2020.10.12 09:43:04 INFO  compiling scala-training (1 scala source)
+2020.10.12 09:43:05 INFO  no build target: using presentation compiler with only scala-library
+2020.10.12 09:43:05 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 3.809s)
+2020.10.12 09:43:05 INFO  compiling scala-training (1 scala source)
+2020.10.12 09:43:05 INFO  running '/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/metals3514032035113011871/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.12 09:43:04 INFO  time: compiled scala-training in 0.98s
+2020.10.12 09:43:06 INFO  time: compiled scala-training in 1.25s
+2020.10.12 09:43:08 INFO  [info] welcome to sbt 1.3.13 (Amazon.com Inc. Java 1.8.0_265)
+2020.10.12 09:43:08 INFO  time: indexed workspace in 4.95s
+2020.10.12 09:43:09 INFO  [info] welcome to sbt 1.3.13 (Amazon.com Inc. Java 1.8.0_265)
+2020.10.12 09:43:09 INFO  [info] loading settings for project scala-training-build-build from metals.sbt ...
+2020.10.12 09:43:10 INFO  [info] loading settings for project scala-training-build-build from metals.sbt ...
+2020.10.12 09:43:09 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project/project
+2020.10.12 09:43:10 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project/project
+2020.10.12 09:43:11 INFO  [info] loading settings for project scala-training-build from metals.sbt ...
+2020.10.12 09:43:11 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project
+2020.10.12 09:43:11 INFO  [info] loading settings for project scala-training-build from metals.sbt ...
+2020.10.12 09:43:11 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project
+2020.10.12 09:43:11 ERROR [info] waiting for lock on /Users/jun.honda/.ivy2/exclude_classifiers.lock to be available...
+2020.10.12 09:43:13 INFO  [success] Generated .bloop/scala-training-build.json
+2020.10.12 09:43:13 INFO  [success] Total time: 2 s, completed 2020/10/12 9:43:13
+2020.10.12 09:43:13 INFO  [info] set current project to scala-training (in build file:/Users/jun.honda/project/scala-training/)
+2020.10.12 09:43:13 INFO  [success] Generated .bloop/scala-training.json
+2020.10.12 09:43:13 INFO  [success] Generated .bloop/scala-training-test.json
+2020.10.12 09:43:13 INFO  [success] Total time: 0 s, completed 2020/10/12 9:43:13
+2020.10.12 09:43:14 INFO  time: ran 'sbt bloopInstall' in 10s
+2020.10.12 09:43:13 INFO  build tool exit: 0
+2020.10.12 09:43:14 INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher5169419743674765870/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher5169419743674765870/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher5169419743674765870/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 09:43:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.12 09:43:14 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.12 09:43:14 INFO  time: indexed workspace in 0.24s
+2020.10.12 09:43:14 INFO  compiling scala-training (7 scala sources)
+2020.10.12 09:43:14 INFO  [success] Generated .bloop/scala-training-build.json
+2020.10.12 09:43:14 INFO  [success] Total time: 2 s, completed 2020/10/12 9:43:14
+2020.10.12 09:43:14 INFO  [info] set current project to scala-training (in build file:/Users/jun.honda/project/scala-training/)
+2020.10.12 09:43:14 INFO  [success] Generated .bloop/scala-training-test.json
+2020.10.12 09:43:14 INFO  [success] Generated .bloop/scala-training.json
+2020.10.12 09:43:14 INFO  [success] Total time: 0 s, completed 2020/10/12 9:43:15
+2020.10.12 09:43:15 INFO  time: ran 'sbt bloopInstall' in 9.74s
+2020.10.12 09:43:14 INFO  build tool exit: 0
+2020.10.12 09:43:15 INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4587357946727878526/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4587357946727878526/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4587357946727878526/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 09:43:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher2567345193137906686/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher2567345193137906686/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher2567345193137906686/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 09:43:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.12 09:43:16 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.12 09:43:16 INFO  time: indexed workspace in 0.47s
+2020.10.12 09:43:17 INFO  time: compiled scala-training in 2.69s
+2020.10.12 10:52:43 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 9m 27.319s)
+2020.10.12 10:52:43 INFO  compiling scala-training (7 scala sources)
+2020.10.12 10:52:43 INFO  compiling scala-training (7 scala sources)
+2020.10.12 10:52:44 INFO  time: compiled scala-training in 1.07s
+2020.10.12 10:52:44 INFO  time: compiled scala-training in 1.07s
+10 12, 2020 11:06:03 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 12
+2020.10.12 11:06:50 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 23m 34.667s)
+2020.10.12 11:06:50 INFO  compiling scala-training (1 scala source)
+2020.10.12 11:06:50 INFO  compiling scala-training (1 scala source)
+2020.10.12 11:06:50 INFO  time: compiled scala-training in 0.17s
+2020.10.12 11:06:50 INFO  time: compiled scala-training in 0.19s
+2020.10.12 11:07:15 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 23m 59.073s)
+2020.10.12 11:07:15 INFO  compiling scala-training (1 scala source)2020.10.12 11:07:15 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 11:07:15 INFO  time: compiled scala-training in 73ms
+2020.10.12 11:07:15 INFO  time: compiled scala-training in 74ms
+2020.10.12 11:08:08 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 24m 54.755s)
+2020.10.12 11:08:08 INFO  compiling scala-training (1 scala source)
+2020.10.12 11:08:08 INFO  compiling scala-training (1 scala source)
+2020.10.12 11:08:08 INFO  time: compiled scala-training in 0.7s
+2020.10.12 11:08:08 INFO  time: compiled scala-training in 0.7s
+2020.10.12 11:08:57 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 25m 43.779s)
+2020.10.12 11:08:57 INFO  compiling scala-training (1 scala source)
+2020.10.12 11:08:57 INFO  compiling scala-training (1 scala source)
+2020.10.12 11:08:57 INFO  time: compiled scala-training in 0.57s
+2020.10.12 11:08:57 INFO  time: compiled scala-training in 0.57s
+2020.10.12 11:24:29 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 41m 13.872s)
+2020.10.12 11:24:29 INFO  compiling scala-training (1 scala source)
+2020.10.12 11:24:29 INFO  compiling scala-training (1 scala source)
+2020.10.12 11:24:29 INFO  time: compiled scala-training in 0.7s2020.10.12 11:24:29 INFO  time: compiled scala-training in 0.7s
+
+10 12, 2020 11:31:29 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 32
+2020.10.12 11:32:56 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 49m 40.37s)
+2020.10.12 11:32:56 INFO  compiling scala-training (1 scala source)2020.10.12 11:32:56 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 11:32:56 INFO  time: compiled scala-training in 0.7s
+2020.10.12 11:32:56 INFO  time: compiled scala-training in 0.7s
+2020.10.12 11:40:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 57m 12.114s)
+2020.10.12 11:40:26 INFO  compiling scala-training (1 scala source)2020.10.12 11:40:26 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 11:40:26 INFO  time: compiled scala-training in 0.74s
+2020.10.12 11:40:26 INFO  time: compiled scala-training in 0.74s
+2020.10.12 11:41:16 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 58m 0.056s)
+2020.10.12 11:41:16 INFO  compiling scala-training (1 scala source)2020.10.12 11:41:16 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 11:41:16 INFO  time: compiled scala-training in 0.76s
+2020.10.12 11:41:16 INFO  time: compiled scala-training in 0.76s
+2020.10.12 11:44:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 1m 14.683s)
+2020.10.12 11:44:28 INFO  compiling scala-training (1 scala source)
+2020.10.12 11:44:28 INFO  compiling scala-training (1 scala source)
+2020.10.12 11:44:28 INFO  time: compiled scala-training in 0.81s
+2020.10.12 11:44:28 INFO  time: compiled scala-training in 0.81s
+2020.10.12 12:11:47 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 28m 33.299s)
+2020.10.12 12:11:47 INFO  compiling scala-training (1 scala source)2020.10.12 12:11:47 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 12:11:47 INFO  time: compiled scala-training in 0.23s
+2020.10.12 12:11:47 INFO  time: compiled scala-training in 0.23s
+2020.10.12 12:12:50 INFO  compiling scala-training (1 scala source)
+2020.10.12 12:12:50 INFO  time: compiled scala-training in 0.2s
+2020.10.12 12:12:58 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 29m 44.534s)
+2020.10.12 12:13:19 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 30m 3.516s)
+2020.10.12 12:13:19 INFO  compiling scala-training (1 scala source)2020.10.12 12:13:19 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 12:13:19 INFO  time: compiled scala-training in 72ms
+2020.10.12 12:13:19 INFO  time: compiled scala-training in 73ms
+10 12, 2020 12:17:17 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 82
+2020.10.12 12:22:22 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 39m 8.59s)
+2020.10.12 12:22:22 INFO  compiling scala-training (2 scala sources)
+2020.10.12 12:22:22 INFO  compiling scala-training (2 scala sources)
+2020.10.12 12:22:22 INFO  time: compiled scala-training in 67ms2020.10.12 12:22:22 INFO  time: compiled scala-training in 67ms
+
+2020.10.12 12:23:19 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 40m 3.533s)
+2020.10.12 12:23:19 INFO  compiling scala-training (2 scala sources)2020.10.12 12:23:19 INFO  compiling scala-training (2 scala sources)
+
+2020.10.12 12:23:19 INFO  time: compiled scala-training in 75ms
+2020.10.12 12:23:19 INFO  time: compiled scala-training in 75ms
+2020.10.12 12:23:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 40m 41.426s)
+2020.10.12 12:23:55 INFO  compiling scala-training (2 scala sources)
+2020.10.12 12:23:55 INFO  compiling scala-training (2 scala sources)
+2020.10.12 12:23:55 INFO  time: compiled scala-training in 71ms
+2020.10.12 12:23:55 INFO  time: compiled scala-training in 71ms
+2020.10.12 12:24:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 41m 27.988s)
+2020.10.12 12:24:44 INFO  compiling scala-training (2 scala sources)
+2020.10.12 12:24:44 INFO  compiling scala-training (2 scala sources)
+2020.10.12 12:24:44 INFO  time: compiled scala-training in 93ms2020.10.12 12:24:44 INFO  time: compiled scala-training in 93ms
+
+2020.10.12 12:25:15 INFO  compiling scala-training (2 scala sources)
+2020.10.12 12:25:15 INFO  time: compiled scala-training in 65ms
+2020.10.12 12:25:15 INFO  compiling scala-training (2 scala sources)
+2020.10.12 12:25:15 INFO  time: compiled scala-training in 15ms
+2020.10.12 12:25:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 42m 14.131s)
+2020.10.12 12:25:28 INFO  compiling scala-training (2 scala sources)
+2020.10.12 12:25:28 INFO  compiling scala-training (2 scala sources)
+2020.10.12 12:25:28 INFO  time: compiled scala-training in 63ms2020.10.12 12:25:28 INFO  time: compiled scala-training in 64ms
+
+2020.10.12 12:27:54 INFO  compiling scala-training (1 scala source)
+2020.10.12 12:27:54 INFO  time: compiled scala-training in 0.21s
+2020.10.12 12:27:57 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 44m 43.221s)
+2020.10.12 12:28:15 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 45m 1.592s)
+2020.10.12 12:28:15 INFO  compiling scala-training (1 scala source)
+2020.10.12 12:28:15 INFO  compiling scala-training (1 scala source)
+2020.10.12 12:28:15 INFO  time: compiled scala-training in 0.64s
+2020.10.12 12:28:15 INFO  time: compiled scala-training in 0.64s
+2020.10.12 13:04:12 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 3h 20m 58.159s)
+2020.10.12 13:04:12 INFO  compiling scala-training (1 scala source)
+2020.10.12 13:04:12 INFO  compiling scala-training (1 scala source)
+2020.10.12 13:04:12 INFO  time: compiled scala-training in 0.62s
+2020.10.12 13:04:12 INFO  time: compiled scala-training in 0.62s
+2020.10.12 14:22:58 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 4h 39m 42.331s)
+2020.10.12 14:22:58 INFO  compiling scala-training (1 scala source)
+2020.10.12 14:22:58 INFO  compiling scala-training (1 scala source)
+2020.10.12 14:22:58 INFO  time: compiled scala-training in 0.6s
+2020.10.12 14:22:58 INFO  time: compiled scala-training in 0.6s
+2020.10.12 15:01:06 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:01:06 INFO  time: compiled scala-training in 0.21s
+2020.10.12 15:01:08 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 17m 54.453s)
+10 12, 2020 3:09:14 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 221
+10 12, 2020 3:09:17 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 526
+2020.10.12 15:11:39 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:11:39 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 5h 28m 23.763s)
+2020.10.12 15:11:39 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:11:39 INFO  time: compiled scala-training in 77ms
+2020.10.12 15:11:39 INFO  time: compiled scala-training in 76ms
+2020.10.12 15:13:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 29m 48.049s)
+2020.10.12 15:13:02 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:13:02 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:13:02 INFO  time: compiled scala-training in 68ms
+2020.10.12 15:13:02 INFO  time: compiled scala-training in 68ms
+2020.10.12 15:13:46 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 30m 32.55s)
+2020.10.12 15:13:46 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:13:46 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:13:46 INFO  time: compiled scala-training in 82ms
+2020.10.12 15:13:46 INFO  time: compiled scala-training in 82ms
+2020.10.12 15:15:42 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 32m 28.508s)
+2020.10.12 15:15:42 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:15:42 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:15:42 INFO  time: compiled scala-training in 86ms
+2020.10.12 15:15:42 INFO  time: compiled scala-training in 86ms
+2020.10.12 15:16:15 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 33m 1.573s)
+2020.10.12 15:16:15 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:16:15 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:16:15 INFO  time: compiled scala-training in 74ms
+2020.10.12 15:16:15 INFO  time: compiled scala-training in 74ms
+2020.10.12 15:16:41 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 5h 33m 25.558s)
+2020.10.12 15:16:41 INFO  compiling scala-training (1 scala source)2020.10.12 15:16:41 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 15:16:41 INFO  time: compiled scala-training in 69ms
+2020.10.12 15:16:41 INFO  time: compiled scala-training in 69ms
+2020.10.12 15:18:06 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 34m 52.753s)
+2020.10.12 15:18:06 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:18:06 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:18:06 INFO  time: compiled scala-training in 0.1s
+2020.10.12 15:18:06 INFO  time: compiled scala-training in 0.1s
+2020.10.12 15:18:34 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 35m 20.467s)
+2020.10.12 15:18:34 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:18:34 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:18:34 INFO  time: compiled scala-training in 73ms2020.10.12 15:18:34 INFO  time: compiled scala-training in 72ms
+
+10 12, 2020 3:18:56 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 528
+2020.10.12 15:19:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 36m 30.303s)
+2020.10.12 15:19:44 INFO  compiling scala-training (1 scala source)2020.10.12 15:19:44 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 15:19:44 INFO  time: compiled scala-training in 0.61s2020.10.12 15:19:44 INFO  time: compiled scala-training in 0.61s
+
+10 12, 2020 3:24:38 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 615
+2020.10.12 15:24:46 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 41m 32.28s)
+2020.10.12 15:24:46 INFO  compiling scala-training (1 scala source)2020.10.12 15:24:46 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 15:24:46 INFO  time: compiled scala-training in 81ms2020.10.12 15:24:46 INFO  time: compiled scala-training in 81ms
+
+2020.10.12 15:25:14 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 42m 0.029s)
+2020.10.12 15:25:14 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:25:14 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:25:14 INFO  time: compiled scala-training in 91ms
+2020.10.12 15:25:14 INFO  time: compiled scala-training in 91ms
+2020.10.12 15:32:40 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 49m 26.87s)
+2020.10.12 15:32:40 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:32:40 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:32:40 INFO  time: compiled scala-training in 97ms
+2020.10.12 15:32:40 INFO  time: compiled scala-training in 96ms
+2020.10.12 15:33:08 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 5h 49m 52.18s)
+2020.10.12 15:33:08 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:33:08 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:33:08 INFO  time: compiled scala-training in 0.53s
+2020.10.12 15:33:08 INFO  time: compiled scala-training in 0.53s
+2020.10.12 15:34:34 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 5h 51m 18.153s)
+2020.10.12 15:34:34 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:34:34 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:34:34 INFO  time: compiled scala-training in 0.56s
+2020.10.12 15:34:34 INFO  time: compiled scala-training in 0.56s
+2020.10.12 15:39:20 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 5h 56m 4.085s)
+2020.10.12 15:39:20 INFO  compiling scala-training (1 scala source)2020.10.12 15:39:20 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 15:39:20 INFO  time: compiled scala-training in 78ms
+2020.10.12 15:39:20 INFO  time: compiled scala-training in 78ms
+2020.10.12 15:39:54 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 56m 40.443s)
+2020.10.12 15:39:54 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:39:54 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:39:54 INFO  time: compiled scala-training in 72ms
+2020.10.12 15:39:54 INFO  time: compiled scala-training in 72ms
+2020.10.12 15:40:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5h 57m 14.287s)
+2020.10.12 15:40:28 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:40:28 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:40:28 INFO  time: compiled scala-training in 81ms
+2020.10.12 15:40:28 INFO  time: compiled scala-training in 81ms
+10 12, 2020 3:41:17 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 636
+10 12, 2020 3:41:21 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 645
+2020.10.12 15:41:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 5h 58m 10.09s)
+2020.10.12 15:41:26 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:41:26 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:41:26 INFO  time: compiled scala-training in 78ms2020.10.12 15:41:26 INFO  time: compiled scala-training in 78ms
+
+2020.10.12 15:43:47 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 33.756s)
+2020.10.12 15:43:47 INFO  compiling scala-training (1 scala source)2020.10.12 15:43:47 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 15:43:47 INFO  time: compiled scala-training in 78ms
+2020.10.12 15:43:47 INFO  time: compiled scala-training in 78ms
+2020.10.12 15:44:08 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 52.553s)
+2020.10.12 15:44:08 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:44:08 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:44:08 INFO  time: compiled scala-training in 0.12s2020.10.12 15:44:08 INFO  time: compiled scala-training in 0.12s
+
+2020.10.12 15:44:22 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 1m 6.778s)
+2020.10.12 15:44:22 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:44:22 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:44:22 INFO  time: compiled scala-training in 0.59s
+2020.10.12 15:44:22 INFO  time: compiled scala-training in 0.59s
+2020.10.12 15:45:48 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 2m 34.382s)
+2020.10.12 15:45:48 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:45:48 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:45:48 INFO  time: compiled scala-training in 0.58s
+2020.10.12 15:45:48 INFO  time: compiled scala-training in 0.58s
+2020.10.12 15:48:13 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 4m 57.349s)
+2020.10.12 15:48:13 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:48:13 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:48:13 INFO  time: compiled scala-training in 0.62s
+2020.10.12 15:48:13 INFO  time: compiled scala-training in 0.62s
+2020.10.12 15:51:17 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 8m 3.48s)
+2020.10.12 15:51:17 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:51:17 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:51:17 INFO  time: compiled scala-training in 0.61s2020.10.12 15:51:17 INFO  time: compiled scala-training in 0.61s
+
+2020.10.12 15:54:12 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 10m 56.704s)
+2020.10.12 15:54:12 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:54:12 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:54:12 INFO  time: compiled scala-training in 0.68s
+2020.10.12 15:54:12 INFO  time: compiled scala-training in 0.68s
+2020.10.12 15:56:42 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 13m 26.029s)
+2020.10.12 15:56:42 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:56:42 INFO  compiling scala-training (1 scala source)
+2020.10.12 15:56:42 INFO  time: compiled scala-training in 0.6s
+2020.10.12 15:56:42 INFO  time: compiled scala-training in 0.61s
+No more data in the client stdin, exiting...
+2020.10.12 16:12:38 INFO  started: Metals version 0.9.0 in workspace '/Users/jun.honda/project/scala-training'
+2020.10.12 16:12:38 INFO  time: initialize in 0.28s
+2020.10.12 16:12:38 WARN  resetting database: /Users/jun.honda/project/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3487727375070255459/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.12 16:12:39 INFO  Selected port 5031
+2020.10.12 16:12:38 INFO  no build target: using presentation compiler with only scala-library
+Waiting for the bsp connection to come up...
+2020.10.12 16:12:40 WARN  no build target for: /Users/jun.honda/project/scala-training/src/main/scala/10/10/Oct12th_2.scala
+2020.10.12 16:12:40 INFO  Started Metals http server at http://127.0.0.1:5031
+2020.10.12 16:12:40 INFO  started: Metals version 0.9.4 in workspace '/Users/jun.honda/project/scala-training' .
+2020.10.12 16:12:41 INFO  time: initialize in 0.32s
+2020.10.12 16:12:41 WARN  resetting database: /Users/jun.honda/project/scala-training/.metals/metals.h2.db
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher1202053956881719459/bsp.socket'...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.0-RC1-229-b7c15aa9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3487727375070255459/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3487727375070255459/bsp.socket...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher1202053956881719459/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher1202053956881719459/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 16:12:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 16:12:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.12 16:12:42 INFO  no build target: using presentation compiler with only scala-library
+2020.10.12 16:12:42 INFO  running '/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/metals1486445545367225854/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.12 16:12:42 WARN  no build target for: /Users/jun.honda/project/scala-training/src/main/scala/10/10/Oct12th_2.scala
+2020.10.12 16:12:42 INFO  time: connected to build server in 3.79s
+2020.10.12 16:12:42 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7991340952259194338/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7991340952259194338/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7991340952259194338/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 16:12:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.12 16:12:42 INFO  time: connected to build server in 1.43s
+2020.10.12 16:12:42 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+2020.10.12 16:12:43 INFO  running '/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/metals1154649939709717205/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.12 16:12:44 INFO  time: indexed workspace in 1.51s
+2020.10.12 16:12:45 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:12:47 INFO  [info] welcome to sbt 1.3.13 (Amazon.com Inc. Java 1.8.0_265)
+2020.10.12 16:12:47 INFO  [info] welcome to sbt 1.3.13 (Amazon.com Inc. Java 1.8.0_265)
+2020.10.12 16:12:47 INFO  time: indexed workspace in 4.48s
+2020.10.12 16:12:47 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 5.143s)
+2020.10.12 16:12:47 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:12:48 INFO  [info] loading settings for project scala-training-build-build from metals.sbt ...
+2020.10.12 16:12:48 INFO  [info] loading settings for project scala-training-build-build from metals.sbt ...
+2020.10.12 16:12:48 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project/project
+2020.10.12 16:12:48 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project/project
+2020.10.12 16:12:50 INFO  [info] loading settings for project scala-training-build from metals.sbt ...
+2020.10.12 16:12:50 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project
+2020.10.12 16:12:51 INFO  [info] loading settings for project scala-training-build from metals.sbt ...
+2020.10.12 16:12:51 INFO  [info] loading project definition from /Users/jun.honda/project/scala-training/project
+2020.10.12 16:12:51 ERROR [info] waiting for lock on /Users/jun.honda/.ivy2/exclude_classifiers.lock to be available...
+2020.10.12 16:12:53 INFO  [success] Generated .bloop/scala-training-build.json
+2020.10.12 16:12:53 INFO  [success] Total time: 2 s, completed 2020/10/12 16:12:53
+2020.10.12 16:12:53 INFO  [info] set current project to scala-training (in build file:/Users/jun.honda/project/scala-training/)
+2020.10.12 16:12:54 INFO  [success] Generated .bloop/scala-training.json
+2020.10.12 16:12:54 INFO  [success] Generated .bloop/scala-training-test.json
+2020.10.12 16:12:54 INFO  [success] Total time: 0 s, completed 2020/10/12 16:12:54
+2020.10.12 16:12:54 INFO  time: ran 'sbt bloopInstall' in 11s
+2020.10.12 16:12:54 INFO  build tool exit: 0
+2020.10.12 16:12:54 INFO  disconnected: build server
+No more data in the client stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher2571132924807237389/bsp.socket'...
+Waiting for the bsp connection to come up...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+2020.10.12 16:12:54 ERROR Unexpected error initializing server
+java.util.concurrent.ExecutionException: Boxed InterruptedException
+	at scala.concurrent.impl.Promise$.resolver(Promise.scala:86)
+	at scala.concurrent.impl.Promise$.scala$concurrent$impl$Promise$$resolveTry(Promise.scala:79)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.java8.FuturesConvertersImpl$P.accept(FutureConvertersImpl.scala:100)
+	at scala.concurrent.java8.FuturesConvertersImpl$P.accept(FutureConvertersImpl.scala:97)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$3(BuildServerConnection.scala:196)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$2(BuildServerConnection.scala:196)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:17)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:28)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:27)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:18)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:139)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:74)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:68)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$3(BuildServerConnection.scala:196)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$2(BuildServerConnection.scala:196)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:17)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:28)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:27)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:18)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:139)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:74)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:68)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher2571132924807237389/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher2571132924807237389/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 16:12:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.12 16:12:54 INFO  time: connected to build server in 0.17s
+2020.10.12 16:12:54 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+2020.10.12 16:12:54 INFO  time: compiled scala-training in 7.3s
+2020.10.12 16:12:55 INFO  [success] Generated .bloop/scala-training-build.json
+2020.10.12 16:12:55 INFO  [success] Total time: 4 s, completed 2020/10/12 16:12:55
+2020.10.12 16:12:54 INFO  time: indexed workspace in 0.43s
+2020.10.12 16:12:54 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:12:55 INFO  [info] set current project to scala-training (in build file:/Users/jun.honda/project/scala-training/)
+2020.10.12 16:12:56 INFO  [success] Generated .bloop/scala-training-test.json
+2020.10.12 16:12:56 INFO  [success] Generated .bloop/scala-training.json
+2020.10.12 16:12:56 INFO  [success] Total time: 0 s, completed 2020/10/12 16:12:56
+2020.10.12 16:12:56 INFO  build tool exit: 0
+2020.10.12 16:12:56 INFO  time: ran 'sbt bloopInstall' in 13s
+2020.10.12 16:12:56 INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7244265301763753809/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7244265301763753809/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7244265301763753809/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 16:12:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7726099528066863959/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7726099528066863959/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7726099528066863959/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 16:12:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.12 16:12:56 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+2020.10.12 16:12:56 INFO  time: indexed workspace in 0.73s
+2020.10.12 16:12:57 INFO  time: compiled scala-training in 2.59s
+2020.10.12 16:13:44 INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6993679863286743098/bsp.socket'...
+Waiting for the bsp connection to come up...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.4-13-408f4d80...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6993679863286743098/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6993679863286743098/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 16:13:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3131893168850461724/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3131893168850461724/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3131893168850461724/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 16:13:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.12 16:13:46 INFO  time: connected to build server in 2.66s
+2020.10.12 16:13:46 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.12 16:13:46 INFO  time: indexed workspace in 0.4s
+2020.10.12 16:13:47 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:13:52 INFO  time: compiled scala-training in 5.34s
+10 12, 2020 4:19:08 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 180
+10 12, 2020 4:20:38 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 183
+10 12, 2020 4:21:16 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 239
+10 12, 2020 4:22:15 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 267
+10 12, 2020 4:22:41 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.fromIdentApply$1(Completions.scala:423)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:443)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:22:41 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:643)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:47)
+	at scala.meta.internal.pc.completions.Completions.fromIdentApply$1(Completions.scala:416)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:436)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:22:41 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.fromIdentApply$1(Completions.scala:423)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:443)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:22:41 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:643)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:47)
+	at scala.meta.internal.pc.completions.Completions.fromIdentApply$1(Completions.scala:416)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:436)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:22:41 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.fromIdentApply$1(Completions.scala:423)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:443)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:22:41 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:643)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:47)
+	at scala.meta.internal.pc.completions.Completions.fromIdentApply$1(Completions.scala:416)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:436)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:22:41 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.fromIdentApply$1(Completions.scala:423)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:443)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:22:41 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:643)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:47)
+	at scala.meta.internal.pc.completions.Completions.fromIdentApply$1(Completions.scala:416)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:436)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:22:52 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 293
+10 12, 2020 4:23:15 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 318
+10 12, 2020 4:23:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:23:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:643)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:47)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:480)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:23:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:23:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:643)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:47)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:480)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:23:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:23:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:643)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:47)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:480)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:23:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 12, 2020 4:23:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:643)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:47)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:480)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+No more data in the client stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3636984971470551768/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4376095200403156537/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3636984971470551768/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher3636984971470551768/bsp.socket...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4376095200403156537/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4376095200403156537/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.12 16:24:30 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.12 16:24:30 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.12 16:24:31 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:24:30 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.12 16:24:31 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.12 16:24:31 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:24:31 INFO  time: compiled scala-training in 0.29s
+2020.10.12 16:24:30 INFO  time: indexed workspace in 0.28s
+2020.10.12 16:24:31 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 0.349s)
+2020.10.12 16:24:31 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:24:31 INFO  time: compiled scala-training in 0.31s
+2020.10.12 16:25:14 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 43.394s)
+2020.10.12 16:25:14 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:25:14 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:25:14 INFO  time: compiled scala-training in 0.44s
+2020.10.12 16:25:14 INFO  time: compiled scala-training in 0.44s
+2020.10.12 16:25:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 11m 42.073s)
+2020.10.12 16:25:28 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:25:28 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:25:28 INFO  time: compiled scala-training in 0.32s2020.10.12 16:25:28 INFO  time: compiled scala-training in 0.32s
+
+2020.10.12 16:27:18 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2m 47.652s)
+2020.10.12 16:27:18 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:27:18 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:27:18 INFO  time: compiled scala-training in 0.28s
+2020.10.12 16:27:18 INFO  time: compiled scala-training in 0.29s
+2020.10.12 16:27:30 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 13m 44.188s)
+2020.10.12 16:27:30 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:27:30 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:27:30 INFO  time: compiled scala-training in 0.28s2020.10.12 16:27:30 INFO  time: compiled scala-training in 0.28s
+
+10 12, 2020 4:27:43 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 333
+10 12, 2020 4:27:57 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 381
+something's wrong: no file:///Users/jun.honda/project/scala-training/src/main/scala/10/10/Oct12th_2.scala in (Int, <error>)RangePosition(file:///Users/jun.honda/project/scala-training/src/main/scala/10/10/Oct12th_2.scala, 697, 697, 711)
+2020.10.12 16:28:01 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 14m 15.47s)
+2020.10.12 16:28:01 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:28:01 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:28:01 INFO  time: compiled scala-training in 0.27s
+2020.10.12 16:28:01 INFO  time: compiled scala-training in 0.27s
+10 12, 2020 4:28:32 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 387
+2020.10.12 16:28:40 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 14m 53.988s)
+2020.10.12 16:28:40 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:28:40 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:28:40 INFO  time: compiled scala-training in 0.25s
+2020.10.12 16:28:40 INFO  time: compiled scala-training in 0.25s
+2020.10.12 16:29:34 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 15m 48.801s)
+2020.10.12 16:29:34 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:29:34 INFO  compiling scala-training (9 scala sources)
+2020.10.12 16:29:36 INFO  time: compiled scala-training in 1.85s2020.10.12 16:29:36 INFO  time: compiled scala-training in 1.85s
+
+10 12, 2020 4:33:14 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 392
+10 12, 2020 4:33:18 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 395
+2020.10.12 16:33:22 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8m 51.48s)
+2020.10.12 16:33:22 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:33:22 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:33:22 INFO  time: compiled scala-training in 0.78s2020.10.12 16:33:22 INFO  time: compiled scala-training in 0.78s
+
+2020.10.12 16:34:22 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 9m 51.957s)
+2020.10.12 16:34:22 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:34:22 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:34:22 INFO  time: compiled scala-training in 0.81s
+2020.10.12 16:34:22 INFO  time: compiled scala-training in 0.81s
+2020.10.12 16:39:54 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 15m 23.188s)
+2020.10.12 16:39:54 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:39:54 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:39:54 INFO  time: compiled scala-training in 0.71s
+2020.10.12 16:39:54 INFO  time: compiled scala-training in 0.71s
+2020.10.12 16:50:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 37m 9.181s)
+2020.10.12 16:50:55 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:50:55 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:50:55 INFO  time: compiled scala-training in 0.95s2020.10.12 16:50:55 INFO  time: compiled scala-training in 0.95s
+
+2020.10.12 16:51:45 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 27m 14.594s)
+2020.10.12 16:51:45 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:51:45 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:51:45 INFO  time: compiled scala-training in 0.68s
+2020.10.12 16:51:45 INFO  time: compiled scala-training in 0.68s
+2020.10.12 16:52:19 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 27m 48.47s)
+2020.10.12 16:52:19 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:52:19 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:52:19 INFO  time: compiled scala-training in 0.67s
+2020.10.12 16:52:19 INFO  time: compiled scala-training in 0.67s
+2020.10.12 16:52:34 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 38m 48.908s)
+2020.10.12 16:52:34 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:52:34 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:52:34 INFO  time: compiled scala-training in 0.6s
+2020.10.12 16:52:34 INFO  time: compiled scala-training in 0.6s
+2020.10.12 16:53:39 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 39m 53.408s)
+2020.10.12 16:53:39 INFO  compiling scala-training (1 scala source)2020.10.12 16:53:39 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 16:53:39 INFO  time: compiled scala-training in 0.12s
+2020.10.12 16:53:39 INFO  time: compiled scala-training in 0.12s
+2020.10.12 16:53:53 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 29m 22.309s)
+2020.10.12 16:53:53 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:53:53 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:53:53 INFO  time: compiled scala-training in 0.65s
+2020.10.12 16:53:53 INFO  time: compiled scala-training in 0.65s
+2020.10.12 16:54:16 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 40m 30.777s)
+2020.10.12 16:54:16 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:54:16 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:54:16 INFO  time: compiled scala-training in 0.65s
+2020.10.12 16:54:16 INFO  time: compiled scala-training in 0.65s
+2020.10.12 16:59:35 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 35m 4.907s)
+2020.10.12 16:59:35 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:59:35 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:59:35 INFO  time: compiled scala-training in 0.66s
+2020.10.12 16:59:35 INFO  time: compiled scala-training in 0.66s
+2020.10.12 16:59:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 45m 58.644s)
+2020.10.12 16:59:44 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:59:44 INFO  compiling scala-training (1 scala source)
+2020.10.12 16:59:44 INFO  time: compiled scala-training in 0.65s2020.10.12 16:59:44 INFO  time: compiled scala-training in 0.65s
+
+2020.10.12 17:00:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 35m 31.279s)
+2020.10.12 17:00:02 INFO  compiling scala-training (1 scala source)
+2020.10.12 17:00:02 INFO  compiling scala-training (1 scala source)
+2020.10.12 17:00:02 INFO  time: compiled scala-training in 0.62s
+2020.10.12 17:00:02 INFO  time: compiled scala-training in 0.62s
+2020.10.12 17:01:07 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 36m 36.088s)
+2020.10.12 17:01:07 INFO  compiling scala-training (1 scala source)
+2020.10.12 17:01:07 INFO  compiling scala-training (1 scala source)
+2020.10.12 17:01:07 INFO  time: compiled scala-training in 0.72s
+2020.10.12 17:01:07 INFO  time: compiled scala-training in 0.72s
+2020.10.12 17:37:29 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 12m 58.765s)
+2020.10.12 17:37:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 13m 13.329s)
+2020.10.12 17:37:44 INFO  compiling scala-training (1 scala source)
+2020.10.12 17:37:44 INFO  compiling scala-training (1 scala source)
+2020.10.12 17:37:44 INFO  time: compiled scala-training in 0.52s
+2020.10.12 17:37:44 INFO  time: compiled scala-training in 0.52s
+2020.10.12 17:38:07 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 13m 36.262s)
+2020.10.12 17:38:07 INFO  compiling scala-training (1 scala source)
+2020.10.12 17:38:07 INFO  compiling scala-training (1 scala source)
+2020.10.12 17:38:07 INFO  time: compiled scala-training in 0.73s2020.10.12 17:38:07 INFO  time: compiled scala-training in 0.73s
+
+2020.10.12 18:21:29 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 7m 43.897s)
+2020.10.12 18:31:08 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 17m 22.48s)
+2020.10.12 18:31:56 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 18m 10.491s)
+2020.10.12 18:31:56 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:31:56 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:31:56 INFO  time: compiled scala-training in 0.26s
+2020.10.12 18:31:56 INFO  time: compiled scala-training in 0.26s
+2020.10.12 18:32:00 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 18m 14.033s)
+10 12, 2020 6:32:43 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 504
+10 12, 2020 6:36:42 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 397
+10 12, 2020 6:36:48 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 582
+2020.10.12 18:37:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 23m 40.518s)
+2020.10.12 18:37:26 INFO  compiling scala-training (1 scala source)2020.10.12 18:37:26 INFO  compiling scala-training (1 scala source)
+
+2020.10.12 18:37:26 INFO  time: compiled scala-training in 85ms2020.10.12 18:37:26 INFO  time: compiled scala-training in 85ms
+
+2020.10.12 18:38:09 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 24m 23.413s)
+2020.10.12 18:38:09 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:38:09 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:38:09 INFO  time: compiled scala-training in 92ms
+2020.10.12 18:38:09 INFO  time: compiled scala-training in 92ms
+2020.10.12 18:39:30 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 25m 44.32s)
+2020.10.12 18:39:30 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:39:30 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:39:30 INFO  time: compiled scala-training in 97ms
+2020.10.12 18:39:30 INFO  time: compiled scala-training in 97ms
+2020.10.12 18:40:14 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 26m 27.975s)
+2020.10.12 18:40:14 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:40:14 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:40:14 INFO  time: compiled scala-training in 0.49s
+2020.10.12 18:40:14 INFO  time: compiled scala-training in 0.5s
+2020.10.12 18:40:59 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 16m 28.64s)
+2020.10.12 18:41:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 16m 31.227s)
+2020.10.12 18:41:07 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 16m 36.84s)
+2020.10.12 18:41:38 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 27m 52.014s)
+2020.10.12 18:41:38 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:41:38 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:41:38 INFO  time: compiled scala-training in 0.45s
+2020.10.12 18:41:38 INFO  time: compiled scala-training in 0.45s
+2020.10.12 18:43:01 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 29m 14.96s)
+2020.10.12 18:43:01 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:43:01 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:43:01 INFO  time: compiled scala-training in 0.12s
+2020.10.12 18:43:01 INFO  time: compiled scala-training in 0.12s
+2020.10.12 18:43:22 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 18m 51.341s)
+2020.10.12 18:43:22 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:43:22 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:43:22 INFO  time: compiled scala-training in 90ms2020.10.12 18:43:22 INFO  time: compiled scala-training in 90ms
+
+2020.10.12 18:44:24 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 19m 53.624s)
+2020.10.12 18:44:24 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:44:24 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:44:24 INFO  time: compiled scala-training in 0.52s
+2020.10.12 18:44:24 INFO  time: compiled scala-training in 0.52s
+2020.10.12 18:44:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 20m 13.672s)
+2020.10.12 18:44:44 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:44:44 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:44:44 INFO  time: compiled scala-training in 0.47s
+2020.10.12 18:44:44 INFO  time: compiled scala-training in 0.47s
+2020.10.12 18:45:10 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 20m 39.585s)
+2020.10.12 18:45:10 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:45:10 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:45:10 INFO  time: compiled scala-training in 0.48s
+2020.10.12 18:45:10 INFO  time: compiled scala-training in 0.48s
+10 12, 2020 6:46:27 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 588
+2020.10.12 18:47:45 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 23m 14.86s)
+2020.10.12 18:47:45 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:47:45 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:47:45 INFO  time: compiled scala-training in 0.55s
+2020.10.12 18:47:45 INFO  time: compiled scala-training in 0.55s
+2020.10.12 18:48:21 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 34m 35.221s)
+2020.10.12 18:48:21 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:48:21 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:48:21 INFO  time: compiled scala-training in 88ms
+2020.10.12 18:48:21 INFO  time: compiled scala-training in 88ms
+2020.10.12 18:48:37 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 34m 51.463s)
+2020.10.12 18:48:37 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:48:37 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:48:37 INFO  time: compiled scala-training in 0.5s
+2020.10.12 18:48:37 INFO  time: compiled scala-training in 0.5s
+2020.10.12 18:49:37 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 35m 51.66s)
+2020.10.12 18:49:37 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:49:37 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:49:37 INFO  time: compiled scala-training in 0.55s
+2020.10.12 18:49:37 INFO  time: compiled scala-training in 0.55s
+2020.10.12 18:50:20 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 36m 33.95s)
+2020.10.12 18:50:20 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:50:20 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:50:20 INFO  time: compiled scala-training in 0.51s
+2020.10.12 18:50:20 INFO  time: compiled scala-training in 0.51s
+2020.10.12 18:51:04 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 26m 33.51s)
+2020.10.12 18:51:04 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:51:04 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:51:04 INFO  time: compiled scala-training in 0.52s
+2020.10.12 18:51:04 INFO  time: compiled scala-training in 0.52s
+2020.10.12 18:57:23 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 32m 52.361s)
+2020.10.12 18:57:23 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:57:23 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:57:23 INFO  time: compiled scala-training in 92ms
+2020.10.12 18:57:23 INFO  time: compiled scala-training in 92ms
+2020.10.12 18:57:31 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 43m 45.27s)
+2020.10.12 18:57:31 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:57:31 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:57:31 INFO  time: compiled scala-training in 0.52s2020.10.12 18:57:31 INFO  time: compiled scala-training in 0.52s
+
+2020.10.12 18:57:37 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 43m 51.706s)
+2020.10.12 18:57:42 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 43m 56.186s)
+2020.10.12 18:58:13 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 44m 27.357s)
+2020.10.12 18:58:13 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:58:13 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:58:13 INFO  time: compiled scala-training in 0.58s
+2020.10.12 18:58:13 INFO  time: compiled scala-training in 0.58s
+2020.10.12 18:58:56 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 45m 10.098s)
+2020.10.12 18:58:56 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:58:56 INFO  compiling scala-training (1 scala source)
+2020.10.12 18:58:56 INFO  time: compiled scala-training in 0.66s
+2020.10.12 18:58:56 INFO  time: compiled scala-training in 0.66s
+2020.10.12 19:00:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 46m 16.207s)
+2020.10.12 19:00:02 INFO  compiling scala-training (1 scala source)
+2020.10.12 19:00:02 INFO  compiling scala-training (1 scala source)
+2020.10.12 19:00:02 INFO  time: compiled scala-training in 0.6s
+2020.10.12 19:00:02 INFO  time: compiled scala-training in 0.6s
+2020.10.12 19:04:07 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2h 50m 21.186s)
+2020.10.12 19:20:41 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2h 56m 10.802s)

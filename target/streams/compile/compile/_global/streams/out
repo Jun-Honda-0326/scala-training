@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/13/Oct13th.scala:60:3: not found: value pr[0m
-[0m[[0m[31merror[0m] [0m[0m  pr[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/12/Oct12th_3.scala:11:36: ';' expected but 'new' found.[0m
+[0m[[0m[31merror[0m] [0m[0m      if (r.exists(_ %2 == 0)) thr new Exception("1はありません")[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

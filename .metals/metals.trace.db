@@ -22,3 +22,11 @@ where ij.md5=? [42102-200]
 org.h2.jdbc.JdbcSQLSyntaxErrorException: テーブル "CHOSEN_BUILD_TOOL" が見つかりません
 Table "CHOSEN_BUILD_TOOL" not found; SQL statement:
 select * from chosen_build_tool LIMIT 1; [42102-200]
+2020-10-14 09:52:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: テーブル "CHOSEN_BUILD_TOOL" が見つかりません
+Table "CHOSEN_BUILD_TOOL" not found; SQL statement:
+select * from chosen_build_tool LIMIT 1; [42102-200]
+2020-10-14 09:53:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: テーブル "CHOSEN_BUILD_TOOL" が見つかりません
+Table "CHOSEN_BUILD_TOOL" not found; SQL statement:
+select * from chosen_build_tool LIMIT 1; [42102-200]

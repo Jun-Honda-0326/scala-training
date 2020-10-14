@@ -7,6 +7,7 @@
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.util._
 import scala.concurrent._
+import scala.concurrent.duration._
 
 
 case class Organization(
@@ -22,7 +23,7 @@ case class Branch (
 )
 
 // Database情報
-object Database extends App {
+object Database  {
   // 施設のIDから、施設情報を取得する
   // 仮で、nextbeat保育園の情報を返却するような実装にしている
   def getBranchById(branchId: Long): Future[Branch] =
@@ -30,34 +31,48 @@ object Database extends App {
       id             = 1,
       organizationId = 1,
       name           = "nextbeat保育園"
-    ))
+    )
+  )
+ //失敗バージョン
+//  Future.failed(new Exception("値が取れませんでした")) //(Branch(
+//      id             = 1,
+//      organizationId = 1,
+//      name           = "nextbeat保育園"
+//    ))
+//
+//)
 
-  // 法人のIDから、法人情報を取得する
-  // 仮で、株式会社nextbeatの情報を返却するような実装にしている
+// 法人のIDから、法人情報を取得する
+ // 仮で、株式会社nextbeatの情報を返却するような実装にしている
   def getOrganizationById(organizationId: Long): Future[Organization] =
     Future.successful(Organization(
       id    = 1,
       name  = "株式会社nextbeat",
       email = "nextbeat.net"
-    ))
+      )
+  )
+} 
 
-    def main(branchId: Long):Unit = {
-      val composeDatabase = 
-        for {
-          br <- getBranchById(branchId)
-          org <- getOrganizationById(br.organizationId)
-        } yield(br, org)
+
+object Main {
+  def main(args:Array[String]):Unit = { 
+    val branchId:Long = 1
+    composeDatabase(branchId)
     
-      composeDatabase.andThen{
-        case Success(database) => println(database._2.name)
-      }.andThen{
-        case Success(database) => println(database._2.email)
+  }
+
+  def composeDatabase(branchId:Long): Unit = { 
+    //if (branchId != 1) throw new Exception("エラー")
+    val database = 
+    for{
+      br <- Database.getBranchById(branchId)
+      org <- Database.getOrganizationById(br.organizationId)
+      } yield org.name
+    //val result = Await.ready(database, Duration.Inf)
+    //result.value.get match{
+      database.onComplete { 
+        case Success(s) => println(s)
+        case Failure(f) => println(f.getMessage)
       }
-    }
-
-  main(1)
-    
-  
-
-
+  }
 }

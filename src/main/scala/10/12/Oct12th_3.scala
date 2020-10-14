@@ -8,7 +8,7 @@ object FuturePractice extends App {
 
   def random(futureName: String): List[Int] = {
     val r:List[Int] = List.fill(10)(Random.nextInt(10)) 
-      if (!r.contains(1)) throw new Exception("1はありません")
+      if (r.exists(_ %2 == 0)) throw new Exception("1はありません")
       r
    }
 
@@ -49,11 +49,8 @@ object FuturePractice extends App {
     case Success(s) => println(s"合成結果: ${s}")
     case Failure(f) => println("合成できませんでした")
   }
-
-
         
-       
-        
+              
   Thread.sleep(3000)
         
     

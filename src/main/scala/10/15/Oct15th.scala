@@ -23,7 +23,7 @@
 
 
 
-object Main {
+object MainOct15th_3 {
 
   def main(args:Array[String]):Unit = {
     val strSeq: Seq[String] = Seq("し", "な", "て", "も", "お")
@@ -59,12 +59,14 @@ object Main {
 
   //問題3
   def question3(intSeq: Seq[Int]):Seq[String] = {
-    val seq = intSeq.collect{
-      case 1 => "x"
-      case 2 => "y"
-      case _ => "z"
-    } 
-    if (seq.isEmpty) Nil else seq 
+    if  (intSeq.isEmpty)
+      Nil 
+    else
+      intSeq.collect{
+        case 1 => "x"
+        case 2 => "y"
+        case _ => "z"
+    }
   }
 
   //問題4

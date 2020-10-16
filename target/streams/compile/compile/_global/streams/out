@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/15/Oct15th.scala:67:13: value isEmp is not a member of Seq[String][0m
-[0m[[0m[31merror[0m] [0m[0m    if (seq.isEmp) Nil else seq [0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/16/levelUpPractice9_.scala:32:12: identifier expected but '_' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    result._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

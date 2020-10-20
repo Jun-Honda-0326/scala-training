@@ -9,7 +9,7 @@ object Oct01th {
 //    println(mapQuestion2_1(fruitsMap))
     println(mapQuestion2_2(fruitsMap))
     println(mapQuestion3(fruitsMap))
-    println(mapQuestion4(fruitsMap))
+//    println(mapQuestion4(fruitsMap))
     println(mapQuestion5(seq))
   
 
@@ -50,9 +50,9 @@ object Oct01th {
 //問4
 //Mapの各値に「円」をつけたMapに変換してみてください。具体的には、以下のようなMapにしてください。
 //
-  def mapQuestion4(fruitsMap: Map[String, Int]):Map[String, String ] = {
-    fruitsMap.mapValues(_ + "円")
-  }
+//  def mapQuestion4(fruitsMap: Map[String, Int]):Map[String, String ] = {
+//    fruitsMap.mapValues(_ + "円")
+//  }
 
 //問5
   def mapQuestion5(seq: Seq[Int]):Map[Int, Seq[Int]] = {

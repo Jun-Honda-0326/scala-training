@@ -1,4 +1,4 @@
-object  Main {
+object  MainPractice1_8 {
 
   def main(args:Array[String]): Unit = {
     val numOpt1:Option[Int] = Some(11)
@@ -15,7 +15,8 @@ object  Main {
     question1(numOpt3)
     question1(numOpt4)
     println("問題2の答え")
-    //println(question2(numOpt1))
+    println(question2(numOpt1))
+    println(question2(numOpt4))
     println("問題3の答え")
     println(question3(seq))
     println("問題4の答え")
@@ -55,12 +56,11 @@ object  Main {
 //    1.numOptがSome()であれば、そのIntの値をStringに変換する
 //    2.numOptがNoneであれば、"空でした"というStringに変換する
 
-//  def convertToString(numOpt: Option[Int])(conv: Option[Int] => String): String = conv(numOpt)
-//  def question2(numOpt: Option[Int]):String = {
-//    val conv = convertToString _
-//    conv(numOpt)
-//       
-// }
+  def convertToString(numOpt: Option[Int])(conv: Option[Int] => String): String = conv(numOpt)
+  
+  def question2(numOpt: Option[Int]):String = {
+      convertToString(numOpt){n => n.getOrElse("空でした").toString }
+  }
 
 
 //問題3

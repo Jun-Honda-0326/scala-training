@@ -1,4 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/16/levelUpPractice9_.scala:57:30: value mfind is not a member of Seq[MainPractice9_15.ArticleDetail][0m
-[0m[[0m[31merror[0m] [0m[0m        d  <- articleDetails.mfind(_.articleId == a.id)[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/16/levelUpPractice1_8.scala:63:10: unclosed string literal[0m[0J
+[0m[[0m[31merror[0m] [0m[0m    else "空でした[0m[0J
+[0m[[0m[31merror[0m] [0m[0m         ^[0m[0J
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/16/levelUpPractice1_8.scala:63:5: ';' expected but 'else' found.[0m[0J
+[0m[[0m[31merror[0m] [0m[0m    else "空でした[0m[0J
+[0m[[0m[31merror[0m] [0m[0m    ^[0m[0J
+[0m[[0m[31merror[0m] [0m[0m/Users/jun.honda/project/scala-training/src/main/scala/10/16/levelUpPractice1_8.scala:70:41: ';' expected but '=' found.[0m[0J
+[0m[[0m[31merror[0m] [0m[0m  def question3(seq: Seq[Int]):Seq[Int] = {[0m[0J
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m[0J
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m[0J

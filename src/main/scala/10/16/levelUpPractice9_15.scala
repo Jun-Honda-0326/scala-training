@@ -60,10 +60,10 @@ case class ArticleDetail(articleId: Long, category: String)
   def question9(
     articles:         Seq[Article],
     articleDetails:Seq[ArticleDetail]
-    ): Seq[(Article, ArticleDetail)] = {
-      for {
+    ): Seq[(Article, ArticleDetail )] = {
+      for{ 
         a  <- articles
-        d  <- articleDetails.find(_.articleId == a.id)
+        d  <- articleDetails
       } yield (a, d)
   }
 

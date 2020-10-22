@@ -8,6 +8,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Oct05th.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	Book$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Book$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	UserInfo.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/UserInfo.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	ImplicitTest$$anon$2.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/ImplicitTest$$anon$2.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	sayHelloEnglish.class[0m[0J
@@ -24,6 +26,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Japanese.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	MainOct06th.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/MainOct06th.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	Database_2$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Database_2$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	MainOct06th$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/MainOct06th$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	sayHello.class[0m[0J
@@ -60,6 +64,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Organization.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	FutureOptionUsage$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/FutureOptionUsage$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	User.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/User.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	TypePram.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/TypePram.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	Props$.class[0m[0J
@@ -90,6 +96,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/MainOct13th$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	Sep28th$$anonfun$seqQuestion7$1.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Sep28th$$anonfun$seqQuestion7$1.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	ViewValueUser.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/ViewValueUser.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	MainPractice9_15$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/MainPractice9_15$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	American.class[0m[0J
@@ -110,6 +118,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Main09th$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	Book.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Book.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	MainPractice16_17.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/MainPractice16_17.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	Nextbeat.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Nextbeat.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	Database$.class[0m[0J
@@ -126,6 +136,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Oct01th.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	FuturePractice$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/FuturePractice$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	User$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/User$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	MainOct13th.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/MainOct13th.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	MainPractice9_15$Article.class[0m[0J
@@ -134,14 +146,22 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Branch$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	Monoid.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Monoid.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	MainPractice16_17$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/MainPractice16_17$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	Oct15th_2$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Oct15th_2$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	FutureOptionUsage$delayedInit$body.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/FutureOptionUsage$delayedInit$body.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	UserInfo$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/UserInfo$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	CompositeFuture$delayedInit$body.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/CompositeFuture$delayedInit$body.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	TypePram$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/TypePram$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	Database_2.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/Database_2.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	ViewValueUser$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/ViewValueUser$.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	MainOct05th02.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/jun.honda/project/scala-training/target/scala-2.13/classes/MainOct05th02.class[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	MainOct15th_3$$anonfun$question3$1.class[0m[0J

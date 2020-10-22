@@ -60,6 +60,7 @@ object  MainPractice1_8 {
   
   def question2(numOpt: Option[Int]):String = {
       convertToString(numOpt){n => n.getOrElse("空でした").toString }
+      //convertToString(numOpt)(n => n.map(_.toString).getOrElse("空でした")) //別解
   }
 
 

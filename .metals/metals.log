@@ -34121,3 +34121,2472 @@ wwwwwww取得したUserをもとにUserInfoを取得し、ViewValueUserを生成
 2020.10.20 18:43:33 INFO  compiling scala-training (20 scala sources)
 2020.10.20 18:43:33 INFO  time: compiled scala-training in 0.16s
 2020.10.20 18:43:33 INFO  time: compiled scala-training in 0.16s
+10 21, 2020 1:17:50 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 160
+10 21, 2020 1:17:57 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 217
+10 21, 2020 1:18:03 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 220
+10 21, 2020 1:18:06 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 226
+10 21, 2020 1:18:13 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 230
+10 21, 2020 1:18:38 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 234
+10 21, 2020 1:18:41 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 242
+10 21, 2020 1:33:13 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 246
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+2020.10.21 14:22:26 INFO  started: Metals version 0.9.0 in workspace '/Users/jun.honda/project/scala-training'
+2020.10.21 14:22:26 INFO  time: initialize in 0.34s
+10 21, 2020 2:22:27 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "initialized",
+  "params": {}
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:273)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.supportedBuildTool(MetalsLanguageServer.scala:1408)
+	at scala.meta.internal.metals.MetalsLanguageServer.slowConnectToBuildServer(MetalsLanguageServer.scala:1429)
+	at scala.meta.internal.metals.MetalsLanguageServer.initialized(MetalsLanguageServer.scala:648)
+	... 16 more
+
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7776448159295246228/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.21 14:22:27 INFO  no build target: using presentation compiler with only scala-library
+Waiting for the bsp connection to come up...
+2020.10.21 14:22:28 WARN  no build target for: /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.21 14:22:28 INFO  started: Metals version 0.9.4 in workspace '/Users/jun.honda/project/scala-training' .
+2020.10.21 14:22:29 INFO  time: initialize in 0.38s
+2020.10.21 14:22:29 WARN  resetting database: /Users/jun.honda/project/scala-training/.metals/metals.h2.db
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher1049155411879926066/bsp.socket'...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.0-RC1-229-b7c15aa9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7776448159295246228/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7776448159295246228/bsp.socket...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher1049155411879926066/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher1049155411879926066/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.21 14:22:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.21 14:22:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.21 14:22:30 INFO  time: connected to build server in 3.36s
+2020.10.21 14:22:30 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6896840773060346677/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6896840773060346677/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6896840773060346677/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.21 14:22:30 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.21 14:22:30 INFO  time: connected to build server in 0.97s
+2020.10.21 14:22:30 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+2020.10.21 14:22:30 WARN  Unable to run doctor. To fix this problem enable -Dmetals.http=true
+2020.10.21 14:22:30 INFO  no build target: using presentation compiler with only scala-library
+2020.10.21 14:22:31 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:22:32 INFO  time: indexed workspace in 2.08s
+2020.10.21 14:22:32 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 2.463s)
+2020.10.21 14:22:32 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:22:33 INFO  time: indexed workspace in 3.06s
+2020.10.21 14:22:33 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 3.383s)
+2020.10.21 14:22:33 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:22:35 INFO  time: compiled scala-training in 2.11s
+2020.10.21 14:22:35 INFO  time: compiled scala-training in 3.01s
+2020.10.21 14:22:35 ERROR Unexpected error initializing server
+java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:285)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:285)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:278)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.isCompatibleVersion$1(MetalsLanguageServer.scala:1574)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$supportedBuildTool$3(MetalsLanguageServer.scala:1594)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.21 14:22:38 INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher1195688458295749009/bsp.socket'...
+Waiting for the bsp connection to come up...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.4-13-408f4d80...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher1195688458295749009/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher1195688458295749009/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.21 14:22:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6789120627743757171/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6789120627743757171/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher6789120627743757171/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.21 14:22:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.21 14:22:40 INFO  time: connected to build server in 2.09s
+2020.10.21 14:22:40 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.21 14:22:40 INFO  time: indexed workspace in 0.57s
+2020.10.21 14:22:41 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:22:44 INFO  time: compiled scala-training in 3.06s
+No more data in the client stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher8510352489183962415/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher8510352489183962415/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher8510352489183962415/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.21 14:36:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.21 14:36:32 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:32 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.21 14:36:32 WARN  Unable to run doctor. To fix this problem enable -Dmetals.http=true
+2020.10.21 14:36:32 INFO  time: indexed workspace in 0.33s
+2020.10.21 14:36:32 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:32 INFO  time: compiled scala-training in 0.99s
+2020.10.21 14:36:32 INFO  time: compiled scala-training in 0.66s
+2020.10.21 14:36:34 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:34 INFO  time: compiled scala-training in 0.79s
+2020.10.21 14:36:35 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:35 INFO  time: compiled scala-training in 54ms
+2020.10.21 14:36:35 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:36 INFO  time: compiled scala-training in 0.36s
+2020.10.21 14:36:36 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:36 INFO  time: compiled scala-training in 0.26s
+2020.10.21 14:36:37 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:37 INFO  time: compiled scala-training in 99ms
+2020.10.21 14:36:37 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:37 INFO  time: compiled scala-training in 0.23s
+2020.10.21 14:36:39 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:39 INFO  time: compiled scala-training in 0.27s
+2020.10.21 14:36:41 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:41 INFO  time: compiled scala-training in 0.34s
+2020.10.21 14:36:41 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:41 INFO  time: compiled scala-training in 0.2s
+2020.10.21 14:36:43 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:43 INFO  time: compiled scala-training in 0.19s
+2020.10.21 14:36:43 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:43 INFO  time: compiled scala-training in 0.2s
+2020.10.21 14:36:45 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:45 INFO  time: compiled scala-training in 0.24s
+2020.10.21 14:36:45 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:45 INFO  time: compiled scala-training in 0.23s
+2020.10.21 14:36:45 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:45 INFO  time: compiled scala-training in 0.16s
+2020.10.21 14:36:48 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:48 INFO  time: compiled scala-training in 0.23s
+2020.10.21 14:36:48 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:48 INFO  time: compiled scala-training in 0.15s
+2020.10.21 14:36:50 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:50 INFO  time: compiled scala-training in 0.2s
+2020.10.21 14:36:52 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:36:52 INFO  time: compiled scala-training in 0.21s
+2020.10.21 14:37:58 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:37:58 INFO  time: compiled scala-training in 0.26s
+2020.10.21 14:38:00 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:00 INFO  time: compiled scala-training in 0.21s
+2020.10.21 14:38:00 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:00 INFO  time: compiled scala-training in 0.14s
+2020.10.21 14:38:04 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:04 INFO  time: compiled scala-training in 76ms
+2020.10.21 14:38:06 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:06 INFO  time: compiled scala-training in 0.1s
+2020.10.21 14:38:37 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:37 INFO  time: compiled scala-training in 76ms
+2020.10.21 14:38:37 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:37 INFO  time: compiled scala-training in 27ms
+2020.10.21 14:38:41 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:41 INFO  time: compiled scala-training in 77ms
+2020.10.21 14:38:41 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:41 INFO  time: compiled scala-training in 24ms
+2020.10.21 14:38:43 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:43 INFO  time: compiled scala-training in 75ms
+2020.10.21 14:38:43 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:43 INFO  time: compiled scala-training in 23ms
+2020.10.21 14:38:44 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:44 INFO  time: compiled scala-training in 23ms
+2020.10.21 14:38:44 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:44 INFO  time: compiled scala-training in 23ms
+2020.10.21 14:38:47 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:47 INFO  time: compiled scala-training in 72ms
+2020.10.21 14:38:47 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:47 INFO  time: compiled scala-training in 22ms
+2020.10.21 14:38:48 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:48 INFO  time: compiled scala-training in 77ms
+2020.10.21 14:38:50 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:50 INFO  time: compiled scala-training in 72ms
+2020.10.21 14:38:51 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:51 INFO  time: compiled scala-training in 89ms
+2020.10.21 14:38:54 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:54 INFO  time: compiled scala-training in 74ms
+2020.10.21 14:38:54 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:54 INFO  time: compiled scala-training in 24ms
+2020.10.21 14:38:54 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:54 INFO  time: compiled scala-training in 21ms
+2020.10.21 14:38:54 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:54 INFO  time: compiled scala-training in 21ms
+2020.10.21 14:38:57 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:38:57 INFO  time: compiled scala-training in 79ms
+2020.10.21 14:39:02 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:39:02 INFO  time: compiled scala-training in 0.22s
+2020.10.21 14:39:05 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:39:05 INFO  time: compiled scala-training in 0.2s
+2020.10.21 14:39:07 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:39:07 INFO  time: compiled scala-training in 0.2s
+2020.10.21 14:40:07 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:07 INFO  time: compiled scala-training in 0.19s
+2020.10.21 14:40:07 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:07 INFO  time: compiled scala-training in 0.14s
+2020.10.21 14:40:14 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:14 INFO  time: compiled scala-training in 77ms
+2020.10.21 14:40:17 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:17 INFO  time: compiled scala-training in 0.23s
+2020.10.21 14:40:17 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:17 INFO  time: compiled scala-training in 26ms
+2020.10.21 14:40:17 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:17 INFO  time: compiled scala-training in 25ms
+2020.10.21 14:40:19 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:19 INFO  time: compiled scala-training in 22ms
+2020.10.21 14:40:19 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:19 INFO  time: compiled scala-training in 22ms
+2020.10.21 14:40:19 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:19 INFO  time: compiled scala-training in 17ms
+2020.10.21 14:40:19 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:19 INFO  time: compiled scala-training in 20ms
+2020.10.21 14:40:21 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:21 INFO  time: compiled scala-training in 19ms
+2020.10.21 14:40:21 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:21 INFO  time: compiled scala-training in 21ms
+2020.10.21 14:40:23 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:23 INFO  time: compiled scala-training in 77ms
+2020.10.21 14:40:23 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:23 INFO  time: compiled scala-training in 0.13s
+2020.10.21 14:40:23 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:23 INFO  time: compiled scala-training in 0.13s
+2020.10.21 14:40:23 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:24 INFO  time: compiled scala-training in 0.13s
+2020.10.21 14:40:24 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:24 INFO  time: compiled scala-training in 0.14s
+2020.10.21 14:40:24 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:24 INFO  time: compiled scala-training in 0.13s
+2020.10.21 14:40:26 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:26 INFO  time: compiled scala-training in 0.18s
+2020.10.21 14:40:26 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:26 INFO  time: compiled scala-training in 0.13s
+2020.10.21 14:40:26 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:27 INFO  time: compiled scala-training in 0.13s
+2020.10.21 14:40:28 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:28 INFO  time: compiled scala-training in 0.2s
+2020.10.21 14:40:28 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:28 INFO  time: compiled scala-training in 0.13s
+2020.10.21 14:40:28 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:28 INFO  time: compiled scala-training in 0.13s
+2020.10.21 14:40:30 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:40:30 INFO  time: compiled scala-training in 0.19s
+2020.10.21 14:42:53 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:42:53 INFO  time: compiled scala-training in 0.19s
+2020.10.21 14:42:59 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:76:13: stale bloop error: not enough arguments for method filter: (p: UserInfo => Boolean)Seq[UserInfo].
+Unspecified value parameter p.
+      ui <- userInfoSeq.filter() 
+            ^^^^^^^^^^^^^^^^^^^^
+2020.10.21 14:42:59 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:76:13: stale bloop error: not enough arguments for method filter: (p: UserInfo => Boolean)Seq[UserInfo].
+Unspecified value parameter p.
+      ui <- userInfoSeq.filter() 
+            ^^^^^^^^^^^^^^^^^^^^
+2020.10.21 14:42:59 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:76:13: stale bloop error: not enough arguments for method filter: (p: UserInfo => Boolean)Seq[UserInfo].
+Unspecified value parameter p.
+      ui <- userInfoSeq.filter() 
+            ^^^^^^^^^^^^^^^^^^^^
+2020.10.21 14:42:59 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:42:59 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:77:7: stale bloop error: illegal character '\u3000'
+    } 　yield 
+      ^
+2020.10.21 14:42:59 INFO  time: compiled scala-training in 83ms
+2020.10.21 14:43:01 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:77:7: stale bloop error: illegal character '\u3000'
+    } 　yield 
+      ^
+2020.10.21 14:43:01 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:76:13: stale bloop error: not enough arguments for method filter: (p: UserInfo => Boolean)Seq[UserInfo].
+Unspecified value parameter p.
+      ui <- userInfoSeq.filter() 
+            ^^^^^^^^^^^^^^^^^^^^
+2020.10.21 14:43:01 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:77:7: stale bloop error: illegal character '\u3000'
+    } 　yield 
+      ^
+2020.10.21 14:43:01 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:76:13: stale bloop error: not enough arguments for method filter: (p: UserInfo => Boolean)Seq[UserInfo].
+Unspecified value parameter p.
+      ui <- userInfoSeq.filter() 
+            ^^^^^^^^^^^^^^^^^^^^
+2020.10.21 14:43:01 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:77:7: stale bloop error: illegal character '\u3000'
+    } 　yield 
+      ^
+2020.10.21 14:43:01 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:76:13: stale bloop error: not enough arguments for method filter: (p: UserInfo => Boolean)Seq[UserInfo].
+Unspecified value parameter p.
+      ui <- userInfoSeq.filter() 
+            ^^^^^^^^^^^^^^^^^^^^
+2020.10.21 14:43:01 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:01 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:77:7: stale bloop error: illegal character '\u3000'
+    } 　jiyield 
+      ^
+2020.10.21 14:43:01 INFO  time: compiled scala-training in 88ms
+2020.10.21 14:43:03 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:77:7: stale bloop error: illegal character '\u3000'
+    } 　jiyield 
+      ^
+2020.10.21 14:43:03 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:77:7: stale bloop error: illegal character '\u3000'
+    } 　jiyield 
+      ^
+2020.10.21 14:43:03 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:03 INFO  time: compiled scala-training in 0.16s
+2020.10.21 14:43:05 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:05 INFO  time: compiled scala-training in 0.17s
+2020.10.21 14:43:05 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:05 INFO  time: compiled scala-training in 0.14s
+2020.10.21 14:43:10 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:10 INFO  time: compiled scala-training in 62ms
+2020.10.21 14:43:11 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:11 INFO  time: compiled scala-training in 0.16s
+2020.10.21 14:43:14 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:14 INFO  time: compiled scala-training in 0.15s
+2020.10.21 14:43:17 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:17 INFO  time: compiled scala-training in 0.18s
+2020.10.21 14:43:19 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:19 INFO  time: compiled scala-training in 0.16s
+2020.10.21 14:43:21 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:21 INFO  time: compiled scala-training in 0.15s
+2020.10.21 14:43:25 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:25 INFO  time: compiled scala-training in 62ms
+2020.10.21 14:43:26 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:26 INFO  time: compiled scala-training in 68ms
+2020.10.21 14:43:31 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:31 INFO  time: compiled scala-training in 66ms
+2020.10.21 14:43:32 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:32 INFO  time: compiled scala-training in 0.18s
+2020.10.21 14:43:32 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:32 INFO  time: compiled scala-training in 24ms
+2020.10.21 14:43:32 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:32 INFO  time: compiled scala-training in 17ms
+2020.10.21 14:43:35 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:35 INFO  time: compiled scala-training in 64ms
+2020.10.21 14:43:35 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:35 INFO  time: compiled scala-training in 19ms
+2020.10.21 14:43:35 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:35 INFO  time: compiled scala-training in 18ms
+2020.10.21 14:43:36 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:36 INFO  time: compiled scala-training in 65ms
+2020.10.21 14:43:36 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:36 INFO  time: compiled scala-training in 18ms
+2020.10.21 14:43:37 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:37 INFO  time: compiled scala-training in 18ms
+2020.10.21 14:43:37 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:38 INFO  time: compiled scala-training in 20ms
+2020.10.21 14:43:38 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:38 INFO  time: compiled scala-training in 19ms
+2020.10.21 14:43:42 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:42 INFO  time: compiled scala-training in 64ms
+2020.10.21 14:43:42 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:42 INFO  time: compiled scala-training in 19ms
+2020.10.21 14:43:42 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:42 INFO  time: compiled scala-training in 18ms
+2020.10.21 14:43:42 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:42 INFO  time: compiled scala-training in 20ms
+2020.10.21 14:43:43 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:43 INFO  time: compiled scala-training in 19ms
+2020.10.21 14:43:44 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:44 INFO  time: compiled scala-training in 66ms
+2020.10.21 14:43:44 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:44 INFO  time: compiled scala-training in 15ms
+2020.10.21 14:43:45 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:45 INFO  time: compiled scala-training in 17ms
+2020.10.21 14:43:47 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:47 INFO  time: compiled scala-training in 64ms
+2020.10.21 14:43:48 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:48 INFO  time: compiled scala-training in 61ms
+2020.10.21 14:43:48 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:49 INFO  time: compiled scala-training in 18ms
+2020.10.21 14:43:49 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:49 INFO  time: compiled scala-training in 16ms
+2020.10.21 14:43:49 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:49 INFO  time: compiled scala-training in 14ms
+2020.10.21 14:43:51 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:51 INFO  time: compiled scala-training in 19ms
+2020.10.21 14:43:51 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:51 INFO  time: compiled scala-training in 15ms
+2020.10.21 14:43:54 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:54 INFO  time: compiled scala-training in 64ms
+2020.10.21 14:43:56 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:56 INFO  time: compiled scala-training in 65ms
+2020.10.21 14:43:58 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:58 INFO  time: compiled scala-training in 58ms
+2020.10.21 14:43:58 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:58 INFO  time: compiled scala-training in 17ms
+2020.10.21 14:43:58 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:58 INFO  time: compiled scala-training in 15ms
+2020.10.21 14:43:58 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:43:58 INFO  time: compiled scala-training in 15ms
+2020.10.21 14:44:00 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:00 INFO  time: compiled scala-training in 14ms
+2020.10.21 14:44:02 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:02 INFO  time: compiled scala-training in 63ms
+2020.10.21 14:44:04 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:04 INFO  time: compiled scala-training in 62ms
+2020.10.21 14:44:04 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:05 INFO  time: compiled scala-training in 17ms
+2020.10.21 14:44:10 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:10 INFO  time: compiled scala-training in 66ms
+2020.10.21 14:44:10 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:10 INFO  time: compiled scala-training in 19ms
+2020.10.21 14:44:10 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:10 INFO  time: compiled scala-training in 18ms
+2020.10.21 14:44:10 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:10 INFO  time: compiled scala-training in 14ms
+2020.10.21 14:44:10 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:10 INFO  time: compiled scala-training in 21ms
+2020.10.21 14:44:12 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:12 INFO  time: compiled scala-training in 69ms
+2020.10.21 14:44:12 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:12 INFO  time: compiled scala-training in 18ms
+2020.10.21 14:44:12 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:12 INFO  time: compiled scala-training in 17ms
+2020.10.21 14:44:13 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:13 INFO  time: compiled scala-training in 17ms
+2020.10.21 14:44:13 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:13 INFO  time: compiled scala-training in 18ms
+2020.10.21 14:44:15 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:78:3: stale bloop error: ';' expected but 'yield' found.
+  yield
+  ^
+2020.10.21 14:44:15 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:76:13: stale bloop error: not enough arguments for method filter: (p: UserInfo => Boolean)Seq[UserInfo].
+Unspecified value parameter p.
+      ui <- userInfoSeq.filter() 
+            ^^^^^^^^^^^^^^^^^^^^
+2020.10.21 14:44:15 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:78:3: stale bloop error: ';' expected but 'yield' found.
+  yield
+  ^
+2020.10.21 14:44:15 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:76:13: stale bloop error: not enough arguments for method filter: (p: UserInfo => Boolean)Seq[UserInfo].
+Unspecified value parameter p.
+      ui <- userInfoSeq.filter() 
+            ^^^^^^^^^^^^^^^^^^^^
+2020.10.21 14:44:15 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:15 INFO  time: compiled scala-training in 64ms
+2020.10.21 14:44:18 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:18 INFO  time: compiled scala-training in 62ms
+2020.10.21 14:44:22 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:22 INFO  time: compiled scala-training in 63ms
+2020.10.21 14:44:27 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:27 INFO  time: compiled scala-training in 63ms
+2020.10.21 14:44:27 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:27 INFO  time: compiled scala-training in 17ms
+2020.10.21 14:44:29 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:29 INFO  time: compiled scala-training in 70ms
+2020.10.21 14:44:31 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:31 INFO  time: compiled scala-training in 62ms
+2020.10.21 14:44:33 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:33 INFO  time: compiled scala-training in 63ms
+2020.10.21 14:44:35 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:35 INFO  time: compiled scala-training in 63ms
+2020.10.21 14:44:35 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:35 INFO  time: compiled scala-training in 18ms
+2020.10.21 14:44:35 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:35 INFO  time: compiled scala-training in 0.14s
+2020.10.21 14:44:37 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:37 INFO  time: compiled scala-training in 69ms
+2020.10.21 14:44:39 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:39 INFO  time: compiled scala-training in 62ms
+2020.10.21 14:44:39 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:44:39 INFO  time: compiled scala-training in 18ms
+2020.10.21 14:45:05 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:45:05 INFO  time: compiled scala-training in 0.18s
+2020.10.21 14:45:05 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:45:05 INFO  time: compiled scala-training in 16ms
+10 21, 2020 2:45:11 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 53
+2020.10.21 14:45:11 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:45:11 INFO  time: compiled scala-training in 67ms
+2020.10.21 14:45:36 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:45:36 INFO  time: compiled scala-training in 71ms
+2020.10.21 14:45:36 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:45:36 INFO  time: compiled scala-training in 22ms
+2020.10.21 14:45:39 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:45:39 INFO  time: compiled scala-training in 80ms
+2020.10.21 14:45:45 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:45:45 INFO  time: compiled scala-training in 67ms
+2020.10.21 14:45:45 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:45:45 INFO  time: compiled scala-training in 17ms
+2020.10.21 14:45:45 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:45:45 INFO  time: compiled scala-training in 19ms
+2020.10.21 14:45:46 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:45:46 INFO  time: compiled scala-training in 18ms
+2020.10.21 14:45:49 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:45:49 INFO  time: compiled scala-training in 64ms
+2020.10.21 14:52:40 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:52:40 INFO  time: compiled scala-training in 89ms
+2020.10.21 14:52:44 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:52:44 INFO  time: compiled scala-training in 72ms
+2020.10.21 14:52:51 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:52:51 INFO  time: compiled scala-training in 0.2s
+2020.10.21 14:52:54 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:52:54 INFO  time: compiled scala-training in 66ms
+2020.10.21 14:52:56 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:52:56 INFO  time: compiled scala-training in 0.16s
+2020.10.21 14:53:02 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:02 INFO  time: compiled scala-training in 0.15s
+2020.10.21 14:53:02 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:02 INFO  time: compiled scala-training in 0.13s
+2020.10.21 14:53:04 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:04 INFO  time: compiled scala-training in 64ms
+2020.10.21 14:53:04 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:04 INFO  time: compiled scala-training in 24ms
+2020.10.21 14:53:06 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:06 INFO  time: compiled scala-training in 0.16s
+2020.10.21 14:53:07 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:07 INFO  time: compiled scala-training in 65ms
+2020.10.21 14:53:07 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:07 INFO  time: compiled scala-training in 0.12s
+2020.10.21 14:53:09 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:09 INFO  time: compiled scala-training in 0.17s
+2020.10.21 14:53:15 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:15 INFO  time: compiled scala-training in 0.16s
+2020.10.21 14:53:17 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:17 INFO  time: compiled scala-training in 0.16s
+2020.10.21 14:53:19 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:19 INFO  time: compiled scala-training in 0.17s
+2020.10.21 14:53:21 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:53:21 INFO  time: compiled scala-training in 0.15s
+2020.10.21 14:54:16 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:54:16 INFO  time: compiled scala-training in 77ms
+2020.10.21 14:54:16 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:54:16 INFO  time: compiled scala-training in 0.12s
+2020.10.21 14:54:19 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:54:19 INFO  time: compiled scala-training in 80ms
+2020.10.21 14:54:19 INFO  compiling scala-training (20 scala sources)
+2020.10.21 14:54:19 INFO  time: compiled scala-training in 0.12s
+2020.10.21 18:27:25 INFO  compiling scala-training (20 scala sources)
+2020.10.21 18:27:25 INFO  time: compiled scala-training in 0.28s
+2020.10.21 19:17:31 INFO  compiling scala-training (20 scala sources)
+2020.10.21 19:17:31 INFO  time: compiled scala-training in 0.16s
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+2020.10.22 10:07:01 INFO  started: Metals version 0.9.0 in workspace '/Users/jun.honda/project/scala-training'
+2020.10.22 10:07:01 INFO  time: initialize in 0.33s
+2020.10.22 10:07:03 INFO  started: Metals version 0.9.4 in workspace '/Users/jun.honda/project/scala-training' .
+2020.10.22 10:07:03 INFO  time: initialize in 0.27s
+2020.10.22 10:07:05 WARN  resetting database: /Users/jun.honda/project/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7559913992340686737/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+2020.10.22 10:07:08 INFO  no build target: using presentation compiler with only scala-library
+2020.10.22 10:07:08 WARN  no build target for: /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.4-13-408f4d80...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7559913992340686737/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher7559913992340686737/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.22 10:07:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4200070871674921490/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4200070871674921490/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher4200070871674921490/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.22 10:07:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.22 10:07:10 INFO  time: connected to build server in 2.88s
+2020.10.22 10:07:10 INFO  Connected to Build server v1.4.4-13-408f4d80
+10 22, 2020 10:07:11 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "initialized",
+  "params": {}
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:273)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.supportedBuildTool(MetalsLanguageServer.scala:1408)
+	at scala.meta.internal.metals.MetalsLanguageServer.slowConnectToBuildServer(MetalsLanguageServer.scala:1429)
+	at scala.meta.internal.metals.MetalsLanguageServer.initialized(MetalsLanguageServer.scala:648)
+	... 16 more
+
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher298119922607595911/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.22 10:07:11 INFO  no build target: using presentation compiler with only scala-library
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher298119922607595911/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/_v/2ym92b512cl739g2xdxl_02c0000gp/T/bsp-launcher298119922607595911/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.22 10:07:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun.honda/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.22 10:07:11 INFO  time: connected to build server in 0.21s
+2020.10.22 10:07:11 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.22 10:07:11 WARN  Unable to run doctor. To fix this problem enable -Dmetals.http=true
+2020.10.22 10:07:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 10:07:14 ERROR unexpected error during source scanning
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: ユニークインデックス、またはプライマリキー違反: "PUBLIC.PRIMARY_KEY_E ON PUBLIC.INDEXED_JAR(MD5) VALUES ( /* 2 */ 'B2996F3764B0DFA82FC82F96A25DEC64' )"
+Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_E ON PUBLIC.INDEXED_JAR(MD5) VALUES ( /* 2 */ 'B2996F3764B0DFA82FC82F96A25DEC64' )"; SQL statement:
+insert into indexed_jar (md5) values (?) [23505-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:611)
+	at org.h2.command.CommandRemote.executeUpdate(CommandRemote.java:237)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at scala.meta.internal.metals.JarTopLevels.putTopLevels(JarTopLevels.scala:71)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$addSourceJarSymbols$1(MetalsLanguageServer.scala:1896)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$addSourceJarTopLevels$1(OnDemandSymbolIndex.scala:94)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.tryRun(OnDemandSymbolIndex.scala:125)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.addSourceJarTopLevels(OnDemandSymbolIndex.scala:93)
+	at scala.meta.internal.metals.MetalsLanguageServer.addSourceJarSymbols(MetalsLanguageServer.scala:1883)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$5(MetalsLanguageServer.scala:1851)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$5$adapted(MetalsLanguageServer.scala:1842)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:912)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:911)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$2(MetalsLanguageServer.scala:1842)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$2$adapted(MetalsLanguageServer.scala:1841)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:1841)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$9(MetalsLanguageServer.scala:1787)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.MetalsLanguageServer.timedThunk(MetalsLanguageServer.scala:1663)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:1787)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$connectToNewBuildServer$10(MetalsLanguageServer.scala:1579)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:1691)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.MetalsLanguageServer.timedThunk(MetalsLanguageServer.scala:1663)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:1691)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.22 10:07:14 INFO  time: indexed workspace in 2.48s
+2020.10.22 10:07:13 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2.582s)
+2020.10.22 10:07:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 10:07:14 INFO  time: indexed workspace in 3.91s
+2020.10.22 10:07:14 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 2.775s)
+2020.10.22 10:07:14 INFO  compiling scala-training (20 scala sources)
+2020.10.22 10:07:17 INFO  time: compiled scala-training in 3.13s
+2020.10.22 10:07:17 INFO  time: compiled scala-training in 3.32s
+2020.10.22 10:07:17 ERROR Unexpected error initializing server
+java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:285)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:285)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:278)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.isCompatibleVersion$1(MetalsLanguageServer.scala:1574)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$supportedBuildTool$3(MetalsLanguageServer.scala:1594)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.22 11:07:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:39 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 27.571s)
+2020.10.22 11:07:39 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:39 INFO  time: compiled scala-training in 0.76s
+2020.10.22 11:07:38 INFO  time: compiled scala-training in 0.82s
+2020.10.22 11:07:40 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 30.88s)
+2020.10.22 11:07:40 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:40 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:40 INFO  time: compiled scala-training in 0.7s
+2020.10.22 11:07:40 INFO  time: compiled scala-training in 0.7s
+2020.10.22 11:07:40 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 31.672s)
+2020.10.22 11:07:40 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:40 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:42 INFO  time: compiled scala-training in 0.36s
+2020.10.22 11:07:42 INFO  time: compiled scala-training in 0.36s
+2020.10.22 11:07:43 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 33.618s)
+2020.10.22 11:07:43 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:43 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:43 INFO  time: compiled scala-training in 0.11s
+2020.10.22 11:07:43 INFO  time: compiled scala-training in 0.11s
+2020.10.22 11:07:49 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 38.475s)
+2020.10.22 11:07:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:49 INFO  time: compiled scala-training in 0.1s
+2020.10.22 11:07:49 INFO  time: compiled scala-training in 0.1s
+2020.10.22 11:07:51 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 39.629s)
+2020.10.22 11:07:51 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:51 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:51 INFO  time: compiled scala-training in 98ms
+2020.10.22 11:07:51 INFO  time: compiled scala-training in 98ms
+2020.10.22 11:07:51 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 42.032s)
+2020.10.22 11:07:52 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:51 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:52 INFO  time: compiled scala-training in 45ms
+2020.10.22 11:07:52 INFO  time: compiled scala-training in 45ms
+2020.10.22 11:07:52 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 41.152s)
+2020.10.22 11:07:52 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:52 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:52 INFO  time: compiled scala-training in 36ms
+2020.10.22 11:07:52 INFO  time: compiled scala-training in 36ms
+2020.10.22 11:07:53 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 43.436s)
+2020.10.22 11:07:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:53 INFO  time: compiled scala-training in 62ms
+2020.10.22 11:07:53 INFO  time: compiled scala-training in 62ms
+2020.10.22 11:07:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 45.368s)
+2020.10.22 11:07:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:55 INFO  time: compiled scala-training in 0.11s2020.10.22 11:07:55 INFO  time: compiled scala-training in 0.11s
+
+2020.10.22 11:07:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 45.727s)
+2020.10.22 11:07:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:55 INFO  time: compiled scala-training in 40ms2020.10.22 11:07:55 INFO  time: compiled scala-training in 40ms
+
+2020.10.22 11:07:56 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 46.44s)
+2020.10.22 11:07:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:56 INFO  time: compiled scala-training in 41ms
+2020.10.22 11:07:56 INFO  time: compiled scala-training in 41ms
+2020.10.22 11:07:58 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 48.081s)
+2020.10.22 11:07:58 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:58 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:58 INFO  time: compiled scala-training in 84ms2020.10.22 11:07:58 INFO  time: compiled scala-training in 84ms
+
+2020.10.22 11:07:59 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 49.394s)
+2020.10.22 11:07:59 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:59 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:07:59 INFO  time: compiled scala-training in 0.34s
+2020.10.22 11:07:59 INFO  time: compiled scala-training in 0.34s
+2020.10.22 11:08:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:01 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 51.155s)
+2020.10.22 11:08:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:01 INFO  time: compiled scala-training in 0.34s
+2020.10.22 11:08:01 INFO  time: compiled scala-training in 0.41s
+2020.10.22 11:08:01 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 51.599s)
+2020.10.22 11:08:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:01 INFO  time: compiled scala-training in 0.22s
+2020.10.22 11:08:01 INFO  time: compiled scala-training in 0.22s
+2020.10.22 11:08:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 52.39s)
+2020.10.22 11:08:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:02 INFO  time: compiled scala-training in 0.22s
+2020.10.22 11:08:02 INFO  time: compiled scala-training in 0.22s
+2020.10.22 11:08:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 51.324s)
+2020.10.22 11:08:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:02 INFO  time: compiled scala-training in 0.2s
+2020.10.22 11:08:02 INFO  time: compiled scala-training in 0.2s
+2020.10.22 11:08:09 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 59.1s)
+2020.10.22 11:08:09 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:09 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:09 INFO  time: compiled scala-training in 0.25s
+2020.10.22 11:08:09 INFO  time: compiled scala-training in 0.25s
+2020.10.22 11:08:15 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 1m 3.834s)
+2020.10.22 11:08:15 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:15 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:15 INFO  time: compiled scala-training in 82ms
+2020.10.22 11:08:15 INFO  time: compiled scala-training in 83ms
+2020.10.22 11:08:17 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 1m 5.882s)
+2020.10.22 11:08:17 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:17 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:17 INFO  time: compiled scala-training in 98ms
+2020.10.22 11:08:17 INFO  time: compiled scala-training in 98ms
+2020.10.22 11:08:17 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 1m 7.845s)
+2020.10.22 11:08:17 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:17 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:17 INFO  time: compiled scala-training in 31ms
+2020.10.22 11:08:17 INFO  time: compiled scala-training in 32ms
+2020.10.22 11:08:18 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 1m 8.414s)
+2020.10.22 11:08:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:18 INFO  time: compiled scala-training in 21ms
+2020.10.22 11:08:18 INFO  time: compiled scala-training in 21ms
+2020.10.22 11:08:18 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 1m 8.991s)
+2020.10.22 11:08:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:18 INFO  time: compiled scala-training in 24ms
+2020.10.22 11:08:18 INFO  time: compiled scala-training in 24ms
+2020.10.22 11:08:19 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 1m 9.694s)
+2020.10.22 11:08:19 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:19 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:19 INFO  time: compiled scala-training in 0.2s2020.10.22 11:08:19 INFO  time: compiled scala-training in 0.2s
+
+2020.10.22 11:08:21 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 1m 11.703s)
+2020.10.22 11:08:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:21 INFO  time: compiled scala-training in 85ms
+2020.10.22 11:08:21 INFO  time: compiled scala-training in 86ms
+2020.10.22 11:08:21 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 1m 11.13s)
+2020.10.22 11:08:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:21 INFO  time: compiled scala-training in 27ms2020.10.22 11:08:21 INFO  time: compiled scala-training in 27ms
+
+2020.10.22 11:08:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 1m 14.709s)
+2020.10.22 11:08:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:26 INFO  time: compiled scala-training in 84ms
+2020.10.22 11:08:26 INFO  time: compiled scala-training in 85ms
+2020.10.22 11:08:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 1m 15.492s)
+2020.10.22 11:08:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:26 INFO  time: compiled scala-training in 25ms
+2020.10.22 11:08:26 INFO  time: compiled scala-training in 25ms
+2020.10.22 11:08:29 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 1h 1m 17.978s)
+2020.10.22 11:08:29 INFO  compiling scala-training (20 scala sources)2020.10.22 11:08:29 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 11:08:29 INFO  time: compiled scala-training in 0.22s
+2020.10.22 11:08:29 INFO  time: compiled scala-training in 0.22s
+2020.10.22 11:08:35 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 1h 1m 25.489s)
+2020.10.22 11:08:35 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:35 INFO  compiling scala-training (20 scala sources)
+2020.10.22 11:08:35 INFO  time: compiled scala-training in 85ms
+2020.10.22 11:08:35 INFO  time: compiled scala-training in 86ms
+2020.10.22 16:27:48 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 20m 38.729s)
+2020.10.22 16:27:48 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:27:48 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:27:48 INFO  time: compiled scala-training in 76ms
+2020.10.22 16:27:48 INFO  time: compiled scala-training in 77ms
+2020.10.22 16:30:29 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 23m 19.032s)
+2020.10.22 16:30:29 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:30:29 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:30:29 INFO  time: compiled scala-training in 78ms
+2020.10.22 16:30:29 INFO  time: compiled scala-training in 78ms
+2020.10.22 16:35:38 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 28m 27.323s)
+2020.10.22 16:35:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:38 INFO  time: compiled scala-training in 79ms
+2020.10.22 16:35:38 INFO  time: compiled scala-training in 79ms
+2020.10.22 16:35:47 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 28m 35.789s)
+2020.10.22 16:35:47 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:47 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:47 INFO  time: compiled scala-training in 78ms
+2020.10.22 16:35:47 INFO  time: compiled scala-training in 78ms
+2020.10.22 16:35:47 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 28m 37.488s)
+2020.10.22 16:35:47 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:47 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:47 INFO  time: compiled scala-training in 29ms
+2020.10.22 16:35:47 INFO  time: compiled scala-training in 29ms
+2020.10.22 16:35:49 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 28m 38.392s)
+2020.10.22 16:35:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:49 INFO  time: compiled scala-training in 84ms
+2020.10.22 16:35:49 INFO  time: compiled scala-training in 85ms
+2020.10.22 16:35:49 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 28m 38.692s)
+2020.10.22 16:35:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:49 INFO  time: compiled scala-training in 26ms
+2020.10.22 16:35:49 INFO  time: compiled scala-training in 27ms
+2020.10.22 16:35:51 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 28m 40.468s)
+2020.10.22 16:35:51 INFO  compiling scala-training (20 scala sources)2020.10.22 16:35:51 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 16:35:51 INFO  time: compiled scala-training in 0.1s
+2020.10.22 16:35:51 INFO  time: compiled scala-training in 0.1s
+2020.10.22 16:35:51 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 28m 40.763s)
+2020.10.22 16:35:51 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:51 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:51 INFO  time: compiled scala-training in 24ms
+2020.10.22 16:35:51 INFO  time: compiled scala-training in 24ms
+2020.10.22 16:35:53 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 28m 43.821s)
+2020.10.22 16:35:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:53 INFO  time: compiled scala-training in 77ms
+2020.10.22 16:35:53 INFO  time: compiled scala-training in 77ms
+2020.10.22 16:35:53 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 28m 44.305s)
+2020.10.22 16:35:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:53 INFO  time: compiled scala-training in 25ms
+2020.10.22 16:35:53 INFO  time: compiled scala-training in 25ms
+2020.10.22 16:35:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 28m 44.076s)
+2020.10.22 16:35:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:55 INFO  time: compiled scala-training in 79ms
+2020.10.22 16:35:55 INFO  time: compiled scala-training in 80ms
+2020.10.22 16:35:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 28m 44.376s)
+2020.10.22 16:35:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:55 INFO  time: compiled scala-training in 0.16s
+2020.10.22 16:35:55 INFO  time: compiled scala-training in 0.16s
+2020.10.22 16:35:57 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 28m 47.808s)
+2020.10.22 16:35:57 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:57 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:57 INFO  time: compiled scala-training in 0.21s
+2020.10.22 16:35:57 INFO  time: compiled scala-training in 0.22s
+2020.10.22 16:35:57 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 28m 46.695s)
+2020.10.22 16:35:57 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:57 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:35:57 INFO  time: compiled scala-training in 0.15s
+2020.10.22 16:35:57 INFO  time: compiled scala-training in 0.15s
+2020.10.22 16:38:36 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 31m 26.681s)
+2020.10.22 16:38:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:38:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:38:36 INFO  time: compiled scala-training in 0.22s2020.10.22 16:38:36 INFO  time: compiled scala-training in 0.22s
+
+2020.10.22 16:45:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 38m 15.969s)
+2020.10.22 16:45:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:45:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:45:26 INFO  time: compiled scala-training in 0.2s
+2020.10.22 16:45:26 INFO  time: compiled scala-training in 0.2s
+2020.10.22 16:46:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 39m 18.867s)
+2020.10.22 16:46:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:28 INFO  time: compiled scala-training in 0.22s
+2020.10.22 16:46:28 INFO  time: compiled scala-training in 0.22s
+2020.10.22 16:46:35 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 39m 24.049s)
+2020.10.22 16:46:35 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:35 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:35 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:46:35 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:46:54 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 39m 42.821s)
+2020.10.22 16:46:54 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:54 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:54 INFO  time: compiled scala-training in 0.48s
+2020.10.22 16:46:54 INFO  time: compiled scala-training in 0.49s
+2020.10.22 16:46:54 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 39m 43.331s)
+2020.10.22 16:46:54 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:54 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:54 INFO  time: compiled scala-training in 0.39s
+2020.10.22 16:46:54 INFO  time: compiled scala-training in 0.39s
+2020.10.22 16:46:54 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 39m 43.741s)
+2020.10.22 16:46:54 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:54 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:55 INFO  time: compiled scala-training in 0.26s
+2020.10.22 16:46:55 INFO  time: compiled scala-training in 0.26s
+2020.10.22 16:46:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 39m 45.424s)
+2020.10.22 16:46:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:55 INFO  time: compiled scala-training in 0.17s
+2020.10.22 16:46:55 INFO  time: compiled scala-training in 0.17s
+2020.10.22 16:46:58 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 39m 46.575s)
+2020.10.22 16:46:58 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:58 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:46:58 INFO  time: compiled scala-training in 0.32s
+2020.10.22 16:46:58 INFO  time: compiled scala-training in 0.32s
+2020.10.22 16:47:00 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 39m 48.623s)
+2020.10.22 16:47:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:00 INFO  time: compiled scala-training in 0.32s
+2020.10.22 16:47:00 INFO  time: compiled scala-training in 0.32s
+2020.10.22 16:47:00 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 39m 48.963s)
+2020.10.22 16:47:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:00 INFO  time: compiled scala-training in 42ms
+2020.10.22 16:47:00 INFO  time: compiled scala-training in 42ms
+2020.10.22 16:47:01 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 39m 50.186s)
+2020.10.22 16:47:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:01 INFO  time: compiled scala-training in 0.3s
+2020.10.22 16:47:01 INFO  time: compiled scala-training in 0.3s
+2020.10.22 16:47:01 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 39m 51.949s)
+2020.10.22 16:47:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:01 INFO  time: compiled scala-training in 0.21s
+2020.10.22 16:47:01 INFO  time: compiled scala-training in 0.21s
+2020.10.22 16:47:01 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 39m 52.187s)
+2020.10.22 16:47:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:01 INFO  time: compiled scala-training in 0.27s
+2020.10.22 16:47:01 INFO  time: compiled scala-training in 0.27s
+2020.10.22 16:47:01 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 39m 52.478s)
+2020.10.22 16:47:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:02 INFO  time: compiled scala-training in 0.18s2020.10.22 16:47:02 INFO  time: compiled scala-training in 0.18s
+
+2020.10.22 16:47:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:02 INFO  time: compiled scala-training in 0.36s
+2020.10.22 16:47:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:02 INFO  time: compiled scala-training in 0.39s
+2020.10.22 16:47:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 39m 53.082s)
+2020.10.22 16:47:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:02 INFO  time: compiled scala-training in 0.16s
+2020.10.22 16:47:02 INFO  time: compiled scala-training in 0.14s
+2020.10.22 16:47:04 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 39m 54.28s)
+2020.10.22 16:47:04 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:04 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:04 INFO  time: compiled scala-training in 0.23s
+2020.10.22 16:47:04 INFO  time: compiled scala-training in 0.23s
+2020.10.22 16:47:04 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 39m 53.227s)
+2020.10.22 16:47:04 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:04 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:04 INFO  time: compiled scala-training in 0.13s
+2020.10.22 16:47:04 INFO  time: compiled scala-training in 0.13s
+2020.10.22 16:47:10 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 40m 0.03s)
+2020.10.22 16:47:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:10 INFO  time: compiled scala-training in 0.23s
+2020.10.22 16:47:10 INFO  time: compiled scala-training in 0.23s
+2020.10.22 16:47:10 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 39m 59.267s)
+2020.10.22 16:47:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:10 INFO  time: compiled scala-training in 0.16s
+2020.10.22 16:47:10 INFO  time: compiled scala-training in 0.16s
+2020.10.22 16:47:12 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 40m 2.208s)
+2020.10.22 16:47:12 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:12 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:12 INFO  time: compiled scala-training in 0.21s
+2020.10.22 16:47:12 INFO  time: compiled scala-training in 0.21s
+2020.10.22 16:47:12 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 40m 3.08s)
+2020.10.22 16:47:12 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:12 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:13 INFO  time: compiled scala-training in 0.18s
+2020.10.22 16:47:13 INFO  time: compiled scala-training in 0.18s
+2020.10.22 16:47:13 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 40m 3.91s)
+2020.10.22 16:47:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:13 INFO  time: compiled scala-training in 0.16s
+2020.10.22 16:47:13 INFO  time: compiled scala-training in 0.16s
+2020.10.22 16:47:13 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 2.683s)
+2020.10.22 16:47:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:13 INFO  time: compiled scala-training in 0.12s
+2020.10.22 16:47:13 INFO  time: compiled scala-training in 0.12s
+2020.10.22 16:47:19 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 7.859s)
+2020.10.22 16:47:19 INFO  compiling scala-training (20 scala sources)2020.10.22 16:47:19 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 16:47:19 INFO  time: compiled scala-training in 0.23s
+2020.10.22 16:47:19 INFO  time: compiled scala-training in 0.23s
+2020.10.22 16:47:19 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 8.417s)
+2020.10.22 16:47:19 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:19 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:19 INFO  time: compiled scala-training in 33ms
+2020.10.22 16:47:19 INFO  time: compiled scala-training in 34ms
+2020.10.22 16:47:20 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 8.863s)
+2020.10.22 16:47:20 INFO  compiling scala-training (20 scala sources)2020.10.22 16:47:20 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 16:47:20 INFO  time: compiled scala-training in 18ms
+2020.10.22 16:47:20 INFO  time: compiled scala-training in 19ms
+2020.10.22 16:47:20 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 9.259s)
+2020.10.22 16:47:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:20 INFO  time: compiled scala-training in 29ms2020.10.22 16:47:20 INFO  time: compiled scala-training in 29ms
+
+2020.10.22 16:47:20 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 40m 11.071s)
+2020.10.22 16:47:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:20 INFO  time: compiled scala-training in 23ms
+2020.10.22 16:47:20 INFO  time: compiled scala-training in 23ms
+2020.10.22 16:47:21 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 10.107s)
+2020.10.22 16:47:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:21 INFO  time: compiled scala-training in 27ms
+2020.10.22 16:47:21 INFO  time: compiled scala-training in 27ms
+2020.10.22 16:47:21 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 40m 11.858s)
+2020.10.22 16:47:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:21 INFO  time: compiled scala-training in 22ms
+2020.10.22 16:47:21 INFO  time: compiled scala-training in 22ms
+2020.10.22 16:47:21 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 10.794s)
+2020.10.22 16:47:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:21 INFO  time: compiled scala-training in 30ms
+2020.10.22 16:47:21 INFO  time: compiled scala-training in 31ms
+2020.10.22 16:47:22 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 40m 12.704s)
+2020.10.22 16:47:22 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:22 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:22 INFO  time: compiled scala-training in 25ms
+2020.10.22 16:47:22 INFO  time: compiled scala-training in 25ms
+2020.10.22 16:47:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 17.212s)
+2020.10.22 16:47:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:28 INFO  time: compiled scala-training in 0.22s2020.10.22 16:47:28 INFO  time: compiled scala-training in 0.22s
+
+2020.10.22 16:47:39 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:39 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 40m 29.866s)
+2020.10.22 16:47:39 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:39 INFO  time: compiled scala-training in 0.39s
+2020.10.22 16:47:39 INFO  time: compiled scala-training in 0.39s
+2020.10.22 16:47:39 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 28.862s)
+2020.10.22 16:47:39 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:39 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:39 INFO  time: compiled scala-training in 0.16s2020.10.22 16:47:39 INFO  time: compiled scala-training in 0.16s
+
+2020.10.22 16:47:39 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 40m 30.511s)
+2020.10.22 16:47:39 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:39 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:39 INFO  time: compiled scala-training in 0.17s
+2020.10.22 16:47:39 INFO  time: compiled scala-training in 0.17s
+2020.10.22 16:47:41 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 40m 31.879s)
+2020.10.22 16:47:41 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:41 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:41 INFO  time: compiled scala-training in 93ms
+2020.10.22 16:47:41 INFO  time: compiled scala-training in 94ms
+2020.10.22 16:47:45 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 33.944s)
+2020.10.22 16:47:45 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:45 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:47:45 INFO  time: compiled scala-training in 0.2s
+2020.10.22 16:47:45 INFO  time: compiled scala-training in 0.2s
+2020.10.22 16:48:08 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 56.975s)
+2020.10.22 16:48:08 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:48:08 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:48:08 INFO  time: compiled scala-training in 89ms
+2020.10.22 16:48:08 INFO  time: compiled scala-training in 91ms
+2020.10.22 16:48:08 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 57.29s)
+2020.10.22 16:48:08 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:48:08 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:48:08 INFO  time: compiled scala-training in 0.12s
+2020.10.22 16:48:08 INFO  time: compiled scala-training in 0.12s
+2020.10.22 16:48:08 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:48:08 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 40m 57.92s)
+2020.10.22 16:48:08 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:48:09 INFO  time: compiled scala-training in 0.13s
+2020.10.22 16:48:09 INFO  time: compiled scala-training in 0.14s
+2020.10.22 16:48:09 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 41m 0.468s)
+2020.10.22 16:48:09 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:48:09 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:48:10 INFO  time: compiled scala-training in 0.17s2020.10.22 16:48:10 INFO  time: compiled scala-training in 0.17s
+
+2020.10.22 16:51:58 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 44m 48.421s)
+2020.10.22 16:51:58 INFO  compiling scala-training (20 scala sources)2020.10.22 16:51:58 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 16:51:58 INFO  time: compiled scala-training in 0.25s
+2020.10.22 16:51:58 INFO  time: compiled scala-training in 0.25s
+2020.10.22 16:52:01 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 44m 49.706s)
+2020.10.22 16:52:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:01 INFO  time: compiled scala-training in 0.29s
+2020.10.22 16:52:01 INFO  time: compiled scala-training in 0.29s
+2020.10.22 16:52:01 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 44m 50.439s)
+2020.10.22 16:52:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:01 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:01 INFO  time: compiled scala-training in 26ms
+2020.10.22 16:52:01 INFO  time: compiled scala-training in 26ms
+2020.10.22 16:52:03 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 44m 51.953s)
+2020.10.22 16:52:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:03 INFO  time: compiled scala-training in 0.23s2020.10.22 16:52:03 INFO  time: compiled scala-training in 0.23s
+
+2020.10.22 16:52:03 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 44m 52.441s)
+2020.10.22 16:52:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:03 INFO  time: compiled scala-training in 19ms
+2020.10.22 16:52:03 INFO  time: compiled scala-training in 19ms
+2020.10.22 16:52:05 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 44m 54.944s)
+2020.10.22 16:52:05 INFO  compiling scala-training (20 scala sources)2020.10.22 16:52:05 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 16:52:05 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:05 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:05 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 44m 53.853s)
+2020.10.22 16:52:05 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:05 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:05 INFO  time: compiled scala-training in 0.13s
+2020.10.22 16:52:05 INFO  time: compiled scala-training in 0.13s
+2020.10.22 16:52:08 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 44m 58.206s)
+2020.10.22 16:52:08 INFO  compiling scala-training (20 scala sources)2020.10.22 16:52:08 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 16:52:08 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:08 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:09 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 44m 58.331s)
+2020.10.22 16:52:09 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:09 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:09 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:09 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:11 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 45m 1.427s)
+2020.10.22 16:52:11 INFO  compiling scala-training (20 scala sources)2020.10.22 16:52:11 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 16:52:11 INFO  time: compiled scala-training in 76ms
+2020.10.22 16:52:11 INFO  time: compiled scala-training in 76ms
+2020.10.22 16:52:11 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 0.915s)
+2020.10.22 16:52:11 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:11 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:11 INFO  time: compiled scala-training in 31ms
+2020.10.22 16:52:11 INFO  time: compiled scala-training in 32ms
+2020.10.22 16:52:13 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 2.302s)
+2020.10.22 16:52:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:13 INFO  time: compiled scala-training in 73ms
+2020.10.22 16:52:13 INFO  time: compiled scala-training in 73ms
+2020.10.22 16:52:14 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 3.484s)
+2020.10.22 16:52:14 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:14 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:14 INFO  time: compiled scala-training in 0.18s2020.10.22 16:52:14 INFO  time: compiled scala-training in 0.18s
+
+2020.10.22 16:52:14 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 45m 5.197s)
+2020.10.22 16:52:14 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:14 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:14 INFO  time: compiled scala-training in 19ms
+2020.10.22 16:52:14 INFO  time: compiled scala-training in 19ms
+2020.10.22 16:52:14 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 4.197s)
+2020.10.22 16:52:14 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:14 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:14 INFO  time: compiled scala-training in 0.18s
+2020.10.22 16:52:14 INFO  time: compiled scala-training in 0.18s
+2020.10.22 16:52:14 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 4.415s)
+2020.10.22 16:52:14 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:14 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:16 INFO  time: compiled scala-training in 0.13s
+2020.10.22 16:52:16 INFO  time: compiled scala-training in 0.13s
+2020.10.22 16:52:16 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 4.573s)
+2020.10.22 16:52:16 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:16 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:16 INFO  time: compiled scala-training in 0.12s
+2020.10.22 16:52:16 INFO  time: compiled scala-training in 0.12s
+2020.10.22 16:52:17 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 6.039s)
+2020.10.22 16:52:17 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:17 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:17 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:17 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 45m 18.076s)
+2020.10.22 16:52:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:28 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:28 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 16.974s)
+2020.10.22 16:52:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:28 INFO  time: compiled scala-training in 19ms
+2020.10.22 16:52:28 INFO  time: compiled scala-training in 19ms
+2020.10.22 16:52:31 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 19.776s)
+2020.10.22 16:52:31 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:31 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:31 INFO  time: compiled scala-training in 0.18s
+2020.10.22 16:52:31 INFO  time: compiled scala-training in 0.18s
+2020.10.22 16:52:31 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 20.229s)
+2020.10.22 16:52:31 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:31 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:31 INFO  time: compiled scala-training in 0.12s
+2020.10.22 16:52:31 INFO  time: compiled scala-training in 0.12s
+2020.10.22 16:52:31 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 20.416s)
+2020.10.22 16:52:31 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:31 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:31 INFO  time: compiled scala-training in 0.13s
+2020.10.22 16:52:31 INFO  time: compiled scala-training in 0.13s
+2020.10.22 16:52:34 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 23.185s)
+2020.10.22 16:52:34 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:34 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:34 INFO  time: compiled scala-training in 0.17s
+2020.10.22 16:52:34 INFO  time: compiled scala-training in 0.17s
+2020.10.22 16:52:36 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 45m 26.142s)
+2020.10.22 16:52:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:36 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:36 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:36 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 25.124s)
+2020.10.22 16:52:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:36 INFO  time: compiled scala-training in 18ms
+2020.10.22 16:52:36 INFO  time: compiled scala-training in 18ms
+2020.10.22 16:52:36 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 25.42s)
+2020.10.22 16:52:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:36 INFO  time: compiled scala-training in 0.13s
+2020.10.22 16:52:36 INFO  time: compiled scala-training in 0.13s
+2020.10.22 16:52:38 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 45m 28.305s)
+2020.10.22 16:52:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:38 INFO  time: compiled scala-training in 0.18s
+2020.10.22 16:52:38 INFO  time: compiled scala-training in 0.18s
+2020.10.22 16:52:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:42 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 31.358s)
+2020.10.22 16:52:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:42 INFO  time: compiled scala-training in 0.19s
+2020.10.22 16:52:42 INFO  time: compiled scala-training in 0.17s
+2020.10.22 16:52:42 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 45m 33.056s)
+2020.10.22 16:52:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:42 INFO  time: compiled scala-training in 0.11s
+2020.10.22 16:52:42 INFO  time: compiled scala-training in 0.11s
+2020.10.22 16:52:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 45m 34.056s)
+2020.10.22 16:52:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:44 INFO  time: compiled scala-training in 0.15s
+2020.10.22 16:52:44 INFO  time: compiled scala-training in 0.15s
+2020.10.22 16:52:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 33.045s)
+2020.10.22 16:52:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:44 INFO  time: compiled scala-training in 0.12s2020.10.22 16:52:44 INFO  time: compiled scala-training in 0.12s
+
+2020.10.22 16:52:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 33.182s)
+2020.10.22 16:52:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:52:44 INFO  time: compiled scala-training in 0.14s2020.10.22 16:52:44 INFO  time: compiled scala-training in 0.14s
+
+2020.10.22 16:53:10 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 45m 59.115s)
+2020.10.22 16:53:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:10 INFO  time: compiled scala-training in 0.18s
+2020.10.22 16:53:10 INFO  time: compiled scala-training in 0.18s
+2020.10.22 16:53:11 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 46m 0.288s)
+2020.10.22 16:53:11 INFO  compiling scala-training (20 scala sources)2020.10.22 16:53:11 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 16:53:11 INFO  time: compiled scala-training in 53ms
+2020.10.22 16:53:11 INFO  time: compiled scala-training in 53ms
+2020.10.22 16:53:11 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 46m 2.068s)
+2020.10.22 16:53:11 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:11 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:11 INFO  time: compiled scala-training in 25ms
+2020.10.22 16:53:11 INFO  time: compiled scala-training in 25ms
+2020.10.22 16:53:12 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 46m 2.862s)
+2020.10.22 16:53:12 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:12 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:12 INFO  time: compiled scala-training in 25ms
+2020.10.22 16:53:12 INFO  time: compiled scala-training in 26ms
+2020.10.22 16:53:12 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 46m 3.152s)
+2020.10.22 16:53:12 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:12 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:12 INFO  time: compiled scala-training in 17ms
+2020.10.22 16:53:12 INFO  time: compiled scala-training in 17ms
+2020.10.22 16:53:15 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 6h 46m 3.678s)
+2020.10.22 16:53:15 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:15 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:15 INFO  time: compiled scala-training in 71ms
+2020.10.22 16:53:15 INFO  time: compiled scala-training in 71ms
+2020.10.22 16:53:20 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 6h 46m 10.36s)
+2020.10.22 16:53:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 16:53:20 INFO  time: compiled scala-training in 0.2s
+2020.10.22 16:53:20 INFO  time: compiled scala-training in 0.2s
+2020.10.22 18:40:16 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 6.41s)
+2020.10.22 18:40:16 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:16 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:16 INFO  time: compiled scala-training in 0.12s
+2020.10.22 18:40:16 INFO  time: compiled scala-training in 0.13s
+2020.10.22 18:40:18 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 6.769s)
+2020.10.22 18:40:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:18 INFO  time: compiled scala-training in 88ms
+2020.10.22 18:40:18 INFO  time: compiled scala-training in 88ms
+2020.10.22 18:40:18 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 7.1s)
+2020.10.22 18:40:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:18 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:40:18 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:40:19 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:19 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 8.385s)
+2020.10.22 18:40:19 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:19 INFO  time: compiled scala-training in 84ms
+2020.10.22 18:40:19 INFO  time: compiled scala-training in 83ms
+2020.10.22 18:40:19 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 10.285s)
+2020.10.22 18:40:19 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:19 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:19 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:40:19 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:40:21 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 10.299s)
+2020.10.22 18:40:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:21 INFO  time: compiled scala-training in 80ms
+2020.10.22 18:40:21 INFO  time: compiled scala-training in 80ms
+2020.10.22 18:40:23 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 13.59s)
+2020.10.22 18:40:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:23 INFO  time: compiled scala-training in 74ms
+2020.10.22 18:40:23 INFO  time: compiled scala-training in 75ms
+2020.10.22 18:40:23 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 12.733s)
+2020.10.22 18:40:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:23 INFO  time: compiled scala-training in 24ms
+2020.10.22 18:40:23 INFO  time: compiled scala-training in 24ms
+2020.10.22 18:40:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 15.348s)
+2020.10.22 18:40:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:26 INFO  time: compiled scala-training in 82ms
+2020.10.22 18:40:26 INFO  time: compiled scala-training in 82ms
+2020.10.22 18:40:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 15.465s)
+2020.10.22 18:40:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:26 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:40:26 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:40:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 16.774s)
+2020.10.22 18:40:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:28 INFO  time: compiled scala-training in 75ms
+2020.10.22 18:40:28 INFO  time: compiled scala-training in 75ms
+2020.10.22 18:40:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 18.648s)
+2020.10.22 18:40:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:28 INFO  time: compiled scala-training in 31ms2020.10.22 18:40:28 INFO  time: compiled scala-training in 29ms
+
+2020.10.22 18:40:29 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 17.947s)
+2020.10.22 18:40:29 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:29 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:29 INFO  time: compiled scala-training in 24ms2020.10.22 18:40:29 INFO  time: compiled scala-training in 24ms
+
+2020.10.22 18:40:29 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 18.276s)
+2020.10.22 18:40:29 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:29 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:29 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:40:29 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:40:29 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 19.907s)
+2020.10.22 18:40:29 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:29 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:29 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:40:29 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:40:33 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 22.228s)
+2020.10.22 18:40:33 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:33 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:33 INFO  time: compiled scala-training in 76ms
+2020.10.22 18:40:33 INFO  time: compiled scala-training in 76ms
+2020.10.22 18:40:36 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 24.667s)
+2020.10.22 18:40:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:36 INFO  time: compiled scala-training in 0.12s
+2020.10.22 18:40:36 INFO  time: compiled scala-training in 0.12s
+2020.10.22 18:40:36 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 26.378s)
+2020.10.22 18:40:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:36 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:40:36 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:40:36 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 25.42s)
+2020.10.22 18:40:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:36 INFO  time: compiled scala-training in 21ms
+2020.10.22 18:40:36 INFO  time: compiled scala-training in 21ms
+2020.10.22 18:40:39 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 27.795s)
+2020.10.22 18:40:39 INFO  compiling scala-training (20 scala sources)2020.10.22 18:40:39 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:40:39 INFO  time: compiled scala-training in 90ms
+2020.10.22 18:40:39 INFO  time: compiled scala-training in 91ms
+2020.10.22 18:40:40 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 30.531s)
+2020.10.22 18:40:40 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:40 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:40 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:40:40 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:40:40 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 30.895s)
+2020.10.22 18:40:40 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:40 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:40 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:40:40 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:40:42 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 31.388s)
+2020.10.22 18:40:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:42 INFO  time: compiled scala-training in 73ms
+2020.10.22 18:40:42 INFO  time: compiled scala-training in 73ms
+2020.10.22 18:40:42 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 32.058s)
+2020.10.22 18:40:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:42 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:40:42 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:40:45 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 34.079s)
+2020.10.22 18:40:45 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:45 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:45 INFO  time: compiled scala-training in 73ms
+2020.10.22 18:40:45 INFO  time: compiled scala-training in 73ms
+2020.10.22 18:40:45 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 34.368s)
+2020.10.22 18:40:45 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:45 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:45 INFO  time: compiled scala-training in 22ms
+2020.10.22 18:40:45 INFO  time: compiled scala-training in 22ms
+2020.10.22 18:40:47 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 37.746s)
+2020.10.22 18:40:47 INFO  compiling scala-training (20 scala sources)2020.10.22 18:40:47 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:40:47 INFO  time: compiled scala-training in 68ms
+2020.10.22 18:40:47 INFO  time: compiled scala-training in 68ms
+2020.10.22 18:40:47 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 38.614s)
+2020.10.22 18:40:47 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:47 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:47 INFO  time: compiled scala-training in 28ms
+2020.10.22 18:40:47 INFO  time: compiled scala-training in 28ms
+2020.10.22 18:40:49 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 39.705s)
+2020.10.22 18:40:49 INFO  compiling scala-training (20 scala sources)2020.10.22 18:40:49 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:40:49 INFO  time: compiled scala-training in 74ms
+2020.10.22 18:40:49 INFO  time: compiled scala-training in 74ms
+2020.10.22 18:40:49 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 40.006s)
+2020.10.22 18:40:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:49 INFO  time: compiled scala-training in 19ms2020.10.22 18:40:49 INFO  time: compiled scala-training in 19ms
+
+2020.10.22 18:40:51 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 41.622s)
+2020.10.22 18:40:51 INFO  compiling scala-training (20 scala sources)2020.10.22 18:40:51 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:40:51 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:40:51 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:40:53 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 43.901s)
+2020.10.22 18:40:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:53 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:40:53 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:40:53 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 44.379s)
+2020.10.22 18:40:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:53 INFO  time: compiled scala-training in 20ms2020.10.22 18:40:53 INFO  time: compiled scala-training in 20ms
+
+2020.10.22 18:40:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 45.386s)
+2020.10.22 18:40:55 INFO  compiling scala-training (20 scala sources)2020.10.22 18:40:55 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:40:55 INFO  time: compiled scala-training in 22ms
+2020.10.22 18:40:55 INFO  time: compiled scala-training in 22ms
+2020.10.22 18:40:59 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 47.923s)
+2020.10.22 18:40:59 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:59 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:40:59 INFO  time: compiled scala-training in 76ms
+2020.10.22 18:40:59 INFO  time: compiled scala-training in 77ms
+2020.10.22 18:41:00 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 49.436s)
+2020.10.22 18:41:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:00 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:41:00 INFO  time: compiled scala-training in 73ms
+2020.10.22 18:41:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 52.644s)
+2020.10.22 18:41:02 INFO  compiling scala-training (20 scala sources)2020.10.22 18:41:02 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:41:02 INFO  time: compiled scala-training in 85ms
+2020.10.22 18:41:02 INFO  time: compiled scala-training in 85ms
+2020.10.22 18:41:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 53.056s)
+2020.10.22 18:41:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:02 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:41:02 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:41:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 53.188s)
+2020.10.22 18:41:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:02 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:41:02 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:41:03 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 53.863s)
+2020.10.22 18:41:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:03 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:03 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:03 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 52.732s)
+2020.10.22 18:41:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:03 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:03 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:05 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 53.573s)
+2020.10.22 18:41:05 INFO  compiling scala-training (20 scala sources)2020.10.22 18:41:05 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:41:05 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:05 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:05 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 53.802s)
+2020.10.22 18:41:05 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:05 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:05 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:41:05 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:41:06 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 56.258s)
+2020.10.22 18:41:06 INFO  compiling scala-training (20 scala sources)2020.10.22 18:41:06 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:41:06 INFO  time: compiled scala-training in 67ms
+2020.10.22 18:41:06 INFO  time: compiled scala-training in 67ms
+2020.10.22 18:41:06 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 56.563s)
+2020.10.22 18:41:06 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:06 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:06 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:06 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:06 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 55.474s)
+2020.10.22 18:41:06 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:06 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:06 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:06 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:10 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 33m 59.992s)
+2020.10.22 18:41:10 INFO  compiling scala-training (20 scala sources)2020.10.22 18:41:10 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:41:10 INFO  time: compiled scala-training in 66ms2020.10.22 18:41:10 INFO  time: compiled scala-training in 66ms
+
+2020.10.22 18:41:10 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 58.796s)
+2020.10.22 18:41:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:10 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:10 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:10 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 59.027s)
+2020.10.22 18:41:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:10 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:41:10 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:41:10 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 33m 59.151s)
+2020.10.22 18:41:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:10 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:10 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:13 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 1.63s)
+2020.10.22 18:41:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:13 INFO  time: compiled scala-training in 87ms
+2020.10.22 18:41:13 INFO  time: compiled scala-training in 87ms
+2020.10.22 18:41:16 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 6.757s)
+2020.10.22 18:41:16 INFO  compiling scala-training (20 scala sources)2020.10.22 18:41:16 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:41:16 INFO  time: compiled scala-training in 74ms2020.10.22 18:41:16 INFO  time: compiled scala-training in 74ms
+
+2020.10.22 18:41:16 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 7.155s)
+2020.10.22 18:41:16 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:16 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:16 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:41:16 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:41:16 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 5.923s)
+2020.10.22 18:41:16 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:16 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:16 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:16 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:41:20 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 10.347s)
+2020.10.22 18:41:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:20 INFO  time: compiled scala-training in 70ms
+2020.10.22 18:41:20 INFO  time: compiled scala-training in 70ms
+2020.10.22 18:41:20 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 9.244s)
+2020.10.22 18:41:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:20 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:20 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:22 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 12.033s)
+2020.10.22 18:41:22 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:22 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:22 INFO  time: compiled scala-training in 76ms2020.10.22 18:41:22 INFO  time: compiled scala-training in 76ms
+
+2020.10.22 18:41:22 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 12.143s)
+2020.10.22 18:41:22 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:22 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:22 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:41:22 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:41:22 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 12.256s)
+2020.10.22 18:41:22 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:22 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:22 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:41:22 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:41:23 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 11.858s)
+2020.10.22 18:41:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:23 INFO  time: compiled scala-training in 43ms
+2020.10.22 18:41:23 INFO  time: compiled scala-training in 43ms
+2020.10.22 18:41:23 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 14.016s)
+2020.10.22 18:41:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:23 INFO  time: compiled scala-training in 22ms2020.10.22 18:41:23 INFO  time: compiled scala-training in 22ms
+
+2020.10.22 18:41:25 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 15.846s)
+2020.10.22 18:41:25 INFO  compiling scala-training (20 scala sources)2020.10.22 18:41:25 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:41:25 INFO  time: compiled scala-training in 87ms
+2020.10.22 18:41:25 INFO  time: compiled scala-training in 87ms
+2020.10.22 18:41:27 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 17.343s)
+2020.10.22 18:41:27 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:27 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:27 INFO  time: compiled scala-training in 70ms
+2020.10.22 18:41:27 INFO  time: compiled scala-training in 70ms
+2020.10.22 18:41:27 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 16.708s)
+2020.10.22 18:41:27 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:27 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:27 INFO  time: compiled scala-training in 28ms
+2020.10.22 18:41:27 INFO  time: compiled scala-training in 28ms
+2020.10.22 18:41:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 17.092s)
+2020.10.22 18:41:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:28 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:41:28 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 17.208s)
+2020.10.22 18:41:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:28 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:28 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:41:31 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 21.105s)
+2020.10.22 18:41:31 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:31 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:31 INFO  time: compiled scala-training in 68ms
+2020.10.22 18:41:31 INFO  time: compiled scala-training in 68ms
+2020.10.22 18:41:32 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 20.795s)
+2020.10.22 18:41:32 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:32 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:32 INFO  time: compiled scala-training in 77ms
+2020.10.22 18:41:32 INFO  time: compiled scala-training in 78ms
+2020.10.22 18:41:32 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 22.351s)
+2020.10.22 18:41:32 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:32 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:32 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:32 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:32 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 21.134s)
+2020.10.22 18:41:32 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:32 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:32 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:32 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:33 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 23.436s)
+2020.10.22 18:41:33 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:33 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:33 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:41:33 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:41:33 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 23.675s)
+2020.10.22 18:41:33 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:33 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:33 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:33 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:33 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 22.412s)
+2020.10.22 18:41:33 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:33 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:33 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:33 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:33 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 24.285s)
+2020.10.22 18:41:33 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:33 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:33 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:41:33 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:41:34 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 24.47s)
+2020.10.22 18:41:34 INFO  compiling scala-training (20 scala sources)2020.10.22 18:41:34 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:41:34 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:41:34 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:41:36 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 25.189s)
+2020.10.22 18:41:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:36 INFO  time: compiled scala-training in 80ms
+2020.10.22 18:41:36 INFO  time: compiled scala-training in 80ms
+2020.10.22 18:41:36 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 26.955s)
+2020.10.22 18:41:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:36 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:41:36 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:41:36 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 25.664s)
+2020.10.22 18:41:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:36 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:36 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:41:36 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:41:38 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 28.123s)
+2020.10.22 18:41:38 INFO  compiling scala-training (20 scala sources)2020.10.22 18:41:38 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:41:38 INFO  time: compiled scala-training in 70ms
+2020.10.22 18:41:38 INFO  time: compiled scala-training in 70ms
+2020.10.22 18:41:40 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 29.315s)
+2020.10.22 18:41:40 INFO  compiling scala-training (20 scala sources)2020.10.22 18:41:40 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:41:40 INFO  time: compiled scala-training in 66ms
+2020.10.22 18:41:40 INFO  time: compiled scala-training in 67ms
+2020.10.22 18:41:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 34.162s)
+2020.10.22 18:41:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:44 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:41:44 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:41:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 33.505s)
+2020.10.22 18:41:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:44 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:41:44 INFO  time: compiled scala-training in 21ms
+2020.10.22 18:41:46 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 34.851s)
+2020.10.22 18:41:46 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:46 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:46 INFO  time: compiled scala-training in 69ms
+2020.10.22 18:41:46 INFO  time: compiled scala-training in 70ms
+2020.10.22 18:41:46 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 35.138s)
+2020.10.22 18:41:46 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:46 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:46 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:41:46 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:41:46 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 37.09s)
+2020.10.22 18:41:46 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:46 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:46 INFO  time: compiled scala-training in 46ms
+2020.10.22 18:41:46 INFO  time: compiled scala-training in 46ms
+2020.10.22 18:41:50 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 39.027s)
+2020.10.22 18:41:50 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:50 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:50 INFO  time: compiled scala-training in 73ms
+2020.10.22 18:41:50 INFO  time: compiled scala-training in 73ms
+2020.10.22 18:41:50 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 41.33s)
+2020.10.22 18:41:50 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:50 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:50 INFO  time: compiled scala-training in 21ms
+2020.10.22 18:41:50 INFO  time: compiled scala-training in 21ms
+2020.10.22 18:41:53 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 41.969s)
+2020.10.22 18:41:53 INFO  compiling scala-training (20 scala sources)2020.10.22 18:41:53 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:41:53 INFO  time: compiled scala-training in 88ms
+2020.10.22 18:41:53 INFO  time: compiled scala-training in 88ms
+2020.10.22 18:41:53 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 42.364s)
+2020.10.22 18:41:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:53 INFO  time: compiled scala-training in 27ms2020.10.22 18:41:53 INFO  time: compiled scala-training in 26ms
+
+2020.10.22 18:41:53 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 43.931s)
+2020.10.22 18:41:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:53 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:53 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:53 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 44.978s)
+2020.10.22 18:41:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:55 INFO  time: compiled scala-training in 78ms2020.10.22 18:41:55 INFO  time: compiled scala-training in 78ms
+
+2020.10.22 18:41:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 43.674s)
+2020.10.22 18:41:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:55 INFO  time: compiled scala-training in 21ms
+2020.10.22 18:41:55 INFO  time: compiled scala-training in 21ms
+2020.10.22 18:41:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 43.88s)
+2020.10.22 18:41:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:55 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:41:55 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:41:56 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 45.987s)
+2020.10.22 18:41:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:56 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:56 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:41:56 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 46.359s)
+2020.10.22 18:41:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:56 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:56 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:56 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 46.541s)
+2020.10.22 18:41:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:56 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:41:56 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:41:56 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 46.76s)
+2020.10.22 18:41:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:56 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:56 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:41:56 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 45.575s)
+2020.10.22 18:41:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:56 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:57 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:57 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:41:57 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 45.694s)
+2020.10.22 18:41:57 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:57 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:57 INFO  time: compiled scala-training in 41ms
+2020.10.22 18:41:57 INFO  time: compiled scala-training in 41ms
+2020.10.22 18:41:58 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 48.34s)
+2020.10.22 18:41:58 INFO  compiling scala-training (20 scala sources)2020.10.22 18:41:58 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:41:58 INFO  time: compiled scala-training in 73ms
+2020.10.22 18:41:58 INFO  time: compiled scala-training in 73ms
+2020.10.22 18:41:58 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 48.626s)
+2020.10.22 18:41:58 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:58 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:41:58 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:41:58 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:42:00 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 50.271s)
+2020.10.22 18:42:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:00 INFO  time: compiled scala-training in 82ms
+2020.10.22 18:42:00 INFO  time: compiled scala-training in 82ms
+2020.10.22 18:42:00 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 50.62s)
+2020.10.22 18:42:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:00 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:42:00 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:00 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 49.328s)
+2020.10.22 18:42:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:00 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:42:00 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:42:00 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 50.852s)
+2020.10.22 18:42:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:00 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:00 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:42:00 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 49.555s)
+2020.10.22 18:42:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:00 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:00 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:42:00 INFO  time: compiled scala-training in 14ms
+10 22, 2020 6:42:01 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 60
+2020.10.22 18:42:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 50.576s)
+2020.10.22 18:42:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:02 INFO  time: compiled scala-training in 75ms
+2020.10.22 18:42:02 INFO  time: compiled scala-training in 75ms
+2020.10.22 18:42:02 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 50.862s)
+2020.10.22 18:42:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:02 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:02 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:42:02 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:42:03 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 51.926s)
+2020.10.22 18:42:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:03 INFO  time: compiled scala-training in 77ms
+2020.10.22 18:42:03 INFO  time: compiled scala-training in 77ms
+2020.10.22 18:42:03 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 52.139s)
+2020.10.22 18:42:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:03 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:03 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:03 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 53.829s)
+2020.10.22 18:42:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:03 INFO  time: compiled scala-training in 13ms
+2020.10.22 18:42:03 INFO  time: compiled scala-training in 13ms
+2020.10.22 18:42:03 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 53.933s)
+2020.10.22 18:42:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:03 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:42:03 INFO  time: compiled scala-training in 16ms
+10 22, 2020 6:42:04 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 63
+2020.10.22 18:42:04 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 53.329s)
+2020.10.22 18:42:04 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:04 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:04 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:42:04 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:42:07 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 34m 57.569s)
+2020.10.22 18:42:07 INFO  compiling scala-training (20 scala sources)2020.10.22 18:42:07 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:42:07 INFO  time: compiled scala-training in 66ms2020.10.22 18:42:07 INFO  time: compiled scala-training in 66ms
+
+2020.10.22 18:42:10 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 58.585s)
+2020.10.22 18:42:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:10 INFO  time: compiled scala-training in 71ms
+2020.10.22 18:42:10 INFO  time: compiled scala-training in 71ms
+2020.10.22 18:42:10 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 34m 58.725s)
+2020.10.22 18:42:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:10 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:10 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:10 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 0.545s)
+2020.10.22 18:42:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:10 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:10 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:42:10 INFO  time: compiled scala-training in 15ms
+2020.10.22 18:42:12 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 0.964s)
+2020.10.22 18:42:12 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:12 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:12 INFO  time: compiled scala-training in 71ms
+2020.10.22 18:42:12 INFO  time: compiled scala-training in 71ms
+2020.10.22 18:42:13 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 2.006s)
+2020.10.22 18:42:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:13 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:13 INFO  time: compiled scala-training in 22ms
+2020.10.22 18:42:13 INFO  time: compiled scala-training in 22ms
+2020.10.22 18:42:15 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 4.989s)
+2020.10.22 18:42:15 INFO  compiling scala-training (20 scala sources)2020.10.22 18:42:15 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:42:15 INFO  time: compiled scala-training in 71ms
+2020.10.22 18:42:15 INFO  time: compiled scala-training in 71ms
+2020.10.22 18:42:15 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 5.327s)
+2020.10.22 18:42:15 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:15 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:15 INFO  time: compiled scala-training in 16ms2020.10.22 18:42:15 INFO  time: compiled scala-training in 16ms
+
+2020.10.22 18:42:15 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 5.488s)
+2020.10.22 18:42:15 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:15 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:15 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:15 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:15 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 5.68s)
+2020.10.22 18:42:15 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:15 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:15 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:42:15 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:42:16 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 6.448s)
+2020.10.22 18:42:16 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:16 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:16 INFO  time: compiled scala-training in 31ms2020.10.22 18:42:16 INFO  time: compiled scala-training in 31ms
+
+2020.10.22 18:42:18 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 6.581s)
+2020.10.22 18:42:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:18 INFO  time: compiled scala-training in 80ms
+2020.10.22 18:42:18 INFO  time: compiled scala-training in 80ms
+2020.10.22 18:42:18 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 6.825s)
+2020.10.22 18:42:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:18 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:42:18 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:42:18 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 8.408s)
+2020.10.22 18:42:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:18 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:18 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:18 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:20 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 8.802s)
+2020.10.22 18:42:20 INFO  compiling scala-training (20 scala sources)2020.10.22 18:42:20 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:42:20 INFO  time: compiled scala-training in 66ms
+2020.10.22 18:42:20 INFO  time: compiled scala-training in 66ms
+2020.10.22 18:42:20 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 9.125s)
+2020.10.22 18:42:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:20 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:20 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:42:20 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:42:21 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 11.516s)
+2020.10.22 18:42:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:21 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:42:21 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:42:21 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 10.391s)
+2020.10.22 18:42:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:21 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:42:21 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:42:21 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 11.966s)
+2020.10.22 18:42:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:21 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:21 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:21 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 12.096s)
+2020.10.22 18:42:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:21 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:21 INFO  time: compiled scala-training in 18ms2020.10.22 18:42:21 INFO  time: compiled scala-training in 18ms
+
+2020.10.22 18:42:23 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 12.318s)
+2020.10.22 18:42:23 INFO  compiling scala-training (20 scala sources)2020.10.22 18:42:23 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:42:23 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:42:23 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:42:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:100:1: stale bloop error: Missing closing brace `}' assumed here
+}
+^
+2020.10.22 18:42:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:100:1: stale bloop error: Missing closing brace `}' assumed here
+}
+^
+2020.10.22 18:42:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:100:1: stale bloop error: Missing closing brace `}' assumed here
+}
+^
+2020.10.22 18:42:24 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:100:1: stale bloop error: Missing closing brace `}' assumed here
+}
+^
+2020.10.22 18:42:23 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 14.687s)
+2020.10.22 18:42:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:23 INFO  time: compiled scala-training in 21ms
+2020.10.22 18:42:23 INFO  time: compiled scala-training in 21ms
+2020.10.22 18:42:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 15.355s)
+2020.10.22 18:42:26 INFO  compiling scala-training (20 scala sources)2020.10.22 18:42:26 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:42:26 INFO  time: compiled scala-training in 70ms
+2020.10.22 18:42:26 INFO  time: compiled scala-training in 71ms
+2020.10.22 18:42:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 15.982s)
+2020.10.22 18:42:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:26 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:42:26 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:42:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 18.882s)
+2020.10.22 18:42:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:28 INFO  time: compiled scala-training in 73ms
+2020.10.22 18:42:28 INFO  time: compiled scala-training in 87ms
+2020.10.22 18:42:29 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 19.885s)
+2020.10.22 18:42:29 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:29 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:29 INFO  time: compiled scala-training in 24ms
+2020.10.22 18:42:29 INFO  time: compiled scala-training in 26ms
+2020.10.22 18:42:30 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 20.918s)
+2020.10.22 18:42:30 INFO  compiling scala-training (20 scala sources)2020.10.22 18:42:30 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:42:30 INFO  time: compiled scala-training in 70ms
+2020.10.22 18:42:30 INFO  time: compiled scala-training in 71ms
+2020.10.22 18:42:32 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 22.314s)
+2020.10.22 18:42:32 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:32 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:32 INFO  time: compiled scala-training in 74ms
+2020.10.22 18:42:32 INFO  time: compiled scala-training in 74ms
+2020.10.22 18:42:34 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 23.343s)
+2020.10.22 18:42:34 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:34 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:34 INFO  time: compiled scala-training in 74ms
+2020.10.22 18:42:34 INFO  time: compiled scala-training in 74ms
+2020.10.22 18:42:36 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 24.529s)
+2020.10.22 18:42:36 INFO  compiling scala-training (20 scala sources)2020.10.22 18:42:36 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:42:36 INFO  time: compiled scala-training in 97ms2020.10.22 18:42:36 INFO  time: compiled scala-training in 97ms
+
+2020.10.22 18:42:38 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 26.579s)
+2020.10.22 18:42:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:38 INFO  time: compiled scala-training in 70ms
+2020.10.22 18:42:38 INFO  time: compiled scala-training in 70ms
+2020.10.22 18:42:38 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 28.191s)
+2020.10.22 18:42:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:38 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:42:38 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:42:38 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 28.481s)
+2020.10.22 18:42:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:38 INFO  time: compiled scala-training in 17ms
+2020.10.22 18:42:38 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:42:38 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 28.606s)
+2020.10.22 18:42:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:38 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:38 INFO  time: compiled scala-training in 16ms
+2020.10.22 18:42:41 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 30.121s)
+2020.10.22 18:42:41 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:41 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:41 INFO  time: compiled scala-training in 69ms
+2020.10.22 18:42:41 INFO  time: compiled scala-training in 69ms
+2020.10.22 18:42:41 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 31.751s)
+2020.10.22 18:42:41 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:41 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:41 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:42:41 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:42:41 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 32.366s)
+2020.10.22 18:42:41 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:41 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:41 INFO  time: compiled scala-training in 17ms2020.10.22 18:42:41 INFO  time: compiled scala-training in 17ms
+
+2020.10.22 18:42:42 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 32.68s)
+2020.10.22 18:42:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:42 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:42:42 INFO  time: compiled scala-training in 14ms
+2020.10.22 18:42:42 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 33.189s)
+2020.10.22 18:42:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:42 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:42:42 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:42:42 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 33.482s)
+2020.10.22 18:42:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:42 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:42 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:42:42 INFO  time: compiled scala-training in 21ms
+2020.10.22 18:42:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 34.368s)
+2020.10.22 18:42:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:44 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:42:44 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:42:44 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 33.507s)
+2020.10.22 18:42:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:44 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:44 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:42:44 INFO  time: compiled scala-training in 20ms
+2020.10.22 18:42:45 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 35.728s)
+2020.10.22 18:42:45 INFO  compiling scala-training (20 scala sources)2020.10.22 18:42:45 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:42:45 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:42:45 INFO  time: compiled scala-training in 18ms
+2020.10.22 18:42:49 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 39.295s)
+2020.10.22 18:42:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:49 INFO  time: compiled scala-training in 97ms
+2020.10.22 18:42:49 INFO  time: compiled scala-training in 97ms
+2020.10.22 18:42:49 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 39.433s)
+2020.10.22 18:42:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:49 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:49 INFO  time: compiled scala-training in 13ms
+2020.10.22 18:42:49 INFO  time: compiled scala-training in 13ms
+2020.10.22 18:42:51 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 41.592s)
+2020.10.22 18:42:51 INFO  compiling scala-training (20 scala sources)2020.10.22 18:42:51 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:42:51 INFO  time: compiled scala-training in 66ms
+2020.10.22 18:42:51 INFO  time: compiled scala-training in 66ms
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:80:13: stale bloop error: ')' expected but '.' found.
+          uI.map(_.phone).getOrElse()
+            ^
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:82:9: stale bloop error: ';' expected but ')' found.
+        )
+        ^
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:101:1: stale bloop error: Missing closing brace `}' assumed here
+}
+^
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:80:13: stale bloop error: ')' expected but '.' found.
+          uI.map(_.phone).getOrElse()
+            ^
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:82:9: stale bloop error: ';' expected but ')' found.
+        )
+        ^
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:101:1: stale bloop error: Missing closing brace `}' assumed here
+}
+^
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:80:13: stale bloop error: ')' expected but '.' found.
+          uI.map(_.phone).getOrElse()
+            ^
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:82:9: stale bloop error: ';' expected but ')' found.
+        )
+        ^
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:101:1: stale bloop error: Missing closing brace `}' assumed here
+}
+^
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:80:13: stale bloop error: ')' expected but '.' found.
+          uI.map(_.phone).getOrElse()
+            ^
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:82:9: stale bloop error: ';' expected but ')' found.
+        )
+        ^
+2020.10.22 18:42:52 INFO  /Users/jun.honda/project/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala:101:1: stale bloop error: Missing closing brace `}' assumed here
+}
+^
+2020.10.22 18:42:53 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 41.69s)
+2020.10.22 18:42:53 INFO  compiling scala-training (20 scala sources)2020.10.22 18:42:53 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:42:53 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:42:53 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:42:55 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 35m 44.004s)
+2020.10.22 18:42:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:55 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:55 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:42:55 INFO  time: compiled scala-training in 72ms
+2020.10.22 18:42:59 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 49.391s)
+2020.10.22 18:42:59 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:59 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:42:59 INFO  time: compiled scala-training in 71ms
+2020.10.22 18:42:59 INFO  time: compiled scala-training in 71ms
+10 22, 2020 6:43:03 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 66
+2020.10.22 18:43:03 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 35m 53.6s)
+2020.10.22 18:43:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:43:03 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:43:03 INFO  time: compiled scala-training in 0.24s
+2020.10.22 18:43:03 INFO  time: compiled scala-training in 0.24s
+2020.10.22 18:43:25 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 36m 15.664s)
+2020.10.22 18:43:25 INFO  compiling scala-training (20 scala sources)2020.10.22 18:43:25 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:43:25 INFO  time: compiled scala-training in 0.2s
+2020.10.22 18:43:25 INFO  time: compiled scala-training in 0.2s
+2020.10.22 18:43:25 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 36m 16.159s)
+2020.10.22 18:43:25 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:43:25 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:43:25 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:43:25 INFO  time: compiled scala-training in 19ms
+2020.10.22 18:43:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 36m 15.428s)
+2020.10.22 18:43:26 INFO  compiling scala-training (20 scala sources)2020.10.22 18:43:26 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:43:26 INFO  time: compiled scala-training in 21ms2020.10.22 18:43:26 INFO  time: compiled scala-training in 21ms
+
+2020.10.22 18:43:29 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 36m 17.67s)
+2020.10.22 18:43:29 INFO  compiling scala-training (20 scala sources)2020.10.22 18:43:29 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:43:29 INFO  time: compiled scala-training in 0.19s
+2020.10.22 18:43:29 INFO  time: compiled scala-training in 0.19s
+2020.10.22 18:43:31 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 36m 21.457s)
+2020.10.22 18:43:31 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:43:31 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:43:31 INFO  time: compiled scala-training in 94ms
+2020.10.22 18:43:31 INFO  time: compiled scala-training in 94ms
+2020.10.22 18:43:46 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 36m 36.02s)
+2020.10.22 18:43:46 INFO  compiling scala-training (20 scala sources)2020.10.22 18:43:46 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:43:46 INFO  time: compiled scala-training in 0.21s
+2020.10.22 18:43:46 INFO  time: compiled scala-training in 0.21s
+2020.10.22 18:44:15 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 37m 5.849s)
+2020.10.22 18:44:15 INFO  compiling scala-training (20 scala sources)2020.10.22 18:44:15 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:44:15 INFO  time: compiled scala-training in 74ms
+2020.10.22 18:44:15 INFO  time: compiled scala-training in 74ms
+2020.10.22 18:44:20 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 37m 10.3s)
+2020.10.22 18:44:20 INFO  compiling scala-training (20 scala sources)2020.10.22 18:44:20 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:44:20 INFO  time: compiled scala-training in 0.17s
+2020.10.22 18:44:20 INFO  time: compiled scala-training in 0.17s
+2020.10.22 18:44:23 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 37m 13.265s)
+2020.10.22 18:44:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:23 INFO  time: compiled scala-training in 0.18s
+2020.10.22 18:44:23 INFO  time: compiled scala-training in 0.18s
+2020.10.22 18:44:23 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 37m 12.74s)
+2020.10.22 18:44:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:23 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:23 INFO  time: compiled scala-training in 0.11s
+2020.10.22 18:44:23 INFO  time: compiled scala-training in 0.11s
+2020.10.22 18:44:25 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 37m 13.731s)
+2020.10.22 18:44:25 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:25 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:25 INFO  time: compiled scala-training in 0.12s
+2020.10.22 18:44:25 INFO  time: compiled scala-training in 0.12s
+2020.10.22 18:44:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 37m 14.737s)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:26 INFO  time: compiled scala-training in 0.12s
+2020.10.22 18:44:26 INFO  time: compiled scala-training in 0.12s
+2020.10.22 18:44:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 37m 16.328s)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:26 INFO  time: compiled scala-training in 0.14s
+2020.10.22 18:44:26 INFO  time: compiled scala-training in 0.14s
+2020.10.22 18:44:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 37m 16.519s)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:26 INFO  time: compiled scala-training in 0.12s
+2020.10.22 18:44:26 INFO  time: compiled scala-training in 0.12s
+2020.10.22 18:44:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 37m 16.657s)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:26 INFO  time: compiled scala-training in 0.12s2020.10.22 18:44:26 INFO  time: compiled scala-training in 0.12s
+
+2020.10.22 18:44:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 37m 16.836s)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:26 INFO  time: compiled scala-training in 0.11s
+2020.10.22 18:44:26 INFO  time: compiled scala-training in 0.11s
+2020.10.22 18:44:26 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 37m 15.718s)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:26 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:27 INFO  time: compiled scala-training in 0.11s
+2020.10.22 18:44:27 INFO  time: compiled scala-training in 0.11s
+2020.10.22 18:44:28 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 37m 17.157s)
+2020.10.22 18:44:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:28 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:28 INFO  time: compiled scala-training in 0.18s
+2020.10.22 18:44:28 INFO  time: compiled scala-training in 0.18s
+2020.10.22 18:44:30 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 37m 20.548s)
+2020.10.22 18:44:30 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:30 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:30 INFO  time: compiled scala-training in 0.17s
+2020.10.22 18:44:30 INFO  time: compiled scala-training in 0.17s
+2020.10.22 18:44:30 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:31 INFO  time: compiled scala-training in 0.17s
+2020.10.22 18:44:31 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:31 INFO  time: compiled scala-training in 0.1s
+2020.10.22 18:44:34 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 37m 23.398s)
+2020.10.22 18:44:34 INFO  compiling scala-training (20 scala sources)2020.10.22 18:44:34 INFO  compiling scala-training (20 scala sources)
+
+2020.10.22 18:44:34 INFO  time: compiled scala-training in 0.2s
+2020.10.22 18:44:34 INFO  time: compiled scala-training in 0.2s
+2020.10.22 18:44:34 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 37m 23.616s)
+2020.10.22 18:44:34 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:34 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:34 INFO  time: compiled scala-training in 0.11s
+2020.10.22 18:44:34 INFO  time: compiled scala-training in 0.11s
+2020.10.22 18:44:34 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 37m 23.892s)
+2020.10.22 18:44:34 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:34 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:34 INFO  time: compiled scala-training in 0.12s
+2020.10.22 18:44:34 INFO  time: compiled scala-training in 0.12s
+10 22, 2020 6:44:36 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 83
+2020.10.22 18:44:37 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 37m 26.132s)
+2020.10.22 18:44:37 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:37 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:37 INFO  time: compiled scala-training in 0.19s2020.10.22 18:44:37 INFO  time: compiled scala-training in 0.19s
+
+2020.10.22 18:44:37 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 37m 26.334s)
+2020.10.22 18:44:37 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:37 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:37 INFO  time: compiled scala-training in 0.15s
+2020.10.22 18:44:37 INFO  time: compiled scala-training in 0.15s
+2020.10.22 18:44:38 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.0' (since 8h 37m 27.205s)
+2020.10.22 18:44:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:38 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:38 INFO  time: compiled scala-training in 0.11s
+2020.10.22 18:44:38 INFO  time: compiled scala-training in 0.11s
+2020.10.22 18:44:41 INFO  Deduplicating compilation of scala-training from bsp client 'Metals 0.9.4' (since 8h 37m 31.168s)
+2020.10.22 18:44:41 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:41 INFO  compiling scala-training (20 scala sources)
+2020.10.22 18:44:41 INFO  time: compiled scala-training in 0.15s
+2020.10.22 18:44:41 INFO  time: compiled scala-training in 0.15s

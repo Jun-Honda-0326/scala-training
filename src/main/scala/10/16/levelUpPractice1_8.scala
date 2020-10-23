@@ -42,11 +42,11 @@ object  MainPractice1_8 {
 //を標準出力させるメソッドquestion1を作成してください
 
   def question1(numOpt: Option[Int]):Unit  = {
-    numOpt  match{
-      case Some(i) if(i > 10) => println("A")
-      case Some(i) if(5 < i && i < 9) => println("B")
-      case Some(i) if(i < 4) => println("C")
-      case _ => println("D")
+    numOpt.getOrElse(0)  match{
+      case 0 => println("D")
+      case i if(i > 10) => println("A")
+      case i if(i < 4) => println("C")
+      case _ => println("B")
     }
   }
 
@@ -96,7 +96,7 @@ object  MainPractice1_8 {
 //最大値が複数存在する場合は、そのうちいずれかが返却されているようになっていれば問題ない
 
   def question7(nums:Seq[Int]):Int ={
-    nums.indexWhere(i => i == (nums.max))
+    nums.indexOf(nums.max)
   }
 
 //問題8

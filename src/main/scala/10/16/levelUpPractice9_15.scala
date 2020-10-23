@@ -60,14 +60,13 @@ case class ArticleDetail(articleId: Long, category: String)
   def question9(
     articles:         Seq[Article],
     articleDetails:Seq[ArticleDetail]
-    ): Seq[(Article, ArticleDetail )] = {
-      for{ 
-        a  <- articles
-        d  <- articleDetails
-      } yield (a, d)
-  }
-
-
+    ): Seq[(Article, Option[ArticleDetail])] = {
+      articles.map {a =>
+        val aD = articleDetails.find(_.articleId == a.id)
+        (a, aD)
+      }
+    }
+        
 ////問題10
 ////Scalaには集合を表すSetというクラスがあります。
 ////set1: Set[Int], set2: Set[Int] を引数として受け取り、set1, set2の差集合と和集合を標準出力するquestion10を作成してください
@@ -98,13 +97,10 @@ case class Person(id: Long, name: String, gender: Option[String])
 //Noneであれば "なし" と標準出力させるquestion13を作成してください
   
   def question13(fOps: Future[Option[String]]):Future[Unit] = {
-    Future{
-      fOps.onComplete{
-        case Success(Some(i)) => println(i)
-        case Success(None)    => println("なし")
-        case Failure(e)       => println(e.getMessage)
+      fOps.value.get.onSuccess{
+        case Some(i) => println(i)
+        case None    => println("なし")
       }
-    }
   }
 
 //問14

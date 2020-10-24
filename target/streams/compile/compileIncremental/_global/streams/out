@@ -1,7 +1,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m[0J
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 85 products, 20 sources, 1 libraries[0m[0J
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/10/15/Oct15th_2.scala, ${BASE}/src/main/scala/10/12/Oct12th_2.scala, ${BASE}/src/main/scala/10/12/Oct12th_3.scala, ${BASE}/src/main/scala/10/15/Oct15th.scala, ${BASE}/src/main/scala/10/19/levelUpPractice16_17.scala, ${BASE}/src/main/scala/10/14/Oct14th.scala, ${BASE}/src/main/scala/09/28/Sep28th.scala, ${BASE}/src/main/scala/10/05/Oct05th.scala, ${BASE}/src/main/scala/10/01/Oct01th.scala, ${BASE}/src/main/scala/10/13/Oct13th.scala, ${BASE}/src/main/scala/10/16/levelUpPractice9_15.scala, ${BASE}/src/main/scala/10/06/Oct06th.scala, ${BASE}/src/main/scala/10/19/levelUpPractice18_20.scala, ${BASE}/src/main/scala/10/09/Oct09th.scala, ${BASE}/src/main/scala/10/13/Oct13th_2.scala, ${BASE}/src/main/scala/10/16/levelUpPractice1_8.scala, ${BASE}/src/main/scala/10/12/Oct12th.scala, ${BASE}/src/main/scala/10/19/implicitTest.scala, ${BASE}/src/main/scala/10/05/Oct05th_2.scala, ${BASE}/src/main/scala/09/25/Sep25th.scala)[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 89 products, 21 sources, 1 libraries[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/10/15/Oct15th_2.scala, ${BASE}/src/main/scala/10/12/Oct12th_2.scala, ${BASE}/src/main/scala/10/12/Oct12th_3.scala, ${BASE}/src/main/scala/10/15/Oct15th.scala, ${BASE}/src/main/scala/10/19/levelUpPractice16_17.scala, ${BASE}/src/main/scala/10/14/Oct14th.scala, ${BASE}/src/main/scala/09/28/Sep28th.scala, ${BASE}/src/main/scala/10/05/Oct05th.scala, ${BASE}/src/main/scala/10/01/Oct01th.scala, ${BASE}/src/main/scala/10/13/Oct13th.scala, ${BASE}/src/main/scala/10/16/levelUpPractice9_15.scala, ${BASE}/src/main/scala/10/06/Oct06th.scala, ${BASE}/src/main/scala/10/19/levelUpPractice18_20.scala, ${BASE}/src/main/scala/10/09/Oct09th.scala, ${BASE}/src/main/scala/10/13/Oct13th_2.scala, ${BASE}/src/main/scala/10/16/levelUpPractice1_8.scala, ${BASE}/src/main/scala/10/12/Oct12th.scala, ${BASE}/src/main/scala/10/19/implicitTest.scala, ${BASE}/src/main/scala/10/05/Oct05th_2.scala, ${BASE}/src/main/scala/09/25/Sep25th.scala, ${BASE}/src/main/scala/10/24/futurePractice.scala)[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/10/16/levelUpPractice9_15.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m[0J
@@ -20,14 +20,14 @@
 [0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/10/16/levelUpPractice9_15.scala)[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: MainPractice9_15.Article, MainPractice9_15.ArticleDetail, MainPractice9_15, MainPractice9_15.Person[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m[0J
-[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/jun.honda/project/Scala/scala-training/target/scala-2.13/classes ...[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/jun/projects/Scala/scala-training/target/scala-2.13/classes ...[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.4.0:compile for Scala 2.13.3[0m[0J
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 3206b6ac for Scala compiler version 2.13.3[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 5481c473 for Scala compiler version 2.13.3[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m[0J
-[0m[[0m[0mdebug[0m] [0m[0m	/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/classes:/Users/jun.honda/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/jun/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m[0J
-[0m[[0m[0mdebug[0m] [0m[0m	/Users/jun.honda/project/Scala/scala-training/target/scala-2.13/classes[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/jun/projects/Scala/scala-training/target/scala-2.13/classes[0m[0J
 [0m[[0m[0mdebug[0m] [0m[0mCompilation failed (CompilerInterface)[0m[0J
 [0m[[0m[31merror[0m] [0m[0mCompilation failed[0m[0J
 [0m[[0m[31merror[0m] [0m[0m	at xsbt.CachedCompiler0.handleErrors(CompilerBridge.scala:183)[0m[0J
@@ -76,10 +76,10 @@
 [0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m[0J
 [0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m[0J
 [0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m[0J
-[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m[0J
-[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m[0J
-[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m[0J
-[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m[0J
-[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m[0J
-[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:748)[0m[0J
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m[0J
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m[0J
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m[0J
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)[0m[0J
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)[0m[0J
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:832)[0m[0J
 [0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m[0J

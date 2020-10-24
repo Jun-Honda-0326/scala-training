@@ -30,3 +30,7 @@ select * from chosen_build_tool LIMIT 1; [42102-200]
 org.h2.jdbc.JdbcSQLSyntaxErrorException: テーブル "CHOSEN_BUILD_TOOL" が見つかりません
 Table "CHOSEN_BUILD_TOOL" not found; SQL statement:
 select * from chosen_build_tool LIMIT 1; [42102-200]
+2020-10-24 12:54:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: テーブル "DEPENDENCY_SOURCE" が見つかりません
+Table "DEPENDENCY_SOURCE" not found; SQL statement:
+select build_target_uri from dependency_source where text_document_uri = ?; [42102-200]

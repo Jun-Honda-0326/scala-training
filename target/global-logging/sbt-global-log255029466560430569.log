@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(++2.13.3!, Some(5201250a-9805-4d9f-bd1c-77f562794b3a), Some(CommandSource(console0)))[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mForcing Scala version to 2.13.3 on all projects.[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mSwitching Scala version on:[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m  * scala-training (2.13.3)[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mExcluding projects:[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mset current project to scala-training (in build file:/Users/jun/projects/Scala/scala-training/)[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m[0J

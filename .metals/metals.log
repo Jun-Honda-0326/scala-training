@@ -40840,3 +40840,2004 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 2020.10.23 18:55:07 WARN  no build target for: /Users/jun.honda/project/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
 2020.10.23 18:55:13 WARN  no build target for: /Users/jun.honda/project/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
 2020.10.23 18:55:13 WARN  no build target for: /Users/jun.honda/project/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.23 22:07:16 INFO  started: Metals version 0.9.0 in workspace '/Users/jun/projects/Scala/scala-training'
+2020.10.23 22:07:17 INFO  time: initialize in 1.33s
+2020.10.23 22:07:23 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+10 23, 2020 10:07:23 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "initialized",
+  "params": {}
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:273)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.supportedBuildTool(MetalsLanguageServer.scala:1408)
+	at scala.meta.internal.metals.MetalsLanguageServer.slowConnectToBuildServer(MetalsLanguageServer.scala:1429)
+	at scala.meta.internal.metals.MetalsLanguageServer.initialized(MetalsLanguageServer.scala:648)
+	... 16 more
+
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher2252660184503314756/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.23 22:07:23 INFO  no build target: using presentation compiler with only scala-library
+error: The command bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher2252660184503314756/bsp.socket returned with an error
+> 
+error: Trying a tcp-based connection to the server instead...
+Opening a bsp server connection with 'bsp --protocol tcp --port 36327'...
+Waiting for the bsp connection to come up...
+error: The command bsp --protocol tcp --port 36327 returned with an error
+> 
+error: The launcher failed to establish a bsp connection, aborting...
+2020.10.23 22:07:24 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:95)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:122)
+	at scala.meta.internal.metals.BloopServers$$anon$1.run(BloopServers.scala:107)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.23 22:07:27 INFO  started: Metals version 0.9.4 in workspace '/Users/jun/projects/Scala/scala-training' .
+2020.10.23 22:07:29 INFO  time: initialize in 1.46s
+2020.10.23 22:07:30 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher6495990104822528244/bsp.socket'...
+Waiting for the bsp connection to come up...
+error: The command bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher6495990104822528244/bsp.socket returned with an error
+> [0m[32m[D][0m Loading workspace settings from bloop.settings.json
+> [0m[32m[D][0m Loading 2 projects from '/Users/jun/projects/Scala/scala-training/.bloop'...
+> [0m[32m[D][0m Loading project from '/Users/jun/projects/Scala/scala-training/.bloop/scala-training.json'
+> [0m[32m[D][0m Loading project from '/Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json'
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+> [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.10.
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist![0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar
+> 
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+> [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.10.
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar
+> [0m[32m[D][0m Elapsed: 37.024757 ms
+> [0m[31m[E][0m Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+> [0m[36m[T][0m bloop.data.Project$ProjectReadException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+> [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:216)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:237)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:57)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+> [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+> [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+> [0m[36m[T][0m Caused by: java.nio.file.NoSuchFileException: /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+> [0m[36m[T][0m 	sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+> [0m[36m[T][0m 	sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+> [0m[36m[T][0m 	java.nio.file.Files.readAttributes(Files.java:1737)
+> [0m[36m[T][0m 	bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:79)
+> [0m[36m[T][0m 	scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+> [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+> [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+> [0m[36m[T][0m 	scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+> [0m[36m[T][0m 	scala.collection.TraversableLike.map(TraversableLike.scala:273)
+> [0m[36m[T][0m 	scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+> [0m[36m[T][0m 	scala.collection.AbstractTraversable.map(Traversable.scala:108)
+> [0m[36m[T][0m 	bloop.ScalaInstance.<init>(ScalaInstance.scala:75)
+> [0m[36m[T][0m 	bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:144)
+> [0m[36m[T][0m 	bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:149)
+> [0m[36m[T][0m 	java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+> [0m[36m[T][0m 	bloop.ScalaInstance$.apply(ScalaInstance.scala:149)
+> [0m[36m[T][0m 	bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:233)
+> [0m[36m[T][0m 	scala.Option.flatMap(Option.scala:271)
+> [0m[36m[T][0m 	bloop.data.Project$.fromConfig(Project.scala:228)
+> [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:210)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:237)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:57)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+> [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+> [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+error: Trying a tcp-based connection to the server instead...
+Opening a bsp server connection with 'bsp --protocol tcp --port 18938'...
+Waiting for the bsp connection to come up...
+error: The command bsp --protocol tcp --port 18938 returned with an error
+> [0m[32m[D][0m Loading workspace settings from bloop.settings.json
+> [0m[32m[D][0m Loading 2 projects from '/Users/jun/projects/Scala/scala-training/.bloop'...
+> [0m[32m[D][0m Loading project from '/Users/jun/projects/Scala/scala-training/.bloop/scala-training.json'
+> [0m[32m[D][0m Loading project from '/Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json'
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist![0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.10.
+> 
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar
+> [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.10.
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar
+> [0m[32m[D][0m Elapsed: 41.828531 ms
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar
+> [0m[31m[E][0m Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+> [0m[36m[T][0m bloop.data.Project$ProjectReadException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+> [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:216)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:237)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:57)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+> [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+> [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+> [0m[36m[T][0m Caused by: java.nio.file.NoSuchFileException: /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+> [0m[36m[T][0m 	sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+> [0m[36m[T][0m 	sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+> [0m[36m[T][0m 	java.nio.file.Files.readAttributes(Files.java:1737)
+> [0m[36m[T][0m 	bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:79)
+> [0m[36m[T][0m 	scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+> [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+> [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+> [0m[36m[T][0m 	scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+> [0m[36m[T][0m 	scala.collection.TraversableLike.map(TraversableLike.scala:273)
+> [0m[36m[T][0m 	scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+> [0m[36m[T][0m 	scala.collection.AbstractTraversable.map(Traversable.scala:108)
+> [0m[36m[T][0m 	bloop.ScalaInstance.<init>(ScalaInstance.scala:75)
+> [0m[36m[T][0m 	bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:144)
+> [0m[36m[T][0m 	bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:149)
+> [0m[36m[T][0m 	java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+> [0m[36m[T][0m 	bloop.ScalaInstance$.apply(ScalaInstance.scala:149)
+> [0m[36m[T][0m 	bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:233)
+> [0m[36m[T][0m 	scala.Option.flatMap(Option.scala:271)
+> [0m[36m[T][0m 	bloop.data.Project$.fromConfig(Project.scala:228)
+> [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:210)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:237)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:57)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+> [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+> [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+error: The launcher failed to establish a bsp connection, aborting...
+2020.10.23 22:07:31 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:95)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:122)
+	at scala.meta.internal.metals.BloopServers$$anon$1.run(BloopServers.scala:111)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.23 22:07:31 ERROR Unexpected error initializing server
+java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:285)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:285)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:278)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.isCompatibleVersion$1(MetalsLanguageServer.scala:1574)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$supportedBuildTool$3(MetalsLanguageServer.scala:1594)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.23 22:07:32 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.23 22:07:32 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice1_8.scala
+2020.10.23 22:07:35 INFO  no build target: using presentation compiler with only scala-library
+2020.10.23 22:07:35 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.23 22:07:35 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice1_8.scala
+2020.10.23 22:09:25 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.23 22:09:25 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.23 22:09:40 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.23 22:09:41 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.23 23:26:50 INFO  started: Metals version 0.9.0 in workspace '/Users/jun/projects/Scala/scala-training'
+2020.10.23 23:26:51 INFO  time: initialize in 0.66s
+2020.10.23 23:26:52 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+10 23, 2020 11:26:53 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "initialized",
+  "params": {}
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:273)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.supportedBuildTool(MetalsLanguageServer.scala:1408)
+	at scala.meta.internal.metals.MetalsLanguageServer.slowConnectToBuildServer(MetalsLanguageServer.scala:1429)
+	at scala.meta.internal.metals.MetalsLanguageServer.initialized(MetalsLanguageServer.scala:648)
+	... 16 more
+
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher3923071891613548491/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.23 23:26:53 INFO  no build target: using presentation compiler with only scala-library
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+2020.10.23 23:26:57 INFO  started: Metals version 0.9.4 in workspace '/Users/jun/projects/Scala/scala-training' .
+2020.10.23 23:26:57 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+Waiting for the bsp connection to come up...
+2020.10.23 23:26:58 INFO  time: initialize in 0.94s
+2020.10.23 23:26:59 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher4816901049217008065/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+error: The command bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher4816901049217008065/bsp.socket returned with an error
+> [0m[32m[D][0m Loading workspace settings from bloop.settings.json
+> [0m[32m[D][0m Loading 2 projects from '/Users/jun/projects/Scala/scala-training/.bloop'...
+> [0m[32m[D][0m Loading project from '/Users/jun/projects/Scala/scala-training/.bloop/scala-training.json'
+> [0m[32m[D][0m Loading project from '/Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json'
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+> [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.10.
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar
+> [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.10.
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar
+> bloop.data.Project$ProjectReadException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json
+> 	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:216)
+> 	at bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:237)
+> 	at bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:57)
+> 	at monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+> 	at monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+> 	at monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+> 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+> 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+> 	at java.lang.Thread.run(Thread.java:748)
+> Caused by: java.nio.file.NoSuchFileException: /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> 	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+> 	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+> 	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+> 	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+> 	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+> 	at java.nio.file.Files.readAttributes(Files.java:1737)
+> 	at bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:79)
+> 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+> 	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+> 	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+> 	at scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+> 	at scala.collection.TraversableLike.map(TraversableLike.scala:273)
+> 	at scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+> 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+> 	at bloop.ScalaInstance.<init>(ScalaInstance.scala:75)
+> 	at bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:144)
+> 	at bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:149)
+> 	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+> 	at bloop.ScalaInstance$.apply(ScalaInstance.scala:149)
+> 	at bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:233)
+> 	at scala.Option.flatMap(Option.scala:271)
+> 	at bloop.data.Project$.fromConfig(Project.scala:228)
+> 	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:210)
+> 	... 8 more
+> bloop.data.Project$ProjectReadException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json
+> 	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:216)
+> 	at bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:237)
+> 	at bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:57)
+> 	at monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+> 	at monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+> 	at monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+> 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+> 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+> 	at java.lang.Thread.run(Thread.java:748)
+> Caused by: java.nio.file.NoSuchFileException: /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> 	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+> 	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+> 	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+> 	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+> 	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+> 	at java.nio.file.Files.readAttributes(Files.java:1737)
+> 	at bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:79)
+> 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+> 	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+> 	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+> 	at scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+> 	at scala.collection.TraversableLike.map(TraversableLike.scala:273)
+> 	at scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+> 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+> 	at bloop.ScalaInstance.<init>(ScalaInstance.scala:75)
+> 	at bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:144)
+> 	at bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:149)
+> 	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+> 	at bloop.ScalaInstance$.apply(ScalaInstance.scala:149)
+> 	at bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:233)
+> 	at scala.Option.flatMap(Option.scala:271)
+> 	at bloop.data.Project$.fromConfig(Project.scala:228)
+> 	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:210)
+> 	... 8 more
+> [0m[32m[D][0m Elapsed: 544.351093 ms
+> [0m[31m[E][0m Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+> [0m[36m[T][0m bloop.data.Project$ProjectReadException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+> [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:216)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:237)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:57)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+> [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+> [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+> [0m[36m[T][0m Caused by: java.nio.file.NoSuchFileException: /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+> [0m[36m[T][0m 	sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+> [0m[36m[T][0m 	sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+> [0m[36m[T][0m 	java.nio.file.Files.readAttributes(Files.java:1737)
+> [0m[36m[T][0m 	bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:79)
+> [0m[36m[T][0m 	scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+> [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+> [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+> [0m[36m[T][0m 	scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+> [0m[36m[T][0m 	scala.collection.TraversableLike.map(TraversableLike.scala:273)
+> [0m[36m[T][0m 	scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+> [0m[36m[T][0m 	scala.collection.AbstractTraversable.map(Traversable.scala:108)
+> [0m[36m[T][0m 	bloop.ScalaInstance.<init>(ScalaInstance.scala:75)
+> [0m[36m[T][0m 	bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:144)
+> [0m[36m[T][0m 	bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:149)
+> [0m[36m[T][0m 	java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+> [0m[36m[T][0m 	bloop.ScalaInstance$.apply(ScalaInstance.scala:149)
+> [0m[36m[T][0m 	bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:233)
+> [0m[36m[T][0m 	scala.Option.flatMap(Option.scala:271)
+> [0m[36m[T][0m 	bloop.data.Project$.fromConfig(Project.scala:228)
+> [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:210)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:237)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:57)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+> [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+> [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+error: Trying a tcp-based connection to the server instead...
+Opening a bsp server connection with 'bsp --protocol tcp --port 18815'...
+Waiting for the bsp connection to come up...
+error: The command bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher3923071891613548491/bsp.socket returned with an error
+> 
+error: Trying a tcp-based connection to the server instead...
+Opening a bsp server connection with 'bsp --protocol tcp --port 40139'...
+Waiting for the bsp connection to come up...
+error: The command bsp --protocol tcp --port 18815 returned with an error
+> [0m[32m[D][0m Loading workspace settings from bloop.settings.json
+> [0m[32m[D][0m Loading 2 projects from '/Users/jun/projects/Scala/scala-training/.bloop'...
+> [0m[32m[D][0m Loading project from '/Users/jun/projects/Scala/scala-training/.bloop/scala-training.json'
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+> [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.10.
+> [0m[32m[D][0m Loading project from '/Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json'
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar
+> [0m[32m[D][0m Elapsed: 6.131033 ms
+> [0m[31m[E][0m Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+> [0m[36m[T][0m bloop.data.Project$ProjectReadException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+> [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:216)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:237)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:57)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+> [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+> [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+> [0m[36m[T][0m Caused by: java.nio.file.NoSuchFileException: /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+> [0m[36m[T][0m 	sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+> [0m[36m[T][0m 	sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)[0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+> 
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist![0m[36m[T][0m 	sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+> 
+> [0m[36m[T][0m 	java.nio.file.Files.readAttributes(Files.java:1737)
+> [0m[36m[T][0m 	bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:79)
+> [0m[33m[W][0m Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist![0m[36m[T][0m 	scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+> 
+> [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+> [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+> [0m[36m[T][0m 	scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+> [0m[36m[T][0m 	scala.collection.TraversableLike.map(TraversableLike.scala:273)
+> [0m[36m[T][0m 	scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+> [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.10.
+> [0m[36m[T][0m 	scala.collection.AbstractTraversable.map(Traversable.scala:108)
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar
+> [0m[36m[T][0m 	bloop.ScalaInstance.<init>(ScalaInstance.scala:75)
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar
+> [0m[36m[T][0m 	bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:144)
+> [0m[36m[T][0m 	bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:149)
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar
+> [0m[36m[T][0m 	java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar
+> [0m[36m[T][0m 	bloop.ScalaInstance$.apply(ScalaInstance.scala:149)
+> [0m[36m[T][0m 	bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:233)
+> [0m[32m[D][0m   => /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar
+> [0m[36m[T][0m 	scala.Option.flatMap(Option.scala:271)
+> [0m[36m[T][0m 	bloop.data.Project$.fromConfig(Project.scala:228)
+> [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:210)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:237)
+> [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:57)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+> [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+> [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+> [0m[36m[T][0m 	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+> [0m[36m[T][0m 	java.lang.Thread.run(Thread.java:748)
+error: The launcher failed to establish a bsp connection, aborting...
+2020.10.23 23:27:00 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:95)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:122)
+	at scala.meta.internal.metals.BloopServers$$anon$1.run(BloopServers.scala:111)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.23 23:27:00 ERROR Unexpected error initializing server
+java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:285)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:285)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:278)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.isCompatibleVersion$1(MetalsLanguageServer.scala:1574)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$supportedBuildTool$3(MetalsLanguageServer.scala:1594)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+error: The command bsp --protocol tcp --port 40139 returned with an error
+> 
+error: The launcher failed to establish a bsp connection, aborting...
+2020.10.23 23:27:00 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:95)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:122)
+	at scala.meta.internal.metals.BloopServers$$anon$1.run(BloopServers.scala:107)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.23 23:27:02 INFO  no build target: using presentation compiler with only scala-library
+2020.10.23 23:27:02 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.23 23:28:12 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.23 23:28:12 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 10:33:28 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 10:33:28 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@2e5809a2 rejected from java.util.concurrent.ThreadPoolExecutor@209fe219[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 138]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020.10.24 10:38:13 INFO  started: Metals version 0.9.0 in workspace '/Users/jun/projects/Scala/scala-training'
+2020.10.24 10:38:13 INFO  time: initialize in 0.6s
+2020.10.24 10:38:14 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher2868231704906167591/bsp.socket'...
+Waiting for the bsp connection to come up...
+10 24, 2020 10:38:15 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "initialized",
+  "params": {}
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:273)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.supportedBuildTool(MetalsLanguageServer.scala:1408)
+	at scala.meta.internal.metals.MetalsLanguageServer.slowConnectToBuildServer(MetalsLanguageServer.scala:1429)
+	at scala.meta.internal.metals.MetalsLanguageServer.initialized(MetalsLanguageServer.scala:648)
+	... 16 more
+
+2020.10.24 10:38:14 INFO  no build target: using presentation compiler with only scala-library
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+2020.10.24 10:38:20 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 10:38:20 INFO  started: Metals version 0.9.4 in workspace '/Users/jun/projects/Scala/scala-training' .
+Waiting for the bsp connection to come up...
+2020.10.24 10:38:21 INFO  time: initialize in 1.03s
+2020.10.24 10:38:22 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher9070857639116600320/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.0-RC1-229-b7c15aa9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher2868231704906167591/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher2868231704906167591/bsp.socket...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher9070857639116600320/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher9070857639116600320/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.24 10:38:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.24 10:38:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 10:38:25 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 10:38:25 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:317)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:252)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 10:38:25 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:304)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:246)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 10:38:24 ERROR Unexpected error initializing server
+java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:285)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:285)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:278)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.isCompatibleVersion$1(MetalsLanguageServer.scala:1574)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$supportedBuildTool$3(MetalsLanguageServer.scala:1594)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 10:38:25 INFO  no build target: using presentation compiler with only scala-library
+2020.10.24 10:38:25 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 12:16:11 INFO  started: Metals version 0.9.0 in workspace '/Users/jun/projects/Scala/scala-training'
+2020.10.24 12:16:11 INFO  time: initialize in 0.57s
+2020.10.24 12:16:13 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher6578817545665842604/bsp.socket'...
+Waiting for the bsp connection to come up...
+10 24, 2020 12:16:14 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "initialized",
+  "params": {}
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:273)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.supportedBuildTool(MetalsLanguageServer.scala:1408)
+	at scala.meta.internal.metals.MetalsLanguageServer.slowConnectToBuildServer(MetalsLanguageServer.scala:1429)
+	at scala.meta.internal.metals.MetalsLanguageServer.initialized(MetalsLanguageServer.scala:648)
+	... 16 more
+
+2020.10.24 12:16:13 INFO  no build target: using presentation compiler with only scala-library
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+2020.10.24 12:16:18 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:16:18 INFO  started: Metals version 0.9.4 in workspace '/Users/jun/projects/Scala/scala-training' .
+Waiting for the bsp connection to come up...
+2020.10.24 12:16:19 INFO  time: initialize in 1.05s
+Waiting for the bsp connection to come up...
+2020.10.24 12:16:20 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher7522096331514738622/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher7522096331514738622/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher7522096331514738622/bsp.socket...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.0-RC1-229-b7c15aa9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher6578817545665842604/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher6578817545665842604/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.24 12:16:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.24 12:16:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 12:16:22 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:304)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:246)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 12:16:22 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:317)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:252)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 12:16:22 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 12:16:22 ERROR Unexpected error initializing server
+java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:285)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:285)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:278)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.isCompatibleVersion$1(MetalsLanguageServer.scala:1574)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$supportedBuildTool$3(MetalsLanguageServer.scala:1594)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 12:16:24 INFO  no build target: using presentation compiler with only scala-library
+2020.10.24 12:16:24 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+10 24, 2020 12:17:09 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 4
+2020.10.24 12:17:50 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:17:50 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:18:12 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:18:12 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:19:03 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:19:03 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:25:39 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:25:39 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+10 24, 2020 12:26:45 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 12
+2020.10.24 12:26:50 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:26:50 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:27:44 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 12:27:44 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 12:36:55 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 12:36:55 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 12:43:30 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 12:43:30 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 12:44:32 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 12:44:32 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 12:47:22 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 12:47:22 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 12:53:55 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 12:53:55 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 12:53:58 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:53:58 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 12:54:14 INFO  started: Metals version 0.9.0 in workspace '/Users/jun/projects/Scala/scala-training'
+2020.10.24 12:54:15 INFO  time: initialize in 0.69s
+2020.10.24 12:54:16 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher8751833578233865221/bsp.socket'...
+Waiting for the bsp connection to come up...
+10 24, 2020 12:54:16 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "initialized",
+  "params": {}
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:273)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.supportedBuildTool(MetalsLanguageServer.scala:1408)
+	at scala.meta.internal.metals.MetalsLanguageServer.slowConnectToBuildServer(MetalsLanguageServer.scala:1429)
+	at scala.meta.internal.metals.MetalsLanguageServer.initialized(MetalsLanguageServer.scala:648)
+	... 16 more
+
+2020.10.24 12:54:16 INFO  no build target: using presentation compiler with only scala-library
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+2020.10.24 12:54:22 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+Waiting for the bsp connection to come up...
+2020.10.24 12:54:23 INFO  started: Metals version 0.9.4 in workspace '/Users/jun/projects/Scala/scala-training' .
+Waiting for the bsp connection to come up...
+2020.10.24 12:54:24 INFO  time: initialize in 1.32s
+2020.10.24 12:54:25 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+2020.10.24 12:54:25 ERROR Unexpected error releasing buffered job
+org.h2.jdbc.JdbcSQLSyntaxErrorException: テーブル "DEPENDENCY_SOURCE" が見つかりません
+Table "DEPENDENCY_SOURCE" not found; SQL statement:
+select build_target_uri from dependency_source where text_document_uri = ?; [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1970)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2827)
+	at org.h2.command.Parser.parseSelect(Parser.java:2959)
+	at org.h2.command.Parser.parseQuerySub(Parser.java:2817)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2649)
+	at org.h2.command.Parser.parseQuery(Parser.java:2620)
+	at org.h2.command.Parser.parsePrepared(Parser.java:868)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at scala.meta.internal.metals.JdbcEnrichments$XtensionConnection.query(JdbcEnrichments.scala:35)
+	at scala.meta.internal.metals.DependencySources.getBuildTarget(DependencySources.scala:25)
+	at scala.meta.internal.metals.BuildTargets.$anonfun$inverseSources$1(BuildTargets.scala:208)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.BuildTargets.inverseSources(BuildTargets.scala:208)
+	at scala.meta.internal.metals.Compilers.loadCompiler(Compilers.scala:301)
+	at scala.meta.internal.metals.Compilers.didChange(Compilers.scala:176)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTrees$2(MetalsLanguageServer.scala:151)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:273)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+	at scala.collection.immutable.List.map(List.scala:298)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTrees$1(MetalsLanguageServer.scala:151)
+	at scala.meta.internal.metals.BatchedFunction.runRelease(BatchedFunction.scala:91)
+	at scala.meta.internal.metals.BatchedFunction.runAcquire(BatchedFunction.scala:74)
+	at scala.meta.internal.metals.BatchedFunction.apply(BatchedFunction.scala:38)
+	at scala.meta.internal.metals.BatchedFunction.apply(BatchedFunction.scala:42)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:811)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher3287563884203347489/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.0-RC1-229-b7c15aa9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher8751833578233865221/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher8751833578233865221/bsp.socket...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher3287563884203347489/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher3287563884203347489/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.24 12:54:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.24 12:54:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 12:54:27 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 12:54:27 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:304)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:246)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 12:54:27 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:317)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:252)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 12:54:27 ERROR Unexpected error initializing server
+java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:285)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:285)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:278)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.isCompatibleVersion$1(MetalsLanguageServer.scala:1574)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$supportedBuildTool$3(MetalsLanguageServer.scala:1594)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 12:54:30 INFO  no build target: using presentation compiler with only scala-library
+2020.10.24 12:54:30 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+10 24, 2020 12:57:53 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 39
+something's wrong: no file:///Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala in Array[<error>]RangePosition(file:///Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala, 127, 127, 141)
+something's wrong: no file:///Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala in Array[<error>]RangePosition(file:///Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala, 127, 127, 142)
+10 24, 2020 12:58:19 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 50
+something's wrong: no file:///Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala in scala.concurrent.Future[<error>]RangePosition(file:///Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala, 172, 172, 179)
+10 24, 2020 12:59:46 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 77
+10 24, 2020 1:00:29 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 116
+10 24, 2020 1:01:10 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 136
+10 24, 2020 1:01:34 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 152
+10 24, 2020 1:01:56 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 162
+10 24, 2020 1:02:21 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 177
+2020.10.24 13:02:24 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:02:24 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:03:44 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:03:44 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:04:00 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:04:00 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:04:10 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:04:10 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:04:28 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:04:28 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:04:52 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:04:52 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:05:08 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:05:08 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:08:46 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:08:46 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+10 24, 2020 1:10:50 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 193
+10 24, 2020 1:11:38 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 207
+2020.10.24 13:12:07 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:12:07 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:12:18 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:12:18 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:13:42 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:13:42 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:14:16 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:14:16 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:14:26 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:14:26 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:15:04 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:15:04 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:16:11 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:16:11 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+10 24, 2020 1:16:52 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 231
+10 24, 2020 1:17:02 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 271
+10 24, 2020 1:17:15 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 275
+something's wrong: no file:///Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala in scala.concurrent.Future[<error>]RangePosition(file:///Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala, 466, 466, 481)
+10 24, 2020 1:17:28 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 24, 2020 1:17:28 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 24, 2020 1:17:29 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 24, 2020 1:17:29 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 24, 2020 1:17:29 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 24, 2020 1:17:29 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 24, 2020 1:17:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:416)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:53)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:170)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:127)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:81)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:185)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+10 24, 2020 1:17:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 13:17:32 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:17:32 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:17:42 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:17:42 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+10 24, 2020 1:20:39 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 281
+2020.10.24 13:20:47 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:20:47 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:21:01 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:21:01 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:22:03 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:22:03 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:22:05 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:22:05 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:24:19 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:24:19 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+10 24, 2020 1:24:44 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 293
+2020.10.24 13:24:48 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:24:48 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:27:11 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:27:11 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:32:46 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 13:32:46 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 13:34:14 INFO  started: Metals version 0.9.0 in workspace '/Users/jun/projects/Scala/scala-training'
+2020.10.24 13:34:15 INFO  time: initialize in 0.76s
+2020.10.24 13:34:16 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher7145423027941950538/bsp.socket'...
+Waiting for the bsp connection to come up...
+10 24, 2020 1:34:17 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "initialized",
+  "params": {}
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:273)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:273)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:266)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.supportedBuildTool(MetalsLanguageServer.scala:1408)
+	at scala.meta.internal.metals.MetalsLanguageServer.slowConnectToBuildServer(MetalsLanguageServer.scala:1429)
+	at scala.meta.internal.metals.MetalsLanguageServer.initialized(MetalsLanguageServer.scala:648)
+	... 16 more
+
+2020.10.24 13:34:17 INFO  no build target: using presentation compiler with only scala-library
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+2020.10.24 13:34:22 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:34:22 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+Waiting for the bsp connection to come up...
+2020.10.24 13:34:22 INFO  started: Metals version 0.9.4 in workspace '/Users/jun/projects/Scala/scala-training' .
+Waiting for the bsp connection to come up...
+2020.10.24 13:34:23 INFO  time: initialize in 1.11s
+2020.10.24 13:34:23 WARN  resetting database: /Users/jun/projects/Scala/scala-training/.metals/metals.h2.db
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher3482264163562058012/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.0-RC1-229-b7c15aa9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher7145423027941950538/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher7145423027941950538/bsp.socket...
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher3482264163562058012/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/bf/xxjll1lx4_xbf7h0wbtyytd00000gn/T/bsp-launcher3482264163562058012/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.24 13:34:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.24 13:34:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jun/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-library.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 13:34:26 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:317)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:252)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training-test.json
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 13:34:26 ERROR Unexpected error initializing server
+java.lang.NumberFormatException: For input string: "0 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at scala.collection.immutable.StringLike.toInt(StringLike.scala:304)
+	at scala.collection.immutable.StringLike.toInt$(StringLike.scala:304)
+	at scala.collection.immutable.StringOps.toInt(StringOps.scala:33)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$Version$.$anonfun$fromString$1$adapted(SemVer.scala:18)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:285)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:285)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:278)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:198)
+	at scala.meta.internal.semver.SemVer$Version$.fromString(SemVer.scala:18)
+	at scala.meta.internal.semver.SemVer$.isCompatibleVersion(SemVer.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.isCompatibleVersion$1(MetalsLanguageServer.scala:1574)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$supportedBuildTool$3(MetalsLanguageServer.scala:1594)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jline.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/jansi.jar doesn't exist!
+2020.10.24 13:34:26 WARN  Scala instance jar /Users/jun.honda/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar doesn't exist!
+2020.10.24 13:34:26 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:304)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:246)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Failed to load project from /Users/jun/projects/Scala/scala-training/.bloop/scala-training.json
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.24 13:34:27 INFO  no build target: using presentation compiler with only scala-library
+2020.10.24 13:34:27 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/24/futurePractice.scala
+2020.10.24 13:34:27 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 1:51:04 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 8
+2020.10.24 13:51:08 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 13:51:08 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:41:55 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:41:55 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:53:03 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:53:03 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 2:54:19 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 22
+2020.10.24 14:54:23 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:54:23 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:54:37 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:54:37 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 2:55:48 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 50
+2020.10.24 14:55:54 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:55:54 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 2:56:32 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 60
+10 24, 2020 2:56:41 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 64
+2020.10.24 14:56:44 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:56:44 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:57:41 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:57:41 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:59:51 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 14:59:51 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 3:02:13 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 68
+10 24, 2020 3:02:15 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 85
+2020.10.24 15:02:29 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:02:29 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:02:46 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+2020.10.24 15:02:46 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/19/levelUpPractice16_17.scala
+10 24, 2020 3:03:30 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 88
+2020.10.24 15:03:33 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:03:33 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:03:43 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:03:43 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:04:21 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:04:21 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:05:20 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:05:20 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 3:06:14 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 98
+10 24, 2020 3:06:21 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 111
+2020.10.24 15:06:34 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:06:34 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:06:49 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:06:49 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 3:10:07 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 114
+10 24, 2020 3:10:19 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 119
+10 24, 2020 3:10:34 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 124
+2020.10.24 15:10:43 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:10:43 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:11:02 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:11:02 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 3:13:35 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 139
+10 24, 2020 3:13:41 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 145
+2020.10.24 15:13:44 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:13:44 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:14:01 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:14:01 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:14:53 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:14:53 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:16:13 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:16:13 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 3:22:07 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 149
+10 24, 2020 3:22:17 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 155
+10 24, 2020 3:27:45 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 159
+10 24, 2020 3:28:02 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 168
+2020.10.24 15:30:42 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:30:42 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 3:30:59 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 171
+2020.10.24 15:31:03 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:31:03 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 3:31:31 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 184
+10 24, 2020 3:31:44 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 188
+10 24, 2020 3:32:24 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 191
+10 24, 2020 3:32:43 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 193
+2020.10.24 15:33:02 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 15:33:02 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 4:02:31 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 202
+10 24, 2020 4:02:39 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 223
+10 24, 2020 4:02:46 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 226
+10 24, 2020 4:02:52 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 234
+2020.10.24 16:03:01 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:03:01 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 4:04:40 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 237
+2020.10.24 16:04:51 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:04:51 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:05:42 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:05:42 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:26:31 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:26:31 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 4:28:52 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 240
+10 24, 2020 4:29:15 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 250
+10 24, 2020 4:34:16 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 258
+10 24, 2020 4:34:24 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 260
+10 24, 2020 4:34:32 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 263
+10 24, 2020 4:34:46 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 270
+10 24, 2020 4:35:04 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 274
+2020.10.24 16:35:48 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:35:48 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:36:15 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:36:15 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:37:42 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:37:42 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:40:00 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:40:00 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:42:37 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:42:37 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:43:21 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 16:43:21 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+10 24, 2020 6:54:54 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 281
+2020.10.24 21:52:20 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala
+2020.10.24 21:52:20 WARN  no build target for: /Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala

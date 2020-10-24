@@ -3,7 +3,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import  scala.util._
 import concurrent.duration.Duration
 
-
+ 
 case class User(
   id:    Long,
   name:  String,
@@ -105,12 +105,6 @@ object MainPractice16_17 {
 
       Await.ready(viewUser, Duration.Inf)
   }  
-
-
-
-    
-
-  //}
 }
     
   

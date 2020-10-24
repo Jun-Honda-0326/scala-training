@@ -22,10 +22,9 @@ object MainPractice9_15{
     //問題13の定義
     val fOps1:Future[Option[String]] = Future(Some("おはよう"))
     val fOps2:Future[Option[String]] = Future(None)
-    val fOps3:Future[Option[String]] = Future.failed(new Exception("失敗です"))
     
     //問題14の定義
-    val fEith1:Future[Either[Int, String]] = Future(Right("こんにちは"))
+    val fEith1:Future[Either[Int, String]] = Future(Right("右答え"))
     val fEith2:Future[Either[Int, String]] = Future(Left(100))
 
     //問題15の定義
@@ -41,9 +40,9 @@ object MainPractice9_15{
     println(question11(people))
     println("問題12の解答")
     println(question12(numstr))
+    println("問題13の解答")
     question13(fOps1)
     question13(fOps2)
-    question13(fOps3)
     question14(fEith1)
     question14(fEith2)
     question15(nums1)
@@ -88,8 +87,8 @@ case class Person(id: Long, name: String, gender: Option[String])
 //問12
 //区切りで生成された文字列numStrを引数として受け取り、 ,で区切られた各文字が数字であればSome[Int], 数字でなければNoneにして返すメソッドquestion12を作成してください
 //例: "1,2,3,4,hello" → Seq(Some(1),Some(2),Some(3),Some(4),None)
-   def question12(numstr:String ):Seq[Option[Int]] = {
-      numstr.split(",").map(_.toIntOption)
+  def question12(numstr:String ):Seq[Option[Int]] = {
+     numstr.split(",").map(_.toIntOption)
   }
 
 //問13
@@ -97,26 +96,31 @@ case class Person(id: Long, name: String, gender: Option[String])
 //Noneであれば "なし" と標準出力させるquestion13を作成してください
   
   def question13(fOps: Future[Option[String]]):Future[Unit] = {
-      fOps.value.get.onSuccess{
-        case Some(i) => println(i)
-        case None    => println("なし")
-      }
-  }
+    for {
+      s <- fOps
+    } yield  s match {
+      case Some(s) =>println(s)
+      case None => println("なし")
+    }
+    //別解 yield println(s.getOrElse("なし"))
+    
+   }
+  
 
 //問14
 //Future[[Either[Int,String]]] 型であるfEithを引数として受け取り、
 //中の結果がRightであればその文字列を、Leftであれば中の数字をぞれぞれ標準出力させるquestion14を作成してください
   
   def question14(fEith: Future[Either[Int, String]]):Future[Unit] = {
-    Future{
-      fEith.onComplete{
-        case Success(Right(r))  => println(r)
-        case Success(Left(l))   => println(l)
-        case Failure(e)         => println(e.getMessage) 
-      }
+    for {
+      fE <- fEith
+    } yield fE match{
+        case Right(r) => println(r)
+        case Left(l) => println(l)
     }
+// 別解 fEith.map(e =>e.getOrElse(e))
   }
-
+  
 
 //問15
 //Seq[Future[Int]]型であるnumsを引数として受け取り、中の数字の合計したFuture[Int]を返すquestion15を作成してください
@@ -124,38 +128,10 @@ case class Person(id: Long, name: String, gender: Option[String])
 //またFuture.sequenceは使用しないこと
 
   def question15(nums: Seq[Future[Int]]):Future[Unit] = {
-    Future{
-      if (nums.isEmpty)
-        println(Future.successful((0)))
-      else
-        println(nums.map(n => n.value.get.get).sum)
-      
-    }
+    nums.map(_.value.getj)    
       
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   }
+

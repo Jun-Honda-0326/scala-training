@@ -45,8 +45,8 @@ object MainPractice9_15{
     question13(fOps2)
     question14(fEith1)
     question14(fEith2)
-    question15(nums1)
-    question15(nums2)
+    println(question15(nums1))
+    println(question15(nums2))
   }
 
 //問題9
@@ -104,6 +104,7 @@ case class Person(id: Long, name: String, gender: Option[String])
     }
     //別解 yield println(s.getOrElse("なし"))
     
+    
    }
   
 
@@ -118,7 +119,7 @@ case class Person(id: Long, name: String, gender: Option[String])
         case Right(r) => println(r)
         case Left(l) => println(l)
     }
-// 別解 fEith.map(e =>e.getOrElse(e))
+       //yield println(fE.getOrElse(fE))
   }
   
 
@@ -127,8 +128,10 @@ case class Person(id: Long, name: String, gender: Option[String])
 //配列の中が空であればFuture[Int] = Future.successful(0) を返すようにすること。
 //またFuture.sequenceは使用しないこと
 
-  def question15(nums: Seq[Future[Int]]):Future[Unit] = {
-    nums.map(_.value.getj)    
+  def question15(nums: Seq[Future[Int]]):Future[Int] = {
+    nums.foldLeft(Future.successful((0))){(acc, x) => Future.successful(
+      nums.map(_.value.get.get).sum)
+    }    
       
   }
 

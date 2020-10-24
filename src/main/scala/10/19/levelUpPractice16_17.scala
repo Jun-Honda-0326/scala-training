@@ -72,17 +72,26 @@ object MainPractice16_17 {
 //
   def question16(users: Seq[User], userInfoSeq: Seq[UserInfo]): Seq[ViewValueUser] = {
     
-    users.map{u => 
-      val uI = userInfoSeq.find(_.userId == u.id)
-        ViewValueUser (
+//    users.map{u => 
+//      val uI = userInfoSeq.find(_.userId == u.id)
+//        ViewValueUser (
+//          u.id.toString,
+//          u.name,
+//          u.age,
+//          uI.map(_.email).getOrElse(""),
+//          uI.map(_.phone).getOrElse("")
+//        )}
+      for {
+        u <- users
+        val uI = userInfoSeq.find(_.userId == u.id)
+      } yield ViewValueUser(
           u.id.toString,
           u.name,
           u.age,
           uI.map(_.email).getOrElse(""),
-          uI.map(_.phone).getOrElse("")
-        )}
+          uI.map(_.phone).getOrElse(":")
 
-
+        )
     }
 
 //問題17
@@ -103,7 +112,21 @@ object MainPractice16_17 {
           uI.map(_.phone).getOrElse("")
         )
 
+//    Database_2.getUser(userId).flatMap{
+//      u => Database_2.getUserInfo(u.id).map{
+//        uI => ViewValueUser(
+//          u.id.toString,
+//          u.name,
+//          u.age,
+//          uI.map(_.email).getOrElse(""),
+//          uI.map(_.phone).getOrElse("")
+//          )
+//      }
+//    }
+//
       Await.ready(viewUser, Duration.Inf)
+      
+    
   }  
 }
     

@@ -1,10 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala:131:22: value getj is not a member of Option[scala.util.Try[Int]][0m[0J
-[0m[[0m[31merror[0m] [0m[0mdid you mean get?[0m[0J
-[0m[[0m[31merror[0m] [0m[0m    nums.map(_.value.getj)    [0m[0J
-[0m[[0m[31merror[0m] [0m[0m                     ^[0m[0J
-[0m[[0m[31merror[0m] [0m[0m/Users/jun/projects/Scala/scala-training/src/main/scala/10/16/levelUpPractice9_15.scala:131:13: type mismatch;[0m[0J
-[0m[[0m[31merror[0m] [0m[0m found   : Seq[Nothing][0m[0J
-[0m[[0m[31merror[0m] [0m[0m required: scala.concurrent.Future[Unit][0m[0J
-[0m[[0m[31merror[0m] [0m[0m    nums.map(_.value.getj)    [0m[0J
-[0m[[0m[31merror[0m] [0m[0m            ^[0m[0J
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 2.10.0); re-run with -deprecation for details[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m[0J
